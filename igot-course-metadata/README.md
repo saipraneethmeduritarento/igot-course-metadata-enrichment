@@ -1,16 +1,84 @@
-# iGOT Course Metadata Regeneration — Framework v3.5 (Advanced)
+# iGOT Course Metadata Regeneration
 
-Regenerates standardised metadata for iGOT Karmayogi Bharat courses using Vertex AI Gemini, grounded
-in three master datasets (KCM competencies, SGOS sectors, the iGOT designation master) and in each
-course's own transcripts and documents.
+Generates clean, consistent metadata for iGOT Karmayogi Bharat courses using Google Gemini (Vertex AI).
 
-This replaces the earlier `v3.4-advanced-extended` implementation. v3.4 is superseded but its output
-is preserved for comparison — see [Version coexistence](#version-coexistence).
+## What it does
 
-Code lives under `src/`: one runnable folder per version in `src/scripts/` (`v3.6/`, `v3.7/`, …) and
-all prompt text in `src/prompts/<version>.yaml`. See [Files](#files).
+Course metadata on the platform is often weak or inconsistent: vague descriptions, wrong difficulty
+levels, missing competencies. This tool reads what each course actually teaches (its video
+transcripts and PDF documents) and produces one standardised record per course:
+
+- a summary and learning outcomes
+- the competency area (Domain, Functional or Behavioural) and the matching competencies from the
+  Karmayogi Competency Model (KCM)
+- the sector, from the SGOS sector master (for Domain courses)
+- a difficulty level (Beginner / Intermediate / Advanced), from a seven-part scoring rubric
+- who the course is for: employee groups (Group A–D) and specific designations from the official iGOT
+  designation master
+- search tags, plus an `explain` section recording why each choice was made
+
+## How it works
+
+For each course:
+
+1. **Read the content.** Transcripts and PDFs come from local course folders, or from the Karmayogi
+   Learning API with `--api`.
+2. **Shortlist target roles.** Out of ~20,000 official designations, pick the ~150 that best match
+   the content.
+3. **Ask the model once.** One Gemini call gets the content, the reference masters and a fixed output
+   format.
+4. **Check the answer.** Anything not in the masters is removed, scores are recalculated in code, and
+   every correction is recorded with the record.
+5. **Save.** The record goes to Postgres. Export tools turn it into JSON/CSV files or an HTML page for
+   reviewers.
+
+Runs are dry by default: nothing is sent to the model or saved until you add `--execute`.
+
+## Versions
+
+Each version is kept as a complete, separate copy, so older results can be reproduced and compared.
+Results are stored per version, so running a new one never overwrites an old one.
+
+| Version | What changed |
+|---|---|
+| v3.4 | Original single-file version. Superseded; kept for reference only. |
+| v3.5 | Reads transcripts and PDFs properly, picks target roles from the designation master, calculates scores in code, and fills the audit trail. |
+| v3.6 | The model sees only course content, not the existing title or description. Long PDFs are summarised first. Title, description and duration come from the portal; language from the transcription. |
+| v3.7 | Prompt fixes from the prompt audit; new fields (job responsibilities, Bloom levels, references cited, excluded roles); long transcripts trimmed fairly across modules. |
+
+## Quick start
+
+Run everything from this folder (`igot-course-metadata/`). You also need the reference masters and
+course content listed under [Inputs you must supply](#inputs-you-must-supply).
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env                                    # fill in credentials, database, file paths
+python src/scripts/tools/build_designation_index.py     # one-off
+
+python src/scripts/v3.7/meta_gen.py --limit 10            # dry run: builds prompts, calls nothing
+python src/scripts/v3.7/meta_gen.py --limit 10 --execute  # for real
+python src/scripts/tools/export.py --version v3.7 --format csv
+python src/scripts/tools/review_report.py --version v3.7  # HTML page for reviewers
+```
+
+Swap `v3.7` for `v3.5` or `v3.6` to run another version.
+
+## Where things are
+
+```
+src/prompts/<version>.yaml   prompt text (edit prompts here)
+src/scripts/<version>/       the code for that version
+src/scripts/tools/           export, review page, inventory, cost estimate
+.env                         settings and credentials (documented in .env.example)
+```
 
 ---
+
+# Detailed reference
+
+The sections below were written for v3.5 and still describe how the pipeline works. Commands use the
+v3.6 engine; the folder layout is described under [Files](#files).
 
 ## Contents
 
