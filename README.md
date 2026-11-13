@@ -1,57 +1,48 @@
 # iGOT Course Metadata Enrichment
 
-Regenerates standardised metadata for iGOT Karmayogi Bharat courses with Vertex AI Gemini. Each course's
-output is grounded in its own transcripts and PDFs and in three master datasets:
+Generates clean, consistent metadata for iGOT Karmayogi Bharat courses using Google Gemini (Vertex AI).
 
-- **KCM**: Functional and Behavioural competencies.
-- **SGOS**: Domain sectors, subsectors and themes.
-- **iGOT designation master**: the designations allowed in `Targetroles`.
+## What it does
 
-> **Scope of this README: the prompt up to v3.5 (`v3.5-advanced`).** It covers the v3.4 → v3.5 changes and
-> how the v3.5 pipeline works. Later versions are out of scope. Note that `meta_gen.py` and `validation.py`
-> now import `prompts_v36`, so a plain run no longer uses the v3.5 prompt. `prompts_v35.py` is kept
-> unchanged as the baseline. For v3.6 → v3.7, see [docs/prompt_audit.md](docs/prompt_audit.md).
+Course metadata on the platform is often weak or inconsistent: vague descriptions, wrong difficulty
+levels, missing competencies. This project reads what each course actually teaches (its video
+transcripts and PDF documents) and produces one standardised record per course:
 
----
+- a summary and learning outcomes
+- the competency area (Domain, Functional or Behavioural) and the matching competencies from the
+  Karmayogi Competency Model (**KCM**)
+- the sector, from the **SGOS** sector master (for Domain courses)
+- a difficulty level (Beginner / Intermediate / Advanced), from a seven-part scoring rubric
+- who the course is for: employee groups (Group A–D) and specific designations from the official
+  **iGOT designation master**
+- search tags, plus an `explain` section recording why each choice was made
 
-## Contents
+## How it works
 
-- [Repository layout](#repository-layout)
-- [Quick start](#quick-start)
-- [How a course is processed (v3.5)](#how-a-course-is-processed-v35)
-- [Prompt changes: v3.4 → v3.5](#prompt-changes-v34--v35)
-- [The v3.5 prompt, section by section](#the-v35-prompt-section-by-section)
-- [Output contract (v3.5)](#output-contract-v35)
-- [Editing the prompt](#editing-the-prompt)
-- [Known gaps at v3.5](#known-gaps-at-v35)
-- [Further reading](#further-reading)
+For each course:
 
----
+1. **Read the content.** Transcripts and PDFs come from local course folders, or from the Karmayogi
+   Learning API with `--api`.
+2. **Shortlist target roles.** Out of ~20,000 official designations, pick the ~150 that best match
+   the content.
+3. **Ask the model once.** One Gemini call gets the content, the reference masters and a fixed output
+   format.
+4. **Check the answer.** Anything not in the masters is removed, scores are recalculated in code, and
+   every correction is recorded with the record.
+5. **Save.** The record goes to Postgres. Export tools turn it into JSON/CSV files or an HTML page for
+   reviewers.
 
-## Repository layout
+## Versions
 
-```text
-igot-course-metadata/        the code; run everything from here
-  meta_gen.py                worker: discovery, queue, Gemini calls, persistence, CLI
-  prompts_v35.py             v3.5 system prompt, response schema, rubric weights, prompt assembly
-  course_io.py               reads course folders: nested transcripts, PDFs, placeholder filtering
-  validation.py              master-membership checks, rubric recomputation, repairs
-  designations.py            designation embedding index and shortlist retrieval
-  api_fetcher.py             --api mode: fetch course content from the Karmayogi Learning API
-  data/designation_index.npz prebuilt designation embedding index
-  tools/                     inventory, index builder, export, cost estimate, HTML review page
-  run_*.ps1                  Windows wrappers for the SCORM, non-SCORM and ad-hoc course sets
-  legacy/meta_gen_v3.4.py    the v3.4 implementation, kept for diffing only (do not run)
-  README.md                  detailed operations guide (data census, cost, resume, exports)
-input/masters/               KCM, SGOS, designation and STO masters
-docs/                        prompt audit (v3.6 → v3.7, outside this README's scope)
-logs/, runs/                 run logs, outcome CSVs and sample run outputs
-SETUP.md                     step-by-step setup for a fresh machine (Windows/PowerShell)
-```
+Each version is kept as a complete, separate copy, so older results can be reproduced and compared.
+Results are stored per version, so running a new one never overwrites an old one.
 
-Never commit `.env`, `.creds/` or the service-account JSON.
-
----
+| Version | What changed |
+|---|---|
+| v3.4 | Original single-file version. Superseded; kept for reference only. |
+| v3.5 | Reads transcripts and PDFs properly, picks target roles from the designation master, calculates scores in code, and fills the audit trail. Documented in detail below. |
+| v3.6 | The model sees only course content, not the existing title or description. Long PDFs are summarised first. Title, description and duration come from the portal; language from the transcription. |
+| v3.7 | Prompt fixes from the [prompt audit](docs/prompt_audit.md); new fields (job responsibilities, Bloom levels, references cited, excluded roles); long transcripts trimmed fairly across modules. |
 
 ## Quick start
 
@@ -75,20 +66,57 @@ Fill in these values in `.env`:
 `ENRICHMENT_DSN` (read-only `course_metadata_v3`) is optional. Without it, language and duration are
 inferred.
 
-Every command is a **dry run** until you add `--execute`. A dry run makes no AI calls and no database writes.
+Every command is a **dry run** until you add `--execute`. A dry run makes no AI calls and no database
+writes. The version is chosen by the folder in the path:
 
 ```bash
-python meta_gen.py --api --course-id do_123 --limit 1             # dry run
-python meta_gen.py --api --course-id do_123 --execute             # real run, one course
-python meta_gen.py --api --course-id-file ids.txt --execute       # one id per line
-python meta_gen.py --limit 10 --execute                           # local folders (COURSES_BASE_PATH)
-python tools/review_report.py --limit 50 --out review.html        # HTML page for reviewers
+python src/scripts/v3.7/meta_gen.py --api --course-id do_123 --limit 1         # dry run
+python src/scripts/v3.7/meta_gen.py --api --course-id do_123 --execute         # real run, one course
+python src/scripts/v3.7/meta_gen.py --api --course-id-file ids.txt --execute   # one id per line
+python src/scripts/v3.7/meta_gen.py --limit 10 --execute                       # local folders (COURSES_BASE_PATH)
+python src/scripts/tools/review_report.py --version v3.7 --limit 50 --out review.html   # HTML page for reviewers
 ```
 
-These commands run the **current** prompt (v3.6), not v3.5. You can't switch back to v3.5 by changing the
-import alone. v3.5's `build_course_section()` takes `current_metadata`, `authoritative_facts` and raw PDF text.
-v3.6's takes `pdf_summaries`, `output_language` and `duration_seconds`. Existing v3.5 records stay in
+Swap `v3.7` for `v3.5` or `v3.6` to run another version. Existing v3.5 records are in
 `course_metadata_regenerated` under `llm_prompt_version = 'v3.5-advanced'`.
+
+## Repository layout
+
+```text
+igot-course-metadata/          the code; run everything from here
+  src/prompts/<version>.yaml   prompt text, one file per version (v3.4–v3.7)
+  src/scripts/<version>/       complete, runnable code per version (v3.5, v3.6, v3.7; v3.4 reference only)
+  src/scripts/tools/           inventory, index builder, export, cost estimate, HTML review page
+  src/scripts/run_*.ps1        Windows wrappers for the SCORM, non-SCORM and ad-hoc course sets
+  data/designation_index.npz   prebuilt designation embedding index
+  README.md                    overview, then the detailed operations guide (data census, cost, resume, exports)
+input/masters/                 KCM, SGOS, designation and STO masters
+docs/                          prompt audit (v3.6 → v3.7)
+logs/, runs/                   run logs, outcome CSVs and sample run outputs
+SETUP.md                       step-by-step setup for a fresh machine (Windows/PowerShell)
+```
+
+Never commit `.env`, `.creds/` or the service-account JSON.
+
+---
+
+# v3.5 reference
+
+> The rest of this README documents **v3.5** (`v3.5-advanced`): the v3.4 → v3.5 prompt changes and how
+> the v3.5 pipeline works. Its prompt text is in
+> [src/prompts/v3.5.yaml](igot-course-metadata/src/prompts/v3.5.yaml) and its code in
+> [src/scripts/v3.5/](igot-course-metadata/src/scripts/v3.5/). For v3.6 → v3.7, see
+> [docs/prompt_audit.md](docs/prompt_audit.md).
+
+## Contents
+
+- [How a course is processed (v3.5)](#how-a-course-is-processed-v35)
+- [Prompt changes: v3.4 → v3.5](#prompt-changes-v34--v35)
+- [The v3.5 prompt, section by section](#the-v35-prompt-section-by-section)
+- [Output contract (v3.5)](#output-contract-v35)
+- [Editing the prompt](#editing-the-prompt)
+- [Known gaps at v3.5](#known-gaps-at-v35)
+- [Further reading](#further-reading)
 
 ---
 
@@ -170,7 +198,7 @@ prefix caching impossible. On a full run, caching the prefix is worth about 55% 
 
 ## The v3.5 prompt, section by section
 
-`SYSTEM_PROMPT_TEMPLATE` in [prompts_v35.py](igot-course-metadata/prompts_v35.py):
+`system_prompt` in [src/prompts/v3.5.yaml](igot-course-metadata/src/prompts/v3.5.yaml):
 
 | § | Section | Produces |
 |---|---|---|
@@ -225,15 +253,19 @@ For more real v3.4 vs v3.5 output, see
 
 ## Editing the prompt
 
-All prompt text lives in `prompts_v35.py`, not in the worker, the validator or the extraction code.
+All prompt text lives in `src/prompts/<version>.yaml` (for v3.5, `v3.5.yaml`), not in the worker, the
+validator or the extraction code. The version's `prompts.py` (`src/scripts/v3.5/prompts.py`) fills it in.
 
 | What | Where |
 |---|---|
-| System prompt | `SYSTEM_PROMPT_TEMPLATE` |
-| Learning-outcome variants | `_LO_RULES_UNLABELLED`, `_LO_RULES_WHW` |
-| Response schema | `METADATA_SCHEMA` |
-| Rubric weights and bands | `RUBRIC_WEIGHTS`, `BEGINNER_MAX`, `INTERMEDIATE_MAX`. The prompt text and the Python recomputation both read these constants, so the two cannot drift apart |
-| Assembly | `build_static_prefix()` (invariant) + `build_course_section()` (per course) |
+| System prompt | `system_prompt` in the YAML |
+| Learning-outcome variants | `learning_outcome_rules.unlabelled` / `.why_how_what` in the YAML |
+| Response schema | `METADATA_SCHEMA` in `prompts.py` |
+| Rubric weights and bands | `RUBRIC_WEIGHTS`, `BEGINNER_MAX`, `INTERMEDIATE_MAX` in `prompts.py`. The prompt text and the Python recomputation both read these constants, so the two cannot drift apart |
+| Assembly | `static_prefix` (invariant) + `course_section` (per course) templates in the YAML, filled by `build_static_prefix()` / `build_course_section()` in `prompts.py` |
+
+To change a prompt, make a new version rather than editing one that has already produced output: see
+*Editing the prompt* in [igot-course-metadata/README.md](igot-course-metadata/README.md#editing-the-prompt).
 
 Env overrides that change the output (see `.env.example`):
 
@@ -245,7 +277,7 @@ Env overrides that change the output (see `.env.example`):
 | `LEARNING_OUTCOME_STYLE` | `unlabelled` (or `why_how_what`) |
 | `BEHAVIOURAL_SPELLING` | `Behavioural` (or `Behavioral`) |
 
-Keep `build_static_prefix()` identical across courses. Anything course-specific in it breaks caching.
+Keep `static_prefix` identical across courses. Anything course-specific in it breaks caching.
 
 ---
 
@@ -267,7 +299,7 @@ Keep `build_static_prefix()` identical across courses. Anything course-specific 
 | Document | Covers |
 |---|---|
 | [SETUP.md](SETUP.md) | Fresh-machine setup and the first run |
-| [igot-course-metadata/README.md](igot-course-metadata/README.md) | Full v3.5 operations guide: input data census, validation table, cost and throughput, resume, exports, review page |
-| [igot-course-metadata/legacy/README.md](igot-course-metadata/legacy/README.md) | v3.4 defects, with line references |
+| [igot-course-metadata/README.md](igot-course-metadata/README.md) | Overview, code layout per version, then the full operations guide: input data census, validation table, cost and throughput, resume, exports, review page |
+| [igot-course-metadata/src/scripts/v3.4/README.md](igot-course-metadata/src/scripts/v3.4/README.md) | v3.4 defects, with line references |
 | [igot-course-metadata/.env.example](igot-course-metadata/.env.example) | Every configuration variable, documented |
 | [docs/prompt_audit.md](docs/prompt_audit.md) | v3.6 → v3.7 prompt audit (after v3.5) |
