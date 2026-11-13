@@ -1,0 +1,12 @@
+.creds/
+
+logs/
+OneDrive_2026-11-06/
+pdf_summary_cache/
+runs/
+shubadha_example_output/
+
+__pycache__/
+.venv/
+
+.env

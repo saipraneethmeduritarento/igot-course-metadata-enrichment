@@ -1,0 +1,2048 @@
+{
+    "Rural and Agriculture": {
+        "Agriculture & Farmers Welfare": [
+            {
+                "theme": "Crop Diversification & Climate Resilience",
+                "description": "Focuses on reducing monoculture risks, building climate resilience, and providing sustainable income options."
+            },
+            {
+                "theme": "Farmer Income Security & Crop Insurance",
+                "description": "Covers insurance schemes and safety nets to protect farmers from droughts, floods, and other risks."
+            },
+            {
+                "theme": "Modern Irrigation & Water Use Efficiency",
+                "description": "Highlights adoption of modern irrigation and efficient water practices for higher productivity."
+            },
+            {
+                "theme": "Digital Agriculture & Market Linkages",
+                "description": "Uses digital tools to improve farmer access to markets, services, and government schemes."
+            },
+            {
+                "theme": "Sustainable Fertilizer & Input Management",
+                "description": "Promotes balanced use of fertilizers and inputs to raise yields while protecting soil health."
+            }
+        ],
+        "Agricultural Research and Education": [
+            {
+                "theme": "Agri-Biotech & Seed Systems",
+                "description": "Advances efforts in research and innovation in seed technology, including biotech and high-yield varieties, to enhance farm productivity and resilience."
+            },
+            {
+                "theme": "Agriculture Policy Frameworks",
+                "description": "Advances biotech and high-yield seed varieties to enhance farm productivity and resilience."
+            },
+            {
+                "theme": "Post-Harvest Management",
+                "description": "Enhances post-harvest handling, storage, and processing to minimize food loss and strengthen agricultural value chains."
+            },
+            {
+                "theme": "Soil & Plant Health Research",
+                "description": "Enables evidence-based policy through research and capacity building in food security."
+            },
+            {
+                "theme": "Climate-Resilient R&D",
+                "description": "Advances research on crop varieties and techniques that can withstand extreme weather and climate variability."
+            }
+        ],
+        "Panchayati Raj": [
+            {
+                "theme": "Decentralized Planning & GPDP",
+                "description": "Establishes capacity for Gram Panchayats to prepare and implement local development plans through participatory and bottom-up approaches."
+            },
+            {
+                "theme": "Fiscal Devolution & Accountability",
+                "description": "Reinforces Panchayati Raj institutions by devolving financial powers and resources to ensure effective self-governance at the grassroots level."
+            },
+            {
+                "theme": "e‑Governance & Service Delivery",
+                "description": "Facilitates adoption of the use of digital tools and platforms for efficient service delivery, transparency, and accountability in local governance."
+            },
+            {
+                "theme": "Community Participation & Inclusion",
+                "description": "Enables strategic initiatives for active participation of citizens in decision-making, planning, and monitoring of Panchayat-led development initiatives."
+            },
+            {
+                "theme": "Rural Infrastructure Stewardship",
+                "description": "Enables local bodies in managing and maintaining essential rural infrastructure such as roads, housing, and community facilities."
+            }
+        ],
+        "Rural Development": [
+            {
+                "theme": "MGNREGA for Resilience",
+                "description": "Rural households guaranteed wage employment while creating assets like roads and water structures, strengthening livelihood security."
+            },
+            {
+                "theme": "SHG & Livelihoods (DAY-NRLM)",
+                "description": "Establishes capacity for rural women through SHGs, promoting savings, credit access, and sustainable livelihoods under DAY-NRLM."
+            },
+            {
+                "theme": "Rural Housing & Amenities",
+                "description": "Operationalizes programs for affordable, disaster-resilient housing and basic amenities in villages through schemes like PMAY-Gramin."
+            },
+            {
+                "theme": "Social Protection Targeting",
+                "description": "Advances efforts in reaching vulnerable groups with wage work, pensions, and safety nets to reduce rural poverty."
+            },
+            {
+                "theme": "Digital & Financial Inclusion",
+                "description": "Enables transparent wage payments, DBT, and financial literacy by linking rural households with digital and banking systems."
+            }
+        ],
+        "Land Resources": [
+            {
+                "theme": "Land Record Modernization",
+                "description": "Modernizes land records through digitization, surveys, and integration with revenue systems to ensure secure land titles."
+            },
+            {
+                "theme": "Watershed & Landscape Management",
+                "description": "Enables strategic initiatives for watershed development and soil-water conservation to restore degraded lands and improve rural livelihoods."
+            },
+            {
+                "theme": "Land Use Planning & Zoning",
+                "description": "Enables scientific land use policies and zoning to balance agriculture, forestry, housing, and industrial needs."
+            },
+            {
+                "theme": "Wasteland Reclamation",
+                "description": "Facilitates adoption of reclamation of degraded and wasteland areas for productive use such as fuelwood, fodder, or cultivation."
+            },
+            {
+                "theme": "Acquisition & Recovery",
+                "description": "Facilitates coordination for efforts in land acquisition for Union purposes and recovery of arrears related to land revenue and public claims."
+            }
+        ],
+        "Water Resources, River Development and Ganga Rejuvenation": [
+            {
+                "theme": "River Basin & Ganga Rejuvenation",
+                "description": "River basin management and the Namami Gange Programme and conservation of the Ganga and its tributaries."
+            },
+            {
+                "theme": "Water Policy & Governance",
+                "description": "Encompasses formulation of national water policies, inter-state coordination, and governance frameworks for equitable and sustainable use."
+            },
+            {
+                "theme": "Flood, Drought & Dam Safety",
+                "description": "Incorporates schemes for flood control, drought relief, and the Dam Safety Programme to monitor and upgrade dam infrastructure."
+            },
+            {
+                "theme": "Irrigation Efficiency & Command Area",
+                "description": "Reinforces irrigation systems and Command Area Development & Water Management (CADWM) schemes to improve water productivity."
+            },
+            {
+                "theme": "Groundwater Governance",
+                "description": "Facilitates coordination for efforts in groundwater regulation, recharge projects, and aquifer management under Atal Bhujal Yojana."
+            }
+        ],
+        "Animal Husbandry and Dairying": [
+            {
+                "theme": "Veterinary Services & One Health",
+                "description": "Operationalizes animal healthcare through schemes like the Livestock Health & Disease Control (LHDC) programme, linking animal and human health."
+            },
+            {
+                "theme": "Breed Improvement & Genetics",
+                "description": "Operationalizes the National Artificial Insemination Programme and genetic upgradation schemes to improve productivity."
+            },
+            {
+                "theme": "Dairy Infrastructure & Cold Chain",
+                "description": "Supported by the Dairy Infrastructure Development Fund (DIDF) to expand chilling, processing, and storage capacity."
+            },
+            {
+                "theme": "Fodder & Nutrition Security",
+                "description": "Enables strategic initiatives for fodder cultivation and balanced feed initiatives under the National Livestock Mission."
+            },
+            {
+                "theme": "Insurance & Producer Organizations",
+                "description": "Addresses livestock insurance and support to Farmer Producer Organizations (FPOs) for risk-sharing and market access."
+            }
+        ],
+        "Fisheries": [
+            {
+                "theme": "Aquaculture Intensification",
+                "description": "Promoted through Pradhan Mantri Matsya Sampada Yojana (PMMSY) to scale up inland aquaculture and enhance yields."
+            },
+            {
+                "theme": "Marine Fisheries Sustainability",
+                "description": "Enables strategic initiatives for responsible fishing practices and marine conservation through PMMSY initiatives."
+            },
+            {
+                "theme": "Cold Chain & Processing",
+                "description": "Develops storage, processing, and value-addition facilities under PMMSY to reduce post-harvest losses."
+            },
+            {
+                "theme": "Habitat Conservation",
+                "description": "Advances efforts in conserving breeding grounds and aquatic ecosystems to sustain fish stocks."
+            },
+            {
+                "theme": "Fisher Welfare & Capacity",
+                "description": "Operationalizes programs for fisher group insurance, housing, and training programmes through PMMSY."
+            }
+        ],
+        "Food Processing Industries": [
+            {
+                "theme": "Mega Food Parks & Clusters",
+                "description": "Operationalizes the Mega Food Park Scheme to provide integrated processing facilities with farm-to-market linkages."
+            },
+            {
+                "theme": "Cold Chain Logistics",
+                "description": "Expands cold storage, warehousing, and transport under the Integrated Cold Chain and Value Addition Infrastructure Scheme."
+            },
+            {
+                "theme": "Safety, Standards & Quality",
+                "description": "Collaborates with FSSAI to ensure hygiene, safety, and compliance in food processing units."
+            },
+            {
+                "theme": "Skill & Technology Upgradation",
+                "description": "Enhances skills and upgrades technology via the PM Kisan Sampada Yojana."
+            },
+            {
+                "theme": "Market Access & Exports",
+                "description": "Reinforces domestic and international linkages for processed food products under schemes promoting export competitiveness."
+            }
+        ],
+        "Fertilizers": [
+            {
+                "theme": "Subsidy Targeting & Reforms",
+                "description": "Operationalizes fertilizer subsidy reforms and Direct Benefit Transfer (DBT) in Fertilizers to ensure targeted delivery and efficient use of subsidies."
+            },
+            {
+                "theme": "Balanced & Bio Fertilizers",
+                "description": "Enables strategic initiatives for balanced nutrient use and bio/organic fertilizers through the Nutrient Based Subsidy (NBS) Scheme."
+            },
+            {
+                "theme": "Supply Chain & Distribution",
+                "description": "Administers production, imports, and distribution of fertilizers ensuring timely supply to farmers."
+            },
+            {
+                "theme": "Safety & Environmental Compliance",
+                "description": "Establishes standards for safety standards, pollution control, and compliance of fertilizer manufacturing units."
+            },
+            {
+                "theme": "Industry Competitiveness",
+                "description": "Enables modernization and energy efficiency in fertilizer plants to enhance competitiveness."
+            }
+        ],
+        "Food and Public Distribution": [
+            {
+                "theme": "PDS Modernization & Portability",
+                "description": "Digitizes the Public Distribution System with One Nation One Ration Card (ONORC) for nationwide portability."
+            },
+            {
+                "theme": "Buffer Stocks & Price Stabilization",
+                "description": "Maintains buffer stocks of food grains under Food Corporation of India (FCI) for food security and price stability."
+            },
+            {
+                "theme": "Warehousing & Loss Reduction",
+                "description": "Expands modern warehousing and storage under the Warehouse Infrastructure Fund to minimize post-harvest losses."
+            },
+            {
+                "theme": "Beneficiary Grievance Redressal",
+                "description": "Reinforces grievance systems under the National Food Security Act (NFSA) to ensure accountability in food delivery."
+            },
+            {
+                "theme": "Data & Analytics for Targeting",
+                "description": "Leverages Aadhaar seeding, digital records, and analytics to improve targeting of food subsidy beneficiaries."
+            }
+        ],
+        "Consumer Affairs": [
+            {
+                "theme": "Consumer Protection & Redressal",
+                "description": "Enforces the Consumer Protection Act, 2019 and manages consumer commissions and helplines."
+            },
+            {
+                "theme": "Standards & Quality Control",
+                "description": "Facilitates coordination for efforts in product standards through the Bureau of Indian Standards (BIS)."
+            },
+            {
+                "theme": "E-Commerce Consumer Rights",
+                "description": "Establishes standards for e-commerce platforms under the Consumer Protection (E-Commerce) Rules, ensuring fair trade practices."
+            },
+            {
+                "theme": "Price Monitoring & Essentials",
+                "description": "Monitors prices of essential commodities via the Price Monitoring Division to prevent hoarding and inflation."
+            },
+            {
+                "theme": "Awareness & Financial Literacy",
+                "description": "Conducts consumer awareness drives like Jago Grahak Jago to educate citizens on rights and safe practices."
+            }
+        ],
+        "Drinking Water and Sanitation": [
+            {
+                "theme": "Jal Jeevan Mission Delivery",
+                "description": "Operationalizes the Jal Jeevan Mission (JJM) to provide functional tap water connections to every rural household."
+            },
+            {
+                "theme": "Rural Sanitation & FSM",
+                "description": "Expands the Swachh Bharat Mission (Grameen) for rural sanitation and fecal sludge management."
+            },
+            {
+                "theme": "Water Quality & Testing",
+                "description": "Sets up laboratories and monitoring systems under JJM to ensure safe drinking water."
+            },
+            {
+                "theme": "Community Ownership & IEC",
+                "description": "Enables strategic initiatives for community-led water management, training, and Information-Education-Communication (IEC) activities."
+            },
+            {
+                "theme": "Greywater & Reuse",
+                "description": "Facilitates adoption of greywater management and reuse in villages as part of JJM’s sustainability agenda."
+            }
+        ],
+        "Cooperation": [
+            {
+                "theme": "Cooperative Governance Reforms",
+                "description": "Reinforces governance of cooperatives through amendments to the MSCS Act, 2002 and new cooperative policies."
+            },
+            {
+                "theme": "Credit & Co-op Banking Strengthening",
+                "description": "Reforms cooperative banks and credit structures for wider financial inclusion in rural areas."
+            },
+            {
+                "theme": "Agri & Dairy Cooperatives",
+                "description": "Enables strategic initiatives for farmer and dairy cooperatives, including support to Amul-type federations for market linkages."
+            },
+            {
+                "theme": "Capacity Building & Leadership",
+                "description": "Develops leadership and training of cooperative members through the National Cooperative Development Corporation (NCDC)."
+            },
+            {
+                "theme": "Digital Cooperatives",
+                "description": "Advances computerization of Primary Agricultural Credit Societies (PACS) under the Ministry’s Digitalization of Cooperatives Initiative."
+            }
+        ]
+    },
+    "Infrastructure": {
+        "Civil Aviation": [
+            {
+                "theme": "Airport Modernization",
+                "description": "Upgrades airports under the GAGAN and AAI modernization programmes to enhance capacity and passenger services."
+            },
+            {
+                "theme": "UDAN & Regional Connectivity",
+                "description": "Operationalizes the UDAN (Ude Desh ka Aam Nagrik) scheme to expand affordable air connectivity to underserved regions."
+            },
+            {
+                "theme": "Safety & Security Oversight",
+                "description": "Enforces international standards through the Directorate General of Civil Aviation (DGCA) and Bureau of Civil Aviation Security."
+            },
+            {
+                "theme": "Air Cargo & Logistics",
+                "description": "Expands air cargo facilities and integrates logistics hubs to support trade and e-commerce."
+            },
+            {
+                "theme": "Sustainable Aviation",
+                "description": "Enables strategic initiatives for low-emission technologies, sustainable fuels, and energy-efficient airport operations."
+            }
+        ],
+        "Railways": [
+            {
+                "theme": "Network Expansion & Upgrades",
+                "description": "Expands rail tracks and modernizes stations under schemes like PM Gati Shakti."
+            },
+            {
+                "theme": "High-Speed & Dedicated Freight",
+                "description": "Develops the Mumbai–Ahmedabad High-Speed Rail and Dedicated Freight Corridors (DFC) to improve speed and capacity."
+            },
+            {
+                "theme": "Passenger Safety & Amenities",
+                "description": "Implements modern signaling, CCTV, and upgraded amenities under the Station Redevelopment Programme."
+            },
+            {
+                "theme": "Financial & Commercial Reforms",
+                "description": "Enhances efficiency through public-private partnerships and rationalized tariff structures."
+            },
+            {
+                "theme": "Indigenisation & Technology",
+                "description": "Advances Make in India for rolling stock, locomotives, and digital rail technology."
+            }
+        ],
+        "Housing and Urban Affairs": [
+            {
+                "theme": "Affordable Housing & Slum Upgrading",
+                "description": "Operationalizes Pradhan Mantri Awas Yojana–Urban (PMAY-U) for affordable housing and slum redevelopment."
+            },
+            {
+                "theme": "Urban Mobility & Transit",
+                "description": "Expands Metro Rail, AMRUT, and electric bus networks for sustainable mobility."
+            },
+            {
+                "theme": "Smart Cities & E-Governance",
+                "description": "Drives the Smart Cities Mission with ICT-based governance and urban services."
+            },
+            {
+                "theme": "Urban Infrastructure & Services",
+                "description": "Reinforces water supply, sanitation, and waste management under AMRUT 2.0."
+            },
+            {
+                "theme": "Urban Planning & Resilience",
+                "description": "Enables strategic initiatives for master plans, resilience frameworks, and climate-responsive planning."
+            }
+        ],
+        "Road Transport and Highways": [
+            {
+                "theme": "Highway Expansion & Safety",
+                "description": "Establishes and widens highways under Bharatmala Pariyojana, while integrating safety audits."
+            },
+            {
+                "theme": "Maintenance & Asset Management",
+                "description": "Leverages performance-based contracts and digital monitoring for upkeep of road assets."
+            },
+            {
+                "theme": "Green & Resilient Roads",
+                "description": "Facilitates adoption of use of recycled materials, EV charging infra, and resilient design in highways."
+            },
+            {
+                "theme": "Multimodal Connectivity & Logistics",
+                "description": "Integrates highways with ports, railways, and logistics parks under PM Gati Shakti."
+            },
+            {
+                "theme": "Innovation & Financing",
+                "description": "Enables strategic initiatives for innovative construction, PPP models, and financing through TOT/InvIT mechanisms."
+            }
+        ],
+        "Ports, Shipping & Waterways": [
+            {
+                "theme": "Cargo Loading and Unloading Administration",
+                "description": "Streamlines port operations through Major Port Authorities Act and digital port initiatives."
+            },
+            {
+                "theme": "Coastal Shipping & Inland Waterways",
+                "description": "Expands coastal cargo movement and National Waterways projects (Sagarmala)."
+            },
+            {
+                "theme": "Maritime Safety & Security",
+                "description": "Facilitates coordination for efforts in safety standards and coastal surveillance via DG Shipping."
+            },
+            {
+                "theme": "Shipbuilding & Repair Ecosystem",
+                "description": "Enables indigenous shipbuilding and ship repair yards under Make in India."
+            },
+            {
+                "theme": "Green Ports & Logistics",
+                "description": "Develops environment-friendly ports with renewable energy and efficient logistics under Sagarmala."
+            }
+        ]
+    },
+    "Resources": {
+        "New and Renewable Energy": [
+            {
+                "theme": "Solar & Rooftop Scale-up",
+                "description": "Expands solar energy under the National Solar Mission and promotes Rooftop Solar Programme Phase-II."
+            },
+            {
+                "theme": "Wind & Hybrid Integration",
+                "description": "Scales up wind capacity and hybrid systems through the National Wind-Solar Hybrid Policy."
+            },
+            {
+                "theme": "Bioenergy & Waste-to-Energy",
+                "description": "Enables biogas, biomass, and waste-to-energy projects under the National Bio-Energy Mission."
+            },
+            {
+                "theme": "Storage & Grid Flexibility",
+                "description": "Enables strategic initiatives for battery storage, pumped hydro, and flexible grids for renewable integration."
+            },
+            {
+                "theme": "Green Financing & Carbon Markets",
+                "description": "Mobilizes climate finance, green bonds, and carbon market mechanisms for renewable projects."
+            }
+        ],
+        "Power": [
+            {
+                "theme": "Generation & Transmission",
+                "description": "Expands power generation and interstate transmission under Deen Dayal Upadhyaya Gram Jyoti Yojana (DDUGJY) and green corridors."
+            },
+            {
+                "theme": "Smart Grids & AMI",
+                "description": "Deploys Smart Grid Mission and Advanced Metering Infrastructure (AMI) for efficient distribution."
+            },
+            {
+                "theme": "Energy Policy & Regulation",
+                "description": "Frames tariff policies, regulatory reforms, and national electricity plans for sector stability."
+            },
+            {
+                "theme": "Distribution Reforms & UDAY",
+                "description": "Reinforces distribution companies through the UDAY scheme and Revamped Distribution Sector Scheme (RDSS)."
+            },
+            {
+                "theme": "Green Technology Adoption",
+                "description": "Enables strategic initiatives for supercritical/ultra-supercritical plants, EV charging, and renewable-linked technologies."
+            }
+        ],
+        "Petroleum and Natural Gas": [
+            {
+                "theme": "Upstream E&P",
+                "description": "Enables strategic initiatives for exploration & production through Open Acreage Licensing Policy (OALP) and HELP framework."
+            },
+            {
+                "theme": "Gas-Based Economy",
+                "description": "Expands gas infrastructure under the National Gas Grid and City Gas Distribution (CGD) networks."
+            },
+            {
+                "theme": "Refining & Petrochemicals",
+                "description": "Enhances refining capacity and value addition through petrochemical hubs."
+            },
+            {
+                "theme": "Clean Cooking & LPG Access",
+                "description": "Operationalizes Pradhan Mantri Ujjwala Yojana (PMUY) for LPG access to households."
+            },
+            {
+                "theme": "Emission Reduction",
+                "description": "Facilitates adoption of BS-VI fuels, natural gas transition, and refinery upgrades for lower emissions."
+            }
+        ],
+        "Environment, Forest and Climate Change": [
+            {
+                "theme": "Water & Wetland Management",
+                "description": "Conserves wetlands under the National Plan for Conservation of Aquatic Ecosystems (NPCA)."
+            },
+            {
+                "theme": "Climate Action & Adaptation & Environmental Impact Management",
+                "description": "Leads National Action Plan on Climate Change (NAPCC) and Environmental Impact Assessments (EIA)."
+            },
+            {
+                "theme": "Biodiversity & Wildlife, & Forest Management",
+                "description": "Operationalizes the National Biodiversity Action Plan, wildlife sanctuaries, and afforestation schemes like CAMPA."
+            },
+            {
+                "theme": "Climate Change & Environmental Sustainability",
+                "description": "Facilitates coordination for India’s commitments under UNFCCC and Paris Agreement."
+            },
+            {
+                "theme": "Waste & Circular Economy",
+                "description": "Enforces Solid Waste Management Rules and e-waste rules to promote circular economy."
+            }
+        ],
+        "Coal": [
+            {
+                "theme": "Efficient Coal Mining",
+                "description": "Expands mechanized mining and auction reforms for efficiency."
+            },
+            {
+                "theme": "Safety & Environmental Compliance",
+                "description": "Reinforces mechanisms to ensure mine safety under DGMS and rehabilitation under the Mine Closure Policy."
+            },
+            {
+                "theme": "Coal Logistics",
+                "description": "Enhances rail connectivity and coal evacuation under Coal Logistics Plan."
+            },
+            {
+                "theme": "Diversification & Gasification",
+                "description": "Enables strategic initiatives for coal gasification, CBM, and clean coal technologies."
+            },
+            {
+                "theme": "Royalty & Revenue",
+                "description": "Administers royalties, revenue sharing, and auctions for coal blocks."
+            }
+        ],
+        "Mines": [
+            {
+                "theme": "Exploration & Licensing",
+                "description": "Operationalizes National Mineral Exploration Policy (NMEP) and transparent licensing systems."
+            },
+            {
+                "theme": "Sustainable Mining",
+                "description": "Enables strategic initiatives for scientific mining and environment management under the Sustainable Development Framework."
+            },
+            {
+                "theme": "Mineral Processing & Value Addition",
+                "description": "Develops downstream industries and mineral beneficiation projects."
+            },
+            {
+                "theme": "Critical Minerals Strategy",
+                "description": "Secures supply chains for rare earths and strategic minerals under the Critical Minerals Mission."
+            },
+            {
+                "theme": "Mining Policy & Regulation",
+                "description": "Frames policy, regulation, and monitoring under the Mines and Minerals (Development and Regulation) Act (MMDR Act)."
+            }
+        ]
+    },
+    "Social": {
+        "Youth Affairs": [
+            {
+                "theme": "Youth Leadership & Volunteering",
+                "description": "Establishes youth leadership through the Nehru Yuva Kendra Sangathan (NYKS) and National Youth Corps."
+            },
+            {
+                "theme": "International Cooperation",
+                "description": "Enables strategic initiatives for youth exchanges and engagement under Bilateral/Multilateral Youth Programmes."
+            },
+            {
+                "theme": "Policy & Flagship Schemes",
+                "description": "Operationalizes the National Youth Policy and flagship programmes for youth development."
+            },
+            {
+                "theme": "Research, Data & Impact Monitoring",
+                "description": "Collects and evaluates youth data to track outcomes of policies and schemes."
+            },
+            {
+                "theme": "Inclusion & Community Service",
+                "description": "Facilitates adoption of social inclusion via youth participation in community development."
+            }
+        ],
+        "Skill Development & Entrepreneurship": [
+            {
+                "theme": "Industry-Linked Training",
+                "description": "Aligns skilling under the Pradhan Mantri Kaushal Vikas Yojana (PMKVY) with industry demand."
+            },
+            {
+                "theme": "RPL & Upskilling",
+                "description": "Expands Recognition of Prior Learning (RPL) and continuous upskilling opportunities."
+            },
+            {
+                "theme": "MSME & Startup Support",
+                "description": "Connects skill development with entrepreneurship and MSME/startup growth."
+            },
+            {
+                "theme": "Digital & Future Skills",
+                "description": "Enables strategic initiatives for AI, robotics, and coding under the Skill India Digital framework."
+            },
+            {
+                "theme": "Quality Assurance",
+                "description": "Reinforces mechanisms to ensure standards through the National Skill Qualification Framework (NSQF) and assessments."
+            }
+        ],
+        "Sports": [
+            {
+                "theme": "Grassroots Sports",
+                "description": "Enables strategic initiatives for school and community sports under the Khelo India Programme."
+            },
+            {
+                "theme": "High-Performance Pathways",
+                "description": "Enables elite athlete training with TOPS (Target Olympic Podium Scheme)."
+            },
+            {
+                "theme": "Infrastructure & Khelo India",
+                "description": "Develops sports infrastructure through Khelo India Centres and Academies."
+            },
+            {
+                "theme": "Inclusive & Para Sports",
+                "description": "Expands opportunities for para-athletes under schemes like Paralympic Mission."
+            },
+            {
+                "theme": "Anti-Doping & Integrity",
+                "description": "Facilitates coordination for efforts in NADA for anti-doping and ensures integrity in sports."
+            }
+        ],
+        "Health and Family Welfare": [
+            {
+                "theme": "Primary Care & HWCs",
+                "description": "Reinforces Health & Wellness Centres under Ayushman Bharat."
+            },
+            {
+                "theme": "Maternal & Child Health",
+                "description": "Conducts RMNCH+A programs and Janani Suraksha Yojana for mothers and children."
+            },
+            {
+                "theme": "Disease Control Programs",
+                "description": "Administers national programmes on TB, malaria, HIV/AIDS, and NCDs."
+            },
+            {
+                "theme": "Digital Health & ABDM",
+                "description": "Operationalizes the Ayushman Bharat Digital Mission (ABDM) for digital health records."
+            },
+            {
+                "theme": "Emergency Preparedness",
+                "description": "Prepares for pandemics and disasters through IDSP and emergency health systems."
+            }
+        ],
+        "AYUSH": [
+            {
+                "theme": "AYUSH Integration in PHC",
+                "description": "Mainstreams Ayurveda, Yoga, and other systems into primary healthcare centres."
+            },
+            {
+                "theme": "Standards & Research",
+                "description": "Sets treatment standards via CCRAS, CCRH, and Research Councils."
+            },
+            {
+                "theme": "Research & Evidence Generation",
+                "description": "Enables clinical studies for AYUSH validation."
+            },
+            {
+                "theme": "AYUSH Wellness & Preventive Care",
+                "description": "Enables strategic initiatives for yoga and naturopathy for preventive and lifestyle care."
+            },
+            {
+                "theme": "Medicinal Plants Value Chain",
+                "description": "Develops the supply chain for medicinal plants under the National AYUSH Mission."
+            }
+        ],
+        "Higher Education": [
+            {
+                "theme": "NEP Implementation",
+                "description": "Drives reforms under the National Education Policy (NEP) 2020."
+            },
+            {
+                "theme": "Research & Innovation",
+                "description": "Enables strategic initiatives for innovation ecosystems through Institutions of Eminence and NRF."
+            },
+            {
+                "theme": "Faculty & Governance",
+                "description": "Enhances governance, autonomy, and faculty development in higher education."
+            },
+            {
+                "theme": "Digital & Open Learning",
+                "description": "Expands access via SWAYAM, NPTEL, and Virtual Universities."
+            },
+            {
+                "theme": "Quality Assurance & Accreditation",
+                "description": "Reinforces mechanisms to ensure standards through NAAC and NBA accreditation systems."
+            }
+        ],
+        "School Education & Literacy": [
+            {
+                "theme": "Foundational Literacy & Numeracy",
+                "description": "Operationalizes NIPUN Bharat under NEP for early learning."
+            },
+            {
+                "theme": "Curriculum & Pedagogy",
+                "description": "Aligns curriculum reforms with NCERT/SCERT frameworks."
+            },
+            {
+                "theme": "Teacher Professional Development",
+                "description": "Operationalizes programs for continuous training via NISHTHA and DIKSHA platforms."
+            },
+            {
+                "theme": "Digital Classrooms & DIKSHA",
+                "description": "Expands e-learning through the DIKSHA portal and smart classrooms."
+            },
+            {
+                "theme": "Inclusive Education",
+                "description": "Enables education for CWSN and marginalized groups under Samagra Shiksha."
+            }
+        ],
+        "Culture": [
+            {
+                "theme": "Heritage Conservation",
+                "description": "Preserves monuments under the Archaeological Survey of India (ASI)."
+            },
+            {
+                "theme": "Museums & Cultural Spaces",
+                "description": "Develops museums and libraries under the National Mission on Libraries."
+            },
+            {
+                "theme": "Creative Industries & Crafts",
+                "description": "Enables strategic initiatives for crafts, folk arts, and cultural enterprises."
+            },
+            {
+                "theme": "Cultural Festivals & Tourism",
+                "description": "Enables cultural festivals and circuits via Incredible India."
+            },
+            {
+                "theme": "Digital Heritage",
+                "description": "Digitizes manuscripts, archives, and cultural records."
+            }
+        ]
+    },
+    "Welfare": {
+        "Women & Child Development": [
+            {
+                "theme": "Nutrition & ICDS",
+                "description": "Conducts the POSHAN Abhiyaan and ICDS programme for child and maternal nutrition."
+            },
+            {
+                "theme": "Protection & Safeguards",
+                "description": "Operationalizes child protection laws and the Juvenile Justice Act."
+            },
+            {
+                "theme": "Economic Empowerment",
+                "description": "Enables strategic initiatives for women’s self-help groups under Mission Shakti."
+            },
+            {
+                "theme": "Health & Education Access",
+                "description": "Expands women and child health and education access through integrated services."
+            },
+            {
+                "theme": "Digital & Social Behavior Change",
+                "description": "Leverages digital platforms and IEC campaigns for awareness on gender, nutrition, and safety."
+            }
+        ],
+        "Social Justice and Empowerment": [
+            {
+                "theme": "Inclusion & Entitlements",
+                "description": "Reinforces mechanisms to ensure access to entitlements under SC, OBC, and senior citizen welfare schemes."
+            },
+            {
+                "theme": "Anti-Discrimination & Rights",
+                "description": "Enforces laws like the SC/ST (Prevention of Atrocities) Act for equality and justice."
+            },
+            {
+                "theme": "Skill & Employability",
+                "description": "Enhances employability of marginalized groups through PM-DAKSH and NSKFDC programmes."
+            },
+            {
+                "theme": "Rehabilitation & Care",
+                "description": "Operationalizes programs for care and rehabilitation through de-addiction centres and senior citizen homes."
+            },
+            {
+                "theme": "Data & Monitoring",
+                "description": "Monitors outcomes with caste census data, surveys, and monitoring systems."
+            }
+        ],
+        "Tribal Affairs": [
+            {
+                "theme": "Forest Rights & Governance",
+                "description": "Operationalizes the Forest Rights Act (FRA), 2006 to secure tribal land and forest rights."
+            },
+            {
+                "theme": "Education & Health",
+                "description": "Conducts Eklavya Model Residential Schools (EMRS) and health initiatives for STs."
+            },
+            {
+                "theme": "Livelihoods & MSP for MFP",
+                "description": "Enables tribal livelihoods through TRIFED and Minimum Support Price (MSP) for Minor Forest Produce."
+            },
+            {
+                "theme": "Infrastructure Access",
+                "description": "Expands roads, housing, and connectivity in tribal areas under Vanbandhu Kalyan Yojana."
+            },
+            {
+                "theme": "Cultural Preservation",
+                "description": "Enables strategic initiatives for tribal heritage, crafts, and festivals through cultural boards and institutions."
+            }
+        ],
+        "Empowerment of Persons with Disabilities (Divyangjan)": [
+            {
+                "theme": "Accessibility & Universal Design",
+                "description": "Operationalizes the Accessible India Campaign (Sugamya Bharat Abhiyan) for barrier-free infrastructure."
+            },
+            {
+                "theme": "Education & Skills",
+                "description": "Enables inclusive education and vocational training through Inclusive Education Schemes."
+            },
+            {
+                "theme": "Assistive Technologies",
+                "description": "Enables strategic initiatives for affordable aids and assistive devices via ADIP Scheme."
+            },
+            {
+                "theme": "Employment & Entrepreneurship",
+                "description": "Enhances opportunities through National Handicapped Finance and Development Corporation (NHFDC)."
+            },
+            {
+                "theme": "Rights & Social Protection",
+                "description": "Enforces the Rights of Persons with Disabilities Act, 2016 for protection and entitlements."
+            }
+        ],
+        "Minority Affairs": [
+            {
+                "theme": "Education & Scholarships",
+                "description": "Operationalizes programs for scholarships through Pre-Matric, Post-Matric, and Merit-cum-Means schemes."
+            },
+            {
+                "theme": "Skill & Entrepreneurship",
+                "description": "Conducts the USTTAD, Nai Manzil, and Seekho Aur Kamao programmes for livelihoods."
+            },
+            {
+                "theme": "Social Infrastructure",
+                "description": "Develops schools, hostels, and health facilities under PMJVK (Pradhan Mantri Jan Vikas Karyakram)."
+            },
+            {
+                "theme": "Heritage & Culture",
+                "description": "Preserves minority crafts and culture through Hamari Dharohar and Hunar Haat."
+            },
+            {
+                "theme": "Data & Grievance Redressal",
+                "description": "Reinforces monitoring and grievance systems for minority welfare schemes."
+            }
+        ]
+    },
+    "Finance and Economy": {
+        "Expenditure": [
+            {
+                "theme": "Financial Rules & Delegation",
+                "description": "Frames and updates General Financial Rules (GFRs) and delegation of financial powers."
+            },
+            {
+                "theme": "Audit and Compliance",
+                "description": "Reinforces mechanisms to ensure expenditure compliance with financial propriety and audit observations."
+            },
+            {
+                "theme": "Budget Planning & Execution",
+                "description": "Facilitates coordination for efforts in budget control, fund release, and expenditure monitoring."
+            },
+            {
+                "theme": "Fiscal Risk & Guarantees",
+                "description": "Administers government guarantees, fiscal liabilities, and contingent risks."
+            },
+            {
+                "theme": "Public Financial Management",
+                "description": "Reinforces PFM systems via PFMS and e-procurement platforms."
+            }
+        ],
+        "Economic Affairs": [
+            {
+                "theme": "Macroeconomic Policy",
+                "description": "Formulates policies on growth, inflation, and fiscal stability."
+            },
+            {
+                "theme": "Capital Markets & Bond Markets & InvITs",
+                "description": "Establishes standards for bond markets, InvITs, and corporate debt through SEBI frameworks."
+            },
+            {
+                "theme": "Infrastructure & PPP Policy",
+                "description": "Enables strategic initiatives for private participation under PPP Cell and Infrastructure Pipeline."
+            },
+            {
+                "theme": "Multilateral & Bilateral Finance",
+                "description": "Facilitates coordination for loans and assistance from World Bank, IMF, ADB and bilateral partners."
+            },
+            {
+                "theme": "Financial Inclusion Strategy",
+                "description": "Expands access to banking, credit, and insurance via Jan Dhan and related initiatives."
+            }
+        ],
+        "Public Enterprises": [
+            {
+                "theme": "CPSE Governance",
+                "description": "Issues guidelines for Central Public Sector Enterprises (CPSEs) board and management."
+            },
+            {
+                "theme": "Disinvestment & Restructuring",
+                "description": "Executes government’s disinvestment and CPSE restructuring plans."
+            },
+            {
+                "theme": "Performance Monitoring",
+                "description": "Monitors CPSE performance through MoUs and DPE Guidelines."
+            },
+            {
+                "theme": "Compliance & Transparency",
+                "description": "Reinforces mechanisms to ensure disclosure, CSR compliance, and accountability in CPSEs."
+            },
+            {
+                "theme": "Innovation & Diversification",
+                "description": "Facilitates adoption of CPSEs to diversify and adopt innovative practices."
+            }
+        ],
+        "NITI Aayog": [
+            {
+                "theme": "National Strategy & Transformative Vision",
+                "description": "Frames India’s long-term development vision beyond Five-Year Plans."
+            },
+            {
+                "theme": "Policy Innovation & Pilot Programs",
+                "description": "Designs pilots in sectors like health, skilling, and energy for scaling up."
+            },
+            {
+                "theme": "Impact Measurement & Performance Review",
+                "description": "Monitors outcomes under Aspirational Districts Programme and SDGs."
+            },
+            {
+                "theme": "State Partnerships & Cooperative Federalism",
+                "description": "Collaborates with states to strengthen federal coordination."
+            },
+            {
+                "theme": "PPP Models & Strategic Collaborations",
+                "description": "Develops new PPP and partnership models across sectors."
+            }
+        ],
+        "Statistics and Programme Implementation": [
+            {
+                "theme": "Official Statistics Quality",
+                "description": "Reinforces mechanisms to ensure statistical reliability through NSS, CSO, and national accounts."
+            },
+            {
+                "theme": "Data Systems & Modernization",
+                "description": "Modernizes surveys and statistical IT systems."
+            },
+            {
+                "theme": "Large Programme Monitoring",
+                "description": "Monitors major infrastructure programmes like MPLADS."
+            },
+            {
+                "theme": "Open Data & Dissemination",
+                "description": "Expands access via the Open Government Data (OGD) Platform."
+            },
+            {
+                "theme": "Statistical Capacity Building & Data Literacy",
+                "description": "Establishes skills through training institutes and literacy drives."
+            }
+        ],
+        "Financial Services": [
+            {
+                "theme": "Banking Sector Strength",
+                "description": "Facilitates coordination for efforts in PSBs, recapitalisation, and banking reforms."
+            },
+            {
+                "theme": "Insurance & Pensions",
+                "description": "Establishes standards for insurance and pension reforms under IRDAI and PFRDA."
+            },
+            {
+                "theme": "Financial Inclusion & DBT",
+                "description": "Operationalizes Jan Dhan Yojana and DBT-linked services."
+            },
+            {
+                "theme": "Digital Payments & Security",
+                "description": "Expands digital transactions under UPI, RuPay, and Bharat BillPay."
+            },
+            {
+                "theme": "Cooperative & Regional Banking",
+                "description": "Establishes standards for cooperative and regional rural banks for rural finance."
+            }
+        ],
+        "Corporate Affairs": [
+            {
+                "theme": "Corporate Governance & Compliance",
+                "description": "Reinforces corporate governance under the Companies Act, 2013."
+            },
+            {
+                "theme": "Competition Policy & Market Fairness",
+                "description": "Enables strategic initiatives for fair markets under the Competition Commission of India (CCI)."
+            },
+            {
+                "theme": "Insolvency & Resolution",
+                "description": "Facilitates coordination for efforts in insolvency resolution through Insolvency and Bankruptcy Code (IBC)."
+            },
+            {
+                "theme": "Regulatory Oversight & Enforcement",
+                "description": "Enforces corporate law compliance through ROC and SFIO."
+            },
+            {
+                "theme": "Digital Corporate Data & Analytics",
+                "description": "Expands MCA21 platform for corporate filings and analytics."
+            }
+        ],
+        "Revenue": [
+            {
+                "theme": "Direct Taxes Administration",
+                "description": "Administers income tax laws via the CBDT."
+            },
+            {
+                "theme": "Indirect Taxes & GST",
+                "description": "Facilitates coordination for efforts in GST and customs through the CBIC."
+            },
+            {
+                "theme": "Economic Offences & Enforcement",
+                "description": "Investigates black money and money laundering via ED and DRI."
+            },
+            {
+                "theme": "Dispute Resolution & Appeals",
+                "description": "Handles tax disputes through tribunals and settlement bodies."
+            },
+            {
+                "theme": "Taxpayer Services & Compliance Enablement",
+                "description": "Expands e-filing, faceless assessments, and taxpayer facilitation."
+            }
+        ],
+        "Investment & Public Asset Management": [
+            {
+                "theme": "Strategic Disinvestment",
+                "description": "Administers strategic sale of government equity in CPSEs."
+            },
+            {
+                "theme": "Asset Monetization",
+                "description": "Monetizes brownfield assets under the National Monetization Pipeline."
+            },
+            {
+                "theme": "Financial Restructuring Advice",
+                "description": "Operationalizes programs for restructuring support to loss-making enterprises."
+            },
+            {
+                "theme": "Portfolio Management & Value Optimization",
+                "description": "Optimizes government shareholding value in CPSEs."
+            },
+            {
+                "theme": "Transparency & Governance",
+                "description": "Reinforces mechanisms to ensure transparent bidding and investor-friendly processes."
+            }
+        ]
+    },
+    "Commerce and Industry": {
+        "Commerce": [
+            {
+                "theme": "Trade Policy & Negotiations",
+                "description": "Frames India’s trade policy and conducts WTO and FTA negotiations."
+            },
+            {
+                "theme": "Export Promotion & Logistics",
+                "description": "Enables exporters via SEZs, logistics policy, and export incentives."
+            },
+            {
+                "theme": "Trade Remedies & Compliance",
+                "description": "Administers anti-dumping, safeguard duties, and WTO compliance."
+            },
+            {
+                "theme": "Services & e‑Commerce",
+                "description": "Expands services trade and frames e-commerce policy."
+            },
+            {
+                "theme": "Market Intelligence",
+                "description": "Operationalizes programs for trade data, export-import trends, and global market insights."
+            }
+        ],
+        "Labour & Employment": [
+            {
+                "theme": "Labour Codes Implementation",
+                "description": "Enforces simplified labour codes on wages, safety, IR, and social security."
+            },
+            {
+                "theme": "Formalization & Social Security",
+                "description": "Expands ESIC, EPFO, and e-Shram to cover informal workers."
+            },
+            {
+                "theme": "Skill & Productivity",
+                "description": "Enhances workforce productivity through labour skilling programmes."
+            },
+            {
+                "theme": "Industrial Relations",
+                "description": "Enables strategic initiatives for harmonious relations via conciliation, arbitration, and Labour Tribunals."
+            },
+            {
+                "theme": "Digital Labour Platforms",
+                "description": "Develops e-Shram portal and online grievance redressal for workers."
+            }
+        ],
+        "Textiles": [
+            {
+                "theme": "MMF & Technical Textiles",
+                "description": "Enables strategic initiatives for man-made fibre and technical textiles via PLI scheme."
+            },
+            {
+                "theme": "Cluster Upgradation",
+                "description": "Reinforces powerloom, handloom, and textile clusters."
+            },
+            {
+                "theme": "Handloom & Handicrafts",
+                "description": "Enables artisans through Handloom Weavers’ and Handicraft schemes."
+            },
+            {
+                "theme": "Sustainability & Circularity",
+                "description": "Facilitates adoption of eco-friendly fibres and textile recycling."
+            },
+            {
+                "theme": "Export Competitiveness",
+                "description": "Enhances global competitiveness through RoDTEP and MEIS incentives."
+            }
+        ],
+        "Heavy Industry": [
+            {
+                "theme": "Advanced Manufacturing",
+                "description": "Enables strategic initiatives for robotics, automation, and Industry 4.0 adoption."
+            },
+            {
+                "theme": "Capital Goods Competitiveness",
+                "description": "Enables competitiveness via the Capital Goods Scheme."
+            },
+            {
+                "theme": "Auto & EV Ecosystem",
+                "description": "Expands FAME India scheme for electric mobility and auto sector growth."
+            },
+            {
+                "theme": "Industrial Policy & Tech Modernization",
+                "description": "Frames industrial policies to drive modernization."
+            },
+            {
+                "theme": "Innovation Hubs",
+                "description": "Establishes centres of excellence and R&D hubs for industry."
+            }
+        ],
+        "Steel": [
+            {
+                "theme": "Capacity & Efficiency",
+                "description": "Expands steel capacity under the National Steel Policy, 2017."
+            },
+            {
+                "theme": "Value Addition & Alloys",
+                "description": "Enables strategic initiatives for specialty steel via the PLI scheme for specialty steel."
+            },
+            {
+                "theme": "Scrap Policy & Recycling",
+                "description": "Operationalizes the National Scrap Policy for circular use."
+            },
+            {
+                "theme": "Safety & Environment",
+                "description": "Reinforces mechanisms to ensure environmental compliance and workplace safety in steel plants."
+            },
+            {
+                "theme": "Export & Trade",
+                "description": "Monitors exports/imports and global competitiveness of Indian steel."
+            }
+        ],
+        "Tourism": [
+            {
+                "theme": "Destination Development",
+                "description": "Develops circuits under Swadesh Darshan and heritage sites under PRASHAD."
+            },
+            {
+                "theme": "Market Development",
+                "description": "Enables strategic initiatives for India abroad through Incredible India campaigns."
+            },
+            {
+                "theme": "Community-Based Tourism",
+                "description": "Involves locals in homestays and eco-tourism."
+            },
+            {
+                "theme": "Sustainable Tourism",
+                "description": "Enables strategic initiatives for eco-friendly practices and responsible tourism."
+            },
+            {
+                "theme": "Safety & Experience",
+                "description": "Advances efforts in tourist safety and quality experiences through service standards."
+            }
+        ],
+        "Department for Promotion of Industry and Internal Trade": [
+            {
+                "theme": "Investment Facilitation",
+                "description": "Attracts FDI and investment through Make in India."
+            },
+            {
+                "theme": "Startup & Innovation",
+                "description": "Enables strategic initiatives for entrepreneurship under the Startup India Mission."
+            },
+            {
+                "theme": "Industrial Policy & Clusters",
+                "description": "Frames industrial policy and develops clusters like Industrial Corridors."
+            },
+            {
+                "theme": "Standards & Quality Infrastructure",
+                "description": "Reinforces BIS and quality certification frameworks."
+            },
+            {
+                "theme": "Ease of Doing Business",
+                "description": "Simplifies regulations and ranks states through Business Reform Action Plan."
+            }
+        ],
+        "Micro, Small and Medium Enterprises": [
+            {
+                "theme": "Credit & Formalization",
+                "description": "Expands credit through CGTMSE, Mudra Yojana."
+            },
+            {
+                "theme": "Market Access & Cluster Development",
+                "description": "Develops MSME clusters and promotes global market access."
+            },
+            {
+                "theme": "Policy & Ecosystem Development",
+                "description": "Frames MSME policy and ecosystem support."
+            },
+            {
+                "theme": "Technology Upgradation & Quality Standards",
+                "description": "Modernizes MSMEs via ZED Certification."
+            },
+            {
+                "theme": "Skill Development & Entrepreneurship",
+                "description": "Trains entrepreneurs under PMEGP and EDPs."
+            }
+        ],
+        "Chemicals & Petrochemicals": [
+            {
+                "theme": "Petrochemical Hubs",
+                "description": "Develops PCPIRs (Petroleum, Chemicals & Petrochemical Investment Regions)."
+            },
+            {
+                "theme": "Specialty Chemicals",
+                "description": "Enables strategic initiatives for high-value specialty chemical industries."
+            },
+            {
+                "theme": "Safety & Environmental Compliance",
+                "description": "Establishes standards for hazardous chemicals and safety norms."
+            },
+            {
+                "theme": "Technology Upgradation & R&D Collaboration",
+                "description": "Facilitates adoption of R&D in collaboration with industry."
+            },
+            {
+                "theme": "Trade & Quality",
+                "description": "Administers quality standards and trade facilitation in chemical sector."
+            }
+        ],
+        "Pharmaceuticals": [
+            {
+                "theme": "Affordable Generics",
+                "description": "Expands Jan Aushadhi Kendras for low-cost medicines."
+            },
+            {
+                "theme": "API & KSM Production",
+                "description": "Enables self-reliance in APIs and KSMs via PLI scheme."
+            },
+            {
+                "theme": "Innovation & Biopharma",
+                "description": "Facilitates adoption of biotech, biosimilars, and novel drug research."
+            },
+            {
+                "theme": "Resilient Supply Chains & Cold Chain Infrastructure",
+                "description": "Secures pharma supply chains with cold chain facilities."
+            },
+            {
+                "theme": "Research & International Cooperation",
+                "description": "Fosters R&D and global cooperation in drug regulation and trials."
+            }
+        ]
+    },
+    "Technology": {
+        "Telecommunications": [
+            {
+                "theme": "Next-Generation Telecom Rollout",
+                "description": "Expands 5G/6G networks and rural broadband under BharatNet."
+            },
+            {
+                "theme": "Regulation & Institutions",
+                "description": "Facilitates coordination for efforts in TRAI, spectrum management, and licensing frameworks."
+            },
+            {
+                "theme": "Security & Resilience",
+                "description": "Reinforces mechanisms to ensure network resilience and lawful interception standards."
+            },
+            {
+                "theme": "Telecom Innovation & R&D",
+                "description": "Enables strategic initiatives for indigenous R&D via the Telecom Technology Development Fund."
+            },
+            {
+                "theme": "International Cooperation",
+                "description": "Engages in ITU and bilateral telecom cooperation."
+            }
+        ],
+        "Electronics and Information Technology": [
+            {
+                "theme": "Digital Public Infrastructure",
+                "description": "Establishes Aadhaar, UPI, DigiLocker and scalable DPIs."
+            },
+            {
+                "theme": "Cybersecurity & Privacy",
+                "description": "Reinforces cybersecurity under CERT-In and personal data protection law."
+            },
+            {
+                "theme": "Electronics Manufacturing",
+                "description": "Enables strategic initiatives for PLI for electronics, semiconductor fabs, and mobile manufacturing."
+            },
+            {
+                "theme": "AI/IoT Adoption in Governance",
+                "description": "Mainstreams emerging tech in governance through IndiaAI and IoT pilots."
+            },
+            {
+                "theme": "Digital Literacy & Inclusion",
+                "description": "Expands PMGDISHA and BharatNet-linked literacy programmes."
+            }
+        ],
+        "Defence Research & Development": [
+            {
+                "theme": "Indigenous R&D",
+                "description": "Develops strategic defence technologies under DRDO labs."
+            },
+            {
+                "theme": "Emerging Technology Synthesis",
+                "description": "Integrates AI, robotics, and hypersonics in defence applications."
+            },
+            {
+                "theme": "Dual-Use Tech & Startups",
+                "description": "Enables strategic initiatives for defence startups under iDEX (Innovations for Defence Excellence)."
+            },
+            {
+                "theme": "Supply Chain Indigenization",
+                "description": "Reduces imports via local sourcing and Defence Production Corridors."
+            },
+            {
+                "theme": "Advanced Materials & Sensors",
+                "description": "Innovates in composites, stealth tech, and sensor systems."
+            }
+        ],
+        "Science & Technology": [
+            {
+                "theme": "Scientific Research & Innovation",
+                "description": "Funds basic research via DST and SERB programmes."
+            },
+            {
+                "theme": "Labs & Infrastructure",
+                "description": "Reinforces national labs, incubation centres, and R&D facilities."
+            },
+            {
+                "theme": "Surveys & Mapping",
+                "description": "Facilitates coordination for efforts in geospatial mapping and scientific surveys."
+            },
+            {
+                "theme": "Technology and Digital Governance",
+                "description": "Enables strategic initiatives for GovTech and National Mission on Cyber-Physical Systems."
+            },
+            {
+                "theme": "Open Science & Data",
+                "description": "Expands access through open science repositories and data-sharing frameworks."
+            }
+        ],
+        "Bio-Technology": [
+            {
+                "theme": "Biopharma & Vaccines",
+                "description": "Enables vaccine and biopharma R&D through BIRAC."
+            },
+            {
+                "theme": "Agri-Biotech & Bioinputs",
+                "description": "Develops biotech crops, biofertilizers, and sustainable inputs."
+            },
+            {
+                "theme": "Bioeconomy & Startups",
+                "description": "Nurtures biotech startups and bioeconomy clusters."
+            },
+            {
+                "theme": "Industrial Biotech",
+                "description": "Expands biofuels, biomaterials, and green chemistry applications."
+            },
+            {
+                "theme": "Biosafety & Ethics",
+                "description": "Reinforces mechanisms to ensure ethical research under GEAC and biosafety norms."
+            }
+        ],
+        "Scientific & Industrial Research": [
+            {
+                "theme": "CSIR System Oversight",
+                "description": "Governs the CSIR labs network across India."
+            },
+            {
+                "theme": "Technology Transfer & NRDC",
+                "description": "Facilitates commercialization via the National Research Development Corporation."
+            },
+            {
+                "theme": "Industry Collaboration",
+                "description": "Enables strategic initiatives for academia-industry R&D partnerships."
+            },
+            {
+                "theme": "International IP/Trade (Tech)",
+                "description": "Handles IP rights, tech trade, and standards in global fora."
+            },
+            {
+                "theme": "R&D Recognition, Standards & Metrology",
+                "description": "Enables recognition of R&D units and national metrology standards."
+            }
+        ],
+        "Earth Sciences": [
+            {
+                "theme": "Weather & Climate Services",
+                "description": "Operationalizes programs for forecasting via IMD and climate models."
+            },
+            {
+                "theme": "Ocean & Polar Research",
+                "description": "Conducts marine and polar expeditions under NCPOR."
+            },
+            {
+                "theme": "Earth System Observations",
+                "description": "Reinforces observation networks like Argo floats and satellites."
+            },
+            {
+                "theme": "Disaster Early Warning",
+                "description": "Issues tsunami, cyclone, and flood early warnings."
+            },
+            {
+                "theme": "Marine Resource Assessment & Conservation",
+                "description": "Explores marine living and non-living resources."
+            }
+        ],
+        "Health Research": [
+            {
+                "theme": "Clinical Research & Trials",
+                "description": "Establishes standards for and supports trials under the ICMR framework."
+            },
+            {
+                "theme": "Public Health Research",
+                "description": "Conducts research on disease patterns and interventions."
+            },
+            {
+                "theme": "Biomedical Innovation",
+                "description": "Funds diagnostics, devices, and biomedical research."
+            },
+            {
+                "theme": "Data Platforms & Cohorts",
+                "description": "Develops health data repositories and long-term cohort studies."
+            },
+            {
+                "theme": "Outbreak Investigation",
+                "description": "Leads epidemic intelligence and field investigation with ICMR-NIV."
+            }
+        ]
+    },
+    "Governance": {
+        "Justice": [
+            {
+                "theme": "Access to Justice",
+                "description": "Expands legal aid and fast-track courts under NALSA and e-Courts."
+            },
+            {
+                "theme": "Judicial Process Efficiency",
+                "description": "Enhances case disposal through e-filing and digital courts."
+            },
+            {
+                "theme": "ADR & Mediation",
+                "description": "Enables strategic initiatives for arbitration, mediation, and Lok Adalats to reduce pendency"
+            },
+            {
+                "theme": "Forensics & Evidence",
+                "description": "Reinforces forensic labs and evidence management."
+            },
+            {
+                "theme": "Legal Awareness",
+                "description": "Conducts legal literacy and outreach campaigns for citizens."
+            }
+        ],
+        "Parliamentary Affairs": [
+            {
+                "theme": "Legislative Coordination",
+                "description": "Facilitates coordination for government business in Parliament."
+            },
+            {
+                "theme": "Member Services",
+                "description": "Facilitates MPs’ questions, travel, and allowances."
+            },
+            {
+                "theme": "Parliamentary Committees & Legislative Scrutiny",
+                "description": "Enables functioning of parliamentary committees."
+            },
+            {
+                "theme": "Parliamentary Training & Procedural Capacity Development",
+                "description": "Operationalizes programs for orientation and training to MPs"
+            },
+            {
+                "theme": "Digital Parliament",
+                "description": "Advances digital tools like e-Parliament and online debates."
+            }
+        ],
+        "Legislative Department": [
+            {
+                "theme": "Drafting & Promulgation",
+                "description": "Drafts bills, ordinances, and amendments."
+            },
+            {
+                "theme": "Harmonization & Consolidation",
+                "description": "Consolidates laws to remove inconsistencies."
+            },
+            {
+                "theme": "Publications & Compilations",
+                "description": "Publishes gazettes, Acts, and legal texts."
+            },
+            {
+                "theme": "Subordinate Legislation Oversight",
+                "description": "Reviews and vets subordinate legislation."
+            },
+            {
+                "theme": "Official Languages—Legal Texts",
+                "description": "Prepares translations of laws in Hindi and regional languages."
+            }
+        ],
+        "Official Language": [
+            {
+                "theme": "Progressive Use of Hindi",
+                "description": "Expands Hindi use in central government offices."
+            },
+            {
+                "theme": "Translation Standards",
+                "description": "Sets translation norms for official documents."
+            },
+            {
+                "theme": "Bilingual ICT Systems",
+                "description": "Enables strategic initiatives for bilingual IT tools for governance."
+            },
+            {
+                "theme": "Capacity & Certification",
+                "description": "Conducts exams and training for Hindi proficiency."
+            },
+            {
+                "theme": "Outreach & Awareness",
+                "description": "Facilitates adoption of awareness through campaigns and events."
+            }
+        ],
+        "Legal Affairs": [
+            {
+                "theme": "Advisory & Litigation",
+                "description": "Operationalizes programs for legal advice and represents government in courts."
+            },
+            {
+                "theme": "Contracts & Authorisations",
+                "description": "Vets contracts, treaties, and authorisations."
+            },
+            {
+                "theme": "International Law & Treaties",
+                "description": "Handles legal issues in treaties and conventions."
+            },
+            {
+                "theme": "Regulatory and Legal Advisory",
+                "description": "Advises ministries on statutory interpretation."
+            },
+            {
+                "theme": "Notaries & Tribunals",
+                "description": "Establishes standards for notaries and supports tribunals’ functioning."
+            }
+        ],
+        "Information and Broadcasting": [
+            {
+                "theme": "Public Communication Strategy",
+                "description": "Designs outreach via DAVP and digital campaigns."
+            },
+            {
+                "theme": "Broadcasting Standards & Regulation",
+                "description": "Facilitates coordination for efforts in Prasar Bharati and private broadcasting norms."
+            },
+            {
+                "theme": "Digital Media & Platforms",
+                "description": "Frames rules for OTT and online media."
+            },
+            {
+                "theme": "Archives & Heritage",
+                "description": "Preserves films, broadcasts, and media heritage."
+            },
+            {
+                "theme": "Media Literacy & Responsible Information Use",
+                "description": "Enables strategic initiatives for awareness against misinformation."
+            }
+        ],
+        "Personnel and Training": [
+            {
+                "theme": "Civil Service Reforms",
+                "description": "Drives reforms under Mission Karmayogi."
+            },
+            {
+                "theme": "Recruitment & Lateral Entry",
+                "description": "Administers UPSC recruitment and lateral hiring."
+            },
+            {
+                "theme": "Civil Service Capacity Building",
+                "description": "Expands online and blended training for officials."
+            },
+            {
+                "theme": "Digital HR Management & Workforce Analytics",
+                "description": "Operationalizes iGOT-Karmayogi HR (EHRMS) systems."
+            },
+            {
+                "theme": "Service Rules & Vigilance",
+                "description": "Frames service rules and disciplinary oversight."
+            }
+        ],
+        "Posts": [
+            {
+                "theme": "Postal Banking & Inclusion",
+                "description": "Expands IPPB for financial inclusion."
+            },
+            {
+                "theme": "Logistics & Parcel Networks",
+                "description": "Reinforces parcel and logistics services."
+            },
+            {
+                "theme": "Network Modernization",
+                "description": "Modernizes post offices under Digital India Post."
+            },
+            {
+                "theme": "Philately & Citizen Engagement",
+                "description": "Enables strategic initiatives for philately as a cultural and educational tool."
+            },
+            {
+                "theme": "DIGIPIN",
+                "description": "Enhances digital postal innovation and PIN-based services."
+            }
+        ],
+        "Development of North Eastern Region": [
+            {
+                "theme": "Regional Infrastructure",
+                "description": "Develops roads, power, and connectivity in NE states."
+            },
+            {
+                "theme": "Livelihoods & Enterprise",
+                "description": "Enables entrepreneurship and MSMEs in the region."
+            },
+            {
+                "theme": "Social Services Access",
+                "description": "Expands education, health, and welfare services."
+            },
+            {
+                "theme": "Natural Resources & Ecology",
+                "description": "Administers ecological balance and natural resources."
+            },
+            {
+                "theme": "Institutional Coordination",
+                "description": "Facilitates coordination for projects across central and state agencies."
+            }
+        ],
+        "Administrative Reforms & PG": [
+            {
+                "theme": "Process Re-engineering & Govrenence reform",
+                "description": "Simplifies rules and service delivery."
+            },
+            {
+                "theme": "Public Grievance Redressal",
+                "description": "Administers CPGRAMS for grievance resolution."
+            },
+            {
+                "theme": "Research & Liaison",
+                "description": "Studies best practices in governance for adoption."
+            },
+            {
+                "theme": "Benchmarking & Awards",
+                "description": "Recognises excellence through awards like PM Award for Public Administration."
+            },
+            {
+                "theme": "Citizen-Centric Design",
+                "description": "Enables strategic initiatives for service design focused on citizen needs."
+            }
+        ],
+        "Pensions and Pensioners Welfare": [
+            {
+                "theme": "Pension Reforms & Portability",
+                "description": "Simplifies pensions and introduces portability via SPARSH."
+            },
+            {
+                "theme": "Grievances & Timeliness",
+                "description": "Reinforces mechanisms to ensure timely grievance redressal."
+            },
+            {
+                "theme": "Pensioner Awareness & Retirement Readiness",
+                "description": "Conducts workshops on pension literacy."
+            },
+            {
+                "theme": "Pension Fund Analytics & Expenditure Forecasting",
+                "description": "Monitors pension liabilities and expenditure."
+            },
+            {
+                "theme": "Digital Pension Management & Process Automation",
+                "description": "Expands digital disbursal and automation systems."
+            }
+        ],
+        "Election Administration and Management": [
+            {
+                "theme": "Electoral Roll Management & Voter Services",
+                "description": "Focuses on initiatives and strategies related to Electoral Roll Management And Voter Services for improved outcomes."
+            },
+            {
+                "theme": "Booth-Level Operations",
+                "description": "Focuses on initiatives and strategies related to Booth-Level Operations for improved outcomes."
+            },
+            {
+                "theme": "Election Personnel Management",
+                "description": "Focuses on initiatives and strategies related to Election Personnel Management for improved outcomes."
+            },
+            {
+                "theme": "Use of Technology In Elections",
+                "description": "Leverages technology and digital platforms to improve efficiency, transparency, and accessibility of services."
+            },
+            {
+                "theme": "Model Code of Conduct Enforcement",
+                "description": "Focuses on initiatives and strategies related to Model Code Of Conduct Enforcement for improved outcomes."
+            }
+        ]
+    },
+    "Security and Foreign Affairs": {
+        "Defence": [
+            {
+                "theme": "Capability Development",
+                "description": "Reinforces armed forces’ equipment and infrastructure for future readiness."
+            },
+            {
+                "theme": "Jointness & Theatre Commands",
+                "description": "Enables strategic initiatives for integrated theatre commands for unified operations."
+            },
+            {
+                "theme": "Logistics & Sustainment",
+                "description": "Modernizes logistics chains and ensures operational sustainment."
+            },
+            {
+                "theme": "Training & Human Capital",
+                "description": "Establishes military leadership through academies and joint training."
+            },
+            {
+                "theme": "Indigenization & Make",
+                "description": "Expands ‘Make in India’ defence projects for self-reliance."
+            }
+        ],
+        "Defence Production": [
+            {
+                "theme": "Industrial Ecosystem",
+                "description": "Develops defence industrial base through DPSUs, OFB corporatisation, and private firms."
+            },
+            {
+                "theme": "Exports & Marketing",
+                "description": "Enables strategic initiatives for defence exports via DefExpo and export promotion cells."
+            },
+            {
+                "theme": "Quality & Certification",
+                "description": "Reinforces mechanisms to ensure quality standards and defence product certification."
+            },
+            {
+                "theme": "R&D Linkages",
+                "description": "Reinforces DRDO–industry–academia R&D collaboration."
+            },
+            {
+                "theme": "Procurement Reforms",
+                "description": "Simplifies acquisition under Defence Acquisition Procedure (DAP)."
+            }
+        ],
+        "Military Affairs": [
+            {
+                "theme": "Personnel Policies",
+                "description": "Facilitates coordination for efforts in cadre management and personnel reforms."
+            },
+            {
+                "theme": "Training & Readiness",
+                "description": "Enhances readiness through simulation, war-gaming, and drills."
+            },
+            {
+                "theme": "Operational Doctrine",
+                "description": "Develops doctrines for joint and modern warfare."
+            },
+            {
+                "theme": "Veterans Transition",
+                "description": "Enables ex-servicemen in re-employment and transition."
+            },
+            {
+                "theme": "Digital Transformation",
+                "description": "Operationalizes IT systems for operational efficiency."
+            }
+        ],
+        "Ex-Servicemen Welfare": [
+            {
+                "theme": "Pension & Benefits",
+                "description": "Administers pensions under SPARSH and OROP."
+            },
+            {
+                "theme": "Health & Insurance",
+                "description": "Conducts ECHS and insurance schemes for veterans."
+            },
+            {
+                "theme": "Rehabilitation & Skilling",
+                "description": "Enables skilling and resettlement programmes."
+            },
+            {
+                "theme": "Housing & Welfare",
+                "description": "Operationalizes programs for housing schemes via Kendriya Sainik Board."
+            },
+            {
+                "theme": "Data & Outreach",
+                "description": "Maintains veteran databases and welfare outreach."
+            }
+        ],
+        "External Affairs": [
+            {
+                "theme": "Foreign Policy Strategy",
+                "description": "Shapes India’s foreign policy priorities and global positioning."
+            },
+            {
+                "theme": "Consular Services & Diaspora",
+                "description": "Operationalizes programs for passports, visas, and diaspora engagement."
+            },
+            {
+                "theme": "Economic Diplomacy",
+                "description": "Enables strategic initiatives for trade and investment through diplomatic missions."
+            },
+            {
+                "theme": "Multilateral Engagement",
+                "description": "Represents India in UN, G20, BRICS, SCO forums."
+            },
+            {
+                "theme": "Public Diplomacy",
+                "description": "Projects India’s culture, heritage, and policy abroad."
+            }
+        ],
+        "Home Affairs": [
+            {
+                "theme": "Internal Security",
+                "description": "Reinforces mechanisms to ensure law and order and combats insurgency/terrorism."
+            },
+            {
+                "theme": "Police Modernization",
+                "description": "Reinforces police with modern equipment and training."
+            },
+            {
+                "theme": "Disaster Management",
+                "description": "Facilitates coordination for NDMA, NDRF for disaster risk reduction."
+            },
+            {
+                "theme": "Border & Coastal Security",
+                "description": "Facilitates coordination for efforts in BSF, coastal policing, and border safety."
+            },
+            {
+                "theme": "Civil Defence & Fire Services",
+                "description": "Enables fire safety, civil defence, and community response."
+            }
+        ],
+        "Border Management": [
+            {
+                "theme": "Border Infrastructure",
+                "description": "Establishes roads, fencing, and IT-enabled systems on borders."
+            },
+            {
+                "theme": "Surveillance & Technology",
+                "description": "Leverages radars, drones, and sensors for monitoring."
+            },
+            {
+                "theme": "Community Engagement",
+                "description": "Reinforces trust with border populations."
+            },
+            {
+                "theme": "Coordination & Protocols",
+                "description": "Facilitates coordination for with states and neighbouring countries."
+            },
+            {
+                "theme": "Humanitarian Response",
+                "description": "Operationalizes programs for relief during border emergencies."
+            }
+        ],
+        "Internal Security": [
+            {
+                "theme": "Law & Order Systems",
+                "description": "Frames policy for state law and order support."
+            },
+            {
+                "theme": "Counter-Insurgency",
+                "description": "Facilitates coordination for anti-insurgency and counter-terrorism efforts."
+            },
+            {
+                "theme": "Cyber & Financial Crimes",
+                "description": "Tackles cyber fraud, money laundering, and digital threats."
+            },
+            {
+                "theme": "Prison & Corrections",
+                "description": "Facilitates coordination for efforts in prison reforms and rehabilitation."
+            },
+            {
+                "theme": "Critical Infrastructure Protection",
+                "description": "Secures vital installations against threats."
+            }
+        ],
+        "Space": [
+            {
+                "theme": "Launch & Satellites",
+                "description": "Administers satellite launches and missions."
+            },
+            {
+                "theme": "Space Technologies & Applications",
+                "description": "Develops remote sensing, communication, and navigation systems."
+            },
+            {
+                "theme": "Space Startups & Industry",
+                "description": "Facilitates adoption of private space startups via IN-SPACe."
+            },
+            {
+                "theme": "Space Situational Awareness",
+                "description": "Monitors debris and space safety."
+            },
+            {
+                "theme": "International Cooperation",
+                "description": "Partners with global space agencies for joint missions."
+            }
+        ],
+        "Atomic Energy": [
+            {
+                "theme": "Nuclear Power Expansion",
+                "description": "Expands civil nuclear power under NPCIL."
+            },
+            {
+                "theme": "Fuel Cycle & Waste",
+                "description": "Administers uranium mining, fuel fabrication, and waste disposal."
+            },
+            {
+                "theme": "Research Reactors & Isotopes",
+                "description": "Produces isotopes for health, industry, and research."
+            },
+            {
+                "theme": "Safety & Regulation",
+                "description": "Facilitates coordination for efforts in nuclear safety under AERB."
+            },
+            {
+                "theme": "International Collaboration",
+                "description": "Cooperates globally on peaceful nuclear use."
+            }
+        ]
+    },
+    "Inter-Sectoral, Institutional & Field level Coordination": {
+        "Centre for Public System Management - CENTRUM": [
+            {
+                "theme": "Process Excellence & Kaizen",
+                "description": "Integrates lean and continuous improvement methods for government efficiency."
+            },
+            {
+                "theme": "Capacity Building Programs",
+                "description": "Conducts training for public officials to strengthen governance capacity."
+            },
+            {
+                "theme": "Data-Driven Governance",
+                "description": "Enables strategic initiatives for evidence-based decision-making using analytics."
+            },
+            {
+                "theme": "Cross-Department Projects",
+                "description": "Facilitates coordination for projects requiring inter-ministerial collaboration."
+            },
+            {
+                "theme": "Human Resource Systems Management",
+                "description": "Reinforces HR practices in public administration."
+            }
+        ],
+        "IAS-PRO (Professional Reorientation Unit)": [
+            {
+                "theme": "Role-Based Competency Pathways",
+                "description": "Develops tailored learning tracks for IAS roles and levels."
+            },
+            {
+                "theme": "Leadership Renewal & Policy Immersion",
+                "description": "Provides mid-career policy immersions for leadership renewal."
+            },
+            {
+                "theme": "Integrity & Accountability in Public Leadership",
+                "description": "Establishes ethics and decision-making capacity for IAS officers."
+            },
+            {
+                "theme": "Change Management",
+                "description": "Prepares officers to manage reforms and stakeholder transitions."
+            },
+            {
+                "theme": "Mentoring & Networks",
+                "description": "Enables strategic initiatives for peer-to-peer mentoring and professional networks."
+            }
+        ],
+        "ATI Capacity Building Centre": [
+            {
+                "theme": "Training Design & Delivery",
+                "description": "Enhances pedagogy and training delivery for officials."
+            },
+            {
+                "theme": "Specialized Sectoral Learning",
+                "description": "Operationalizes programs for domain-specific training in health, finance, and infrastructure."
+            },
+            {
+                "theme": "Next-Gen Digital Learning & Analytics",
+                "description": "Leverages e-learning platforms and learning analytics."
+            },
+            {
+                "theme": "Learning Outcomes & Benefit Realization",
+                "description": "Monitors training impact and policy outcomes."
+            },
+            {
+                "theme": "Innovation in Training Methods",
+                "description": "Implements simulations, labs, and case-based learning."
+            }
+        ],
+        "District Governance and Field Administration Centre (DIG-FAC)": [
+            {
+                "theme": "Field Administration Excellence",
+                "description": "Reinforces district-level service delivery and administration."
+            },
+            {
+                "theme": "Responsive Governance & Service Excellence",
+                "description": "Enables strategic initiatives for citizen-focused service delivery models."
+            },
+            {
+                "theme": "Data-Driven Governance & Performance Insights",
+                "description": "Establishes dashboards and performance monitoring systems."
+            },
+            {
+                "theme": "Integrated Disaster Preparedness & Crisis Management",
+                "description": "Enables districts in disaster readiness and response."
+            },
+            {
+                "theme": "Institutional Capacity Building & Knowledge Exchange",
+                "description": "Enables cross-district knowledge and best practices."
+            }
+        ],
+        "Digi-TAG Arena": [
+            {
+                "theme": "Digital Governance & Transformation",
+                "description": "Drives e-governance reforms under Digital India"
+            },
+            {
+                "theme": "AI, Data Analytics & Intelligent Decision-Making",
+                "description": "Integrates AI and analytics to policy and governance."
+            },
+            {
+                "theme": "Open Data Ecosystems & API Integration",
+                "description": "Enables strategic initiatives for open APIs and interoperable digital systems."
+            },
+            {
+                "theme": "Cybersecurity, Data Protection & Trust",
+                "description": "Secures digital platforms with robust protection frameworks."
+            },
+            {
+                "theme": "Digital Change Management & Adoption",
+                "description": "Supports adoption of digital tools and cultural transformation."
+            }
+        ]
+    }
+}

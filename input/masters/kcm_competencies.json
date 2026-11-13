@@ -1,0 +1,800 @@
+[
+  {
+    "type": "Behavioural",
+    "theme": "Self-Awareness",
+    "theme_description": "Conscious recognition of one’s thoughts, emotions, and behaviours, driven by a clear sense of purpose and values. It involves a confident understanding of one’s strengths and weaknesses, fostering the ability to align actions with goals and a commitment to ongoing self-learning and personal growth.",
+    "sub_theme": "Self-Analysis",
+    "sub_theme_description": "Ability to critically examine and evaluate their own thoughts, behaviors, emotions, strengths, weaknesses for introspection and self-reflection."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Self-Awareness",
+    "theme_description": "Conscious recognition of one’s thoughts, emotions, and behaviours, driven by a clear sense of purpose and values. It involves a confident understanding of one’s strengths and weaknesses, fostering the ability to align actions with goals and a commitment to ongoing self-learning and personal growth.",
+    "sub_theme": "Self Confidence",
+    "sub_theme_description": "Ability to believe in ones own abilities, judgment, and skills and have positive and realistic self-perception and assurance to tackle challenges. Take calculated risks and persist in the face of setbacks."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Self-Awareness",
+    "theme_description": "Conscious recognition of one’s thoughts, emotions, and behaviours, driven by a clear sense of purpose and values. It involves a confident understanding of one’s strengths and weaknesses, fostering the ability to align actions with goals and a commitment to ongoing self-learning and personal growth.",
+    "sub_theme": "Purposefulness",
+    "sub_theme_description": "Ability to align their actions, decisions, and goals with a clear sense of purpose or a higher meaning for working towards the goal of greater good of citizens."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Self-Awareness",
+    "theme_description": "Conscious recognition of one’s thoughts, emotions, and behaviours, driven by a clear sense of purpose and values. It involves a confident understanding of one’s strengths and weaknesses, fostering the ability to align actions with goals and a commitment to ongoing self-learning and personal growth.",
+    "sub_theme": "Self-Learning",
+    "sub_theme_description": "Exhibits a commitment to addressing the Department’s, Ministry’s, or Organization’s needs now and, in the future, through focusing on learning by identifying one’s own learning needs, setting a learning plan and choosing the appropriate learning resources. Focuses on learning how new and innovative ideas and emerging technologies can be adopted to contribute towards successful completion of tasks."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Personal Effectiveness",
+    "theme_description": "Recognizes one’s emotional triggers and controls emotional reactions for retaining professionalism while working under pressure and heightened stress. Shows perseverance, self-control, and professional toughness when facing challenges and recovering from setbacks by adapting attitude and behaviour to meet a particular circumstance or in response to shifting working conditions and dynamics. Shows adaptability in fulfilling a given responsibility, navigating through uncertain situations with limited knowledge or resources.",
+    "sub_theme": "Stress Management",
+    "sub_theme_description": "Identifies one’s emotional triggers, regulating emotional responses through self-control, and maintaining dignity of the office and the position."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Personal Effectiveness",
+    "theme_description": "Recognizes one’s emotional triggers and controls emotional reactions for retaining professionalism while working under pressure and heightened stress. Shows perseverance, self-control, and professional toughness when facing challenges and recovering from setbacks by adapting attitude and behaviour to meet a particular circumstance or in response to shifting working conditions and dynamics. Shows adaptability in fulfilling a given responsibility, navigating through uncertain situations with limited knowledge or resources.",
+    "sub_theme": "Resilience",
+    "sub_theme_description": "Exhibits competence, confidence, coping skills, self- control through awareness and mindfulness of shared purpose of good governance and maintaining positive relations. Demonstrating professional perseverance by modifying approach while working under increased pressure."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Personal Effectiveness",
+    "theme_description": "Recognizes one’s emotional triggers and controls emotional reactions for retaining professionalism while working under pressure and heightened stress. Shows perseverance, self-control, and professional toughness when facing challenges and recovering from setbacks by adapting attitude and behaviour to meet a particular circumstance or in response to shifting working conditions and dynamics. Shows adaptability in fulfilling a given responsibility, navigating through uncertain situations with limited knowledge or resources.",
+    "sub_theme": "Navigating Ambiguity",
+    "sub_theme_description": "Ability to effectively operate in situations characterized by uncertainty, complexity, and a lack of clear information or direction by adapting quickly to changing circumstances, be they new policy directives, unexpected challenges, or shifts in political priorities."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Solution Orientation",
+    "theme_description": "Displays a sense of carefulness and practicality in employing both creative and reflective problem- solving methods. Conducts thorough root-cause analyses and collaborate with experts and stakeholders to generate a range of hypotheses based on historical precedents, data, reports, with a goal to anticipate potential issues and suggest practical and alternative solutions that are based on insights gained from a comprehensive analysis of all relevant available information.",
+    "sub_theme": "Analytical Thinking",
+    "sub_theme_description": "Demonstrates ability to extract key information from data, reports, precedence through thorough examination, scrutiny, and analysis using logic to address issues and problems."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Solution Orientation",
+    "theme_description": "Displays a sense of carefulness and practicality in employing both creative and reflective problem- solving methods. Conducts thorough root-cause analyses and collaborate with experts and stakeholders to generate a range of hypotheses based on historical precedents, data, reports, with a goal to anticipate potential issues and suggest practical and alternative solutions that are based on insights gained from a comprehensive analysis of all relevant available information.",
+    "sub_theme": "Attention to Detail",
+    "sub_theme_description": "Displays the quality of thoroughly, meticulously and accurately examining all aspects of a problem or task such as document creation to data analysis, budget management, and project implementation by employing keen eye to detail for their screening and scrutiny using functional expertise and domain credibility."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Solution Orientation",
+    "theme_description": "Displays a sense of carefulness and practicality in employing both creative and reflective problem- solving methods. Conducts thorough root-cause analyses and collaborate with experts and stakeholders to generate a range of hypotheses based on historical precedents, data, reports, with a goal to anticipate potential issues and suggest practical and alternative solutions that are based on insights gained from a comprehensive analysis of all relevant available information.",
+    "sub_theme": "Systems Thinking",
+    "sub_theme_description": "Recognize one’s area of responsibility as a critical component of the larger system of the Government machinery and understand its interrelatedness and interoperability with other areas. This involves perceiving and comprehending complex problems and systems, such as processes and policies, as a whole and in parts simultaneously. It also involves devising strategies that would impact the dynamics of the whole by synthesizing complex problems, creating feedback loops, and comprehending causality."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Communication",
+    "theme_description": "Exhibits the ability to speak, read and interpret official communications such as English/Hindi/ State specific in respect to their context, message, and intent. Displays positive non-verbal cues, actively practices attentive listening, endeavours to understand the viewpoints of others, and responds respectfully and humbly. Presents information with conviction, fluency, rationality, and persuasion while using a communication techniques tailored to the audience.",
+    "sub_theme": "Active Listening",
+    "sub_theme_description": "Demonstrates the capacity to pay close attention to what is being said and to interpret the spirit and intent of the speaker from other cues such as body language and facial expressions."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Communication",
+    "theme_description": "Exhibits the ability to speak, read and interpret official communications such as English/Hindi/ State specific in respect to their context, message, and intent. Displays positive non-verbal cues, actively practices attentive listening, endeavours to understand the viewpoints of others, and responds respectfully and humbly. Presents information with conviction, fluency, rationality, and persuasion while using a communication techniques tailored to the audience.",
+    "sub_theme": "Reading & Comprehension",
+    "sub_theme_description": "Exhibits elevated reading skills, possesses a firm linguistic command and knowledge. Demonstrates the ability to absorb information, understand it, and integrate it with existing knowledge."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Communication",
+    "theme_description": "Exhibits the ability to speak, read and interpret official communications such as English/Hindi/ State specific in respect to their context, message, and intent. Displays positive non-verbal cues, actively practices attentive listening, endeavours to understand the viewpoints of others, and responds respectfully and humbly. Presents information with conviction, fluency, rationality, and persuasion while using a communication techniques tailored to the audience.",
+    "sub_theme": "Verbal & Non-Verbal Fluency",
+    "sub_theme_description": "Demonstrates ability to articulate thoughts and express/ present ideas clearly and effectively using oral, non-verbal communication skills aiming to inform, instruct, or persuade audience/ stakeholders and augments credibility of the position and the office."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Communication",
+    "theme_description": "Exhibits the ability to speak, read and interpret official communications such as English/Hindi/ State specific in respect to their context, message, and intent. Displays positive non-verbal cues, actively practices attentive listening, endeavours to understand the viewpoints of others, and responds respectfully and humbly. Presents information with conviction, fluency, rationality, and persuasion while using a communication techniques tailored to the audience.",
+    "sub_theme": "Presentation Skills",
+    "sub_theme_description": "Displays the ability to create documents and presentations that highlight the key points, details, accomplishments, and difficulties associated with the topic at hand."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Outcome Orientation",
+    "theme_description": "Demonstrates an intense motivation to set goals and be responsible for their achievement while striving for quality excellence. Possesses the capacity to identify problems and gaps during service delivery and to proactively analyse and assess different options to ensure best result. Drives systemic changes to increase effectiveness and efficiency in line with future needs.",
+    "sub_theme": "Goal Setting",
+    "sub_theme_description": "Displays an underlying desire to be thorough and accurate when determining clear, challenging, & SMART (specific, measurable, achievable, relevant & time-bound) objectives or targets to guide actions as per set procedures, rules & guidelines."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Outcome Orientation",
+    "theme_description": "Demonstrates an intense motivation to set goals and be responsible for their achievement while striving for quality excellence. Possesses the capacity to identify problems and gaps during service delivery and to proactively analyse and assess different options to ensure best result. Drives systemic changes to increase effectiveness and efficiency in line with future needs.",
+    "sub_theme": "Accountability",
+    "sub_theme_description": "Demonstrates the ability to take responsibility and make team accountable for measurable, high- quality, timely, and cost-effective delivery. Accepts responsibility for mistakes and takes initiatives for correcting them."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Outcome Orientation",
+    "theme_description": "Demonstrates an intense motivation to set goals and be responsible for their achievement while striving for quality excellence. Possesses the capacity to identify problems and gaps during service delivery and to proactively analyse and assess different options to ensure best result. Drives systemic changes to increase effectiveness and efficiency in line with future needs.",
+    "sub_theme": "Initiative and Drive",
+    "sub_theme_description": "Displays a profound drive to conduct oneself meticulously, following processes, norms, and other guidelines as one makes improvements by voluntarily and consciously putting forth the effort required by a task or activity despite difficulties, hardships, failures, or obstacles."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Outcome Orientation",
+    "theme_description": "Demonstrates an intense motivation to set goals and be responsible for their achievement while striving for quality excellence. Possesses the capacity to identify problems and gaps during service delivery and to proactively analyse and assess different options to ensure best result. Drives systemic changes to increase effectiveness and efficiency in line with future needs.",
+    "sub_theme": "Commitment to Quality",
+    "sub_theme_description": "Facilitates in building a culture of delivering high quality outputs through consistent focus on creating new benchmarks in quality and maintaining it for both internal and external stakeholders."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Collaboration",
+    "theme_description": "Working in tandem with others as an integral unit, establishing partnerships and cooperative working relationships toward realizing Division / Department / Ministry goals. Proactively sharing relevant and useful knowledge, experience, or expertise with peers/team to strengthen knowledge base. It also refers to leveraging diverse strengths and contribution of every officer/ staff for timely and high-quality delivery.",
+    "sub_theme": "Relationship Management",
+    "sub_theme_description": "Actively establishes connections, nurtures relationships, and capitalizes on opportunities to identify intelligence and insights into existing or potential challenges. Additionally, builds partnerships and public-private collaborations to leverage expertise in the national and global ecosystem, enhancing efficiency and promoting social inclusion for pro-people governance."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Collaboration",
+    "theme_description": "Working in tandem with others as an integral unit, establishing partnerships and cooperative working relationships toward realizing Division / Department / Ministry goals. Proactively sharing relevant and useful knowledge, experience, or expertise with peers/team to strengthen knowledge base. It also refers to leveraging diverse strengths and contribution of every officer/ staff for timely and high-quality delivery.",
+    "sub_theme": "Diversity & Inclusion",
+    "sub_theme_description": "Create an inclusive work environment that values and embraces diverse perspectives, backgrounds, and experiences by actively promoting diversity, equity, and inclusion (DEI) within the Ministry/Department/ Organization and integrating it into various aspects of working."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Collaboration",
+    "theme_description": "Working in tandem with others as an integral unit, establishing partnerships and cooperative working relationships toward realizing Division / Department / Ministry goals. Proactively sharing relevant and useful knowledge, experience, or expertise with peers/team to strengthen knowledge base. It also refers to leveraging diverse strengths and contribution of every officer/ staff for timely and high-quality delivery.",
+    "sub_theme": "Knowledge Sharing",
+    "sub_theme_description": "Exchanges explicit and implicit knowledge with stakeholders at the inter-, intra-, divisional, departmental, and ministerial levels in order to improve output that leverages multiple viewpoints."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Service Orientation",
+    "theme_description": "Demonstrates the ability to focus one’s efforts on discovering and meeting needs of stakeholder(s) by establishing a rapport, putting oneself into the mindset of the stakeholder and facilitating delivery of services that meet their underlying and unexpressed needs. Demonstrates the ability to provide excellent service delivery while developing and maintaining strong relationships with citizens and balancing the government’s key strategic priorities.",
+    "sub_theme": "Empathy",
+    "sub_theme_description": "Ability to understand and connect with the emotions, perspectives, and feelings of others and take actions to support them through challenging situations."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Service Orientation",
+    "theme_description": "Demonstrates the ability to focus one’s efforts on discovering and meeting needs of stakeholder(s) by establishing a rapport, putting oneself into the mindset of the stakeholder and facilitating delivery of services that meet their underlying and unexpressed needs. Demonstrates the ability to provide excellent service delivery while developing and maintaining strong relationships with citizens and balancing the government’s key strategic priorities.",
+    "sub_theme": "Responsiveness",
+    "sub_theme_description": "Demonstrate the ability to respond respectfully and effectively and ensure highest level of care and satisfaction of citizens."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Service Orientation",
+    "theme_description": "Demonstrates the ability to focus one’s efforts on discovering and meeting needs of stakeholder(s) by establishing a rapport, putting oneself into the mindset of the stakeholder and facilitating delivery of services that meet their underlying and unexpressed needs. Demonstrates the ability to provide excellent service delivery while developing and maintaining strong relationships with citizens and balancing the government’s key strategic priorities.",
+    "sub_theme": "Service Excellence (wrt citizens)",
+    "sub_theme_description": "Demonstrating professional perseverance by focusing one’s efforts on meeting the set goals of the government as well as needs of the citizen while maintaining quality of delivery."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Operational Excellence",
+    "theme_description": "Establishes plans, defines milestones, and allots resources for regularly producing high-quality, cost-effective results that are in accordance with the department’s or ministry’s overall objectives. Focuses on tasks that will increase effectiveness, efficiency, and production through planning, intentional effort, and control. Determines goals, assigns tasks, and establishes priorities based on skill levels and the availability of resources.",
+    "sub_theme": "Planning & Prioritization",
+    "sub_theme_description": "Demonstrates the ability to effectively manage tasks and reorder priorities in order to make the most use of available resources."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Operational Excellence",
+    "theme_description": "Establishes plans, defines milestones, and allots resources for regularly producing high-quality, cost-effective results that are in accordance with the department’s or ministry’s overall objectives. Focuses on tasks that will increase effectiveness, efficiency, and production through planning, intentional effort, and control. Determines goals, assigns tasks, and establishes priorities based on skill levels and the availability of resources.",
+    "sub_theme": "Resource Management",
+    "sub_theme_description": "Demonstrate the ability to effectively and efficiently allocate, utilize, and optimize various resources to achieve strategic goals and objectives"
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Operational Excellence",
+    "theme_description": "Establishes plans, defines milestones, and allots resources for regularly producing high-quality, cost-effective results that are in accordance with the department’s or ministry’s overall objectives. Focuses on tasks that will increase effectiveness, efficiency, and production through planning, intentional effort, and control. Determines goals, assigns tasks, and establishes priorities based on skill levels and the availability of resources.",
+    "sub_theme": "Process Excellence",
+    "sub_theme_description": "Analyse and implement government processes and procedures to ensure alignment to the department’s strategic objectives and ensure value to both internal and external stakeholders"
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Operational Excellence",
+    "theme_description": "Establishes plans, defines milestones, and allots resources for regularly producing high-quality, cost-effective results that are in accordance with the department’s or ministry’s overall objectives. Focuses on tasks that will increase effectiveness, efficiency, and production through planning, intentional effort, and control. Determines goals, assigns tasks, and establishes priorities based on skill levels and the availability of resources.",
+    "sub_theme": "Continuous Improvement",
+    "sub_theme_description": "Demonstrate the ability to deliver high- quality services through improvement of existing processes, systems, and practices within the sections, divisions or departments."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Creativity & Innovation",
+    "theme_description": "Champions ‘out-of-the-box’ thinking, and supports experimentation of new ideas, utilizing technological advancements with the aim of transforming operations to enhance governance efficiency. Synthesizes insights and concepts from diverse disciplines to drive the decision-making process, promote wider acceptance, and encourage cooperation to ensure successful implementation.",
+    "sub_theme": "Lateral Thinking",
+    "sub_theme_description": "Demonstrates awareness of key emerging trends on a national and global scale. Utilizes cross functional knowledge to develop innovative strategies and approaches to solving real- world problems for the Ministry / Department. Enabling problem solving through consideration of broader perspectives and looking beyond standard reasoning & conventional ideas."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Creativity & Innovation",
+    "theme_description": "Champions ‘out-of-the-box’ thinking, and supports experimentation of new ideas, utilizing technological advancements with the aim of transforming operations to enhance governance efficiency. Synthesizes insights and concepts from diverse disciplines to drive the decision-making process, promote wider acceptance, and encourage cooperation to ensure successful implementation.",
+    "sub_theme": "Transformation Orientation",
+    "sub_theme_description": "Ability to drive cultural, attitudinal, and operational transformation within a Department or Ministry is demonstrated by fostering innovative thinking that utilizes emerging technological and digital advances, while also mitigating potential risks and capitalizing on opportunities to enhance governance efficiency."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Strategic Leadership",
+    "theme_description": "Ability to foresee future challenges and identify opportunities by discerning the operating environment holistically and being cognizant of emerging dynamics and trends globally, locally, and internally. Creates and communicates a vision of success, coupled with a progressive outlook and aligning strategic goals with operational plans to achieve the vision. Exhibits prudence, credibility and authority for shaping strategic direction to achieve Department/ Ministry mandates.",
+    "sub_theme": "Global mindset",
+    "sub_theme_description": "Demonstrates the ability to enhance Departmental processes aligned to global standards by staying well- versed with the evolving dynamics at the global level, including those related to geo-politics, economics, society, and technology. Understands and keeps up- to-date on international policies and trends that affect the organization and shape stakeholders’ views."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Strategic Leadership",
+    "theme_description": "Ability to foresee future challenges and identify opportunities by discerning the operating environment holistically and being cognizant of emerging dynamics and trends globally, locally, and internally. Creates and communicates a vision of success, coupled with a progressive outlook and aligning strategic goals with operational plans to achieve the vision. Exhibits prudence, credibility and authority for shaping strategic direction to achieve Department/ Ministry mandates.",
+    "sub_theme": "Forward Thinking",
+    "sub_theme_description": "Demonstrates the ability to comprehend the internal and external environmental dynamics and their effect on both the short-term goals and long-term mandates of the Department/ Ministry/ Organization. This entails achieving a strategic balance with multiple stakeholders on sensitive issues while maintaining a clear focus on the mandate of the future for pro-people governance."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Strategic Leadership",
+    "theme_description": "Ability to foresee future challenges and identify opportunities by discerning the operating environment holistically and being cognizant of emerging dynamics and trends globally, locally, and internally. Creates and communicates a vision of success, coupled with a progressive outlook and aligning strategic goals with operational plans to achieve the vision. Exhibits prudence, credibility and authority for shaping strategic direction to achieve Department/ Ministry mandates.",
+    "sub_theme": "Executive Presence",
+    "sub_theme_description": "Exhibits a blend of professional charismatic persona that exudes calmness, composure, confidence, effective communication, and commanding presence in the room while engaging in inter-Ministerial, National and Global forums intending to promote Government Programmes, Schemes and Strategies."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Strategic Leadership",
+    "theme_description": "Ability to foresee future challenges and identify opportunities by discerning the operating environment holistically and being cognizant of emerging dynamics and trends globally, locally, and internally. Creates and communicates a vision of success, coupled with a progressive outlook and aligning strategic goals with operational plans to achieve the vision. Exhibits prudence, credibility and authority for shaping strategic direction to achieve Department/ Ministry mandates.",
+    "sub_theme": "Sustainable mindset",
+    "sub_theme_description": "Adopting a mindset of implementing rigorous and comprehensive human, financial, and environmental resource accountability systems to ensure that resources are managed effectively and with integrity, and that these are carefully considered in the development and implementation of all policies and programs"
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Collaborative Leadership",
+    "theme_description": "Demonstrates the ability to seek and establish alliances, collaborations, and partnerships with stakeholders, both internal and external, such as inter- and intra-Department /Ministerial officers, corporations, institutions, influencers, trusted advisors, and citizens. This includes creating a progressive roadmap for multifaceted development aligned with Atma Nirbhar Bharat. Shows expertise in manoeuvring diplomatic deliberations, persuading, converging divergent views and interests, reconciling conflicts, and facilitating mutually beneficial agreements.",
+    "sub_theme": "Influencing and Negotiation",
+    "sub_theme_description": "Demonstrates a high level of proficiency in shaping the stance and perspectives of stakeholders into acceptance of the proposed approach for the benefit of the citizens. Engage in discussions with partners and stakeholders and achieve a mutually agreeable and appropriate consensus."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Collaborative Leadership",
+    "theme_description": "Demonstrates the ability to seek and establish alliances, collaborations, and partnerships with stakeholders, both internal and external, such as inter- and intra-Department /Ministerial officers, corporations, institutions, influencers, trusted advisors, and citizens. This includes creating a progressive roadmap for multifaceted development aligned with Atma Nirbhar Bharat. Shows expertise in manoeuvring diplomatic deliberations, persuading, converging divergent views and interests, reconciling conflicts, and facilitating mutually beneficial agreements.",
+    "sub_theme": "Conflict Management",
+    "sub_theme_description": "Demonstrates the capability to recognize disparities or conflicts that arise from varying opinions, objectives, and interests among different stakeholders, and effectively manages such situations in a rational, equitable, and efficient manner while strictly adhering to compliance requirements."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Team Leadership",
+    "theme_description": "Fosters a positive work environment by actively engaging with the team, enabling their growth and enhancing their proficiency. This involves identifying and creating opportunities to enhance officers’ skills and competencies through timely feedback, guidance, and mentoring. Additionally, promoting a culture of trust, openness, appreciation, recognition, parity, and leading by example.",
+    "sub_theme": "Mentoring",
+    "sub_theme_description": "Demonstrates the capability to foster team development by creating a supportive environment and dedicating efforts to patiently train, provide opportunities, instil discipline and commitment, and offer timely monitoring and guidance to enhance their functional efficiency and professional agility"
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Team Leadership",
+    "theme_description": "Fosters a positive work environment by actively engaging with the team, enabling their growth and enhancing their proficiency. This involves identifying and creating opportunities to enhance officers’ skills and competencies through timely feedback, guidance, and mentoring. Additionally, promoting a culture of trust, openness, appreciation, recognition, parity, and leading by example.",
+    "sub_theme": "Sharing constructive feedback",
+    "sub_theme_description": "Provides timely feedback in a helpful, supportive, and constructive manner to others in a way that promotes their personal and professional growth while maintaining a positive and respectful working relationship."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Team Leadership",
+    "theme_description": "Fosters a positive work environment by actively engaging with the team, enabling their growth and enhancing their proficiency. This involves identifying and creating opportunities to enhance officers’ skills and competencies through timely feedback, guidance, and mentoring. Additionally, promoting a culture of trust, openness, appreciation, recognition, parity, and leading by example.",
+    "sub_theme": "Inspiring others",
+    "sub_theme_description": "Demonstrates the characteristics and traits of Karmayogis, including fulfilling commitments on every task, recognizing, appreciating, and encouraging each team member, stakeholder, and partner, and staying true to the principles of good governance and encourages others in inculcating them. Displaying a high level of emotional intelligence and being alert, careful, organized, and diligent for setting the right example for the team."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Decision Making",
+    "theme_description": "Possess the ability to analyse facts, reports, policies, precedents, constraints, risks, and conflicting points of view in a comprehensive and logical manner to gain a holistic perspective and arrive at a timely- decision. It involves weighing the pros and cons of various options to arrive at the best possible decision that would lead to the welfare of citizens and contribute towards attainment of Aatma Nirbhar & Viksit Bharat.",
+    "sub_theme": "Logical Reasoning",
+    "sub_theme_description": "Objectively analyse, evaluate, and interpret information and arguments in a logical and systematic manner in order to arrive at conclusions."
+  },
+  {
+    "type": "Behavioural",
+    "theme": "Decision Making",
+    "theme_description": "Possess the ability to analyse facts, reports, policies, precedents, constraints, risks, and conflicting points of view in a comprehensive and logical manner to gain a holistic perspective and arrive at a timely- decision. It involves weighing the pros and cons of various options to arrive at the best possible decision that would lead to the welfare of citizens and contribute towards attainment of Aatma Nirbhar & Viksit Bharat.",
+    "sub_theme": "Sound Judgement",
+    "sub_theme_description": "Ability to make well-informed, rational, and balanced decisions based on a thorough analysis of available information, careful consideration of potential consequences, and alignment with ethical principles and organizational goals"
+  },
+  {
+    "type": "Functional",
+    "theme": "Citizen Centricity",
+    "theme_description": "Ensures citizens’ welfare and citizens’ satisfaction, by improving the standards of accountable and transparent governance, implementing result-oriented administration through innovative interventions based on design thinking, and enhancing citizen- centric decision-making. Implements Open Government policies and practices, which include collaborating and forming partnerships with informed citizens, leveraging social capital, and promoting participative public service delivery by ensuring freedom and ease of access to information. Establish an efficient framework that ensures timely and transparent delivery of services by various government departments through awareness of various social, political, economic and technological developments that may impact citizens.",
+    "sub_theme": "Design Thinking",
+    "sub_theme_description": "Demonstrates ability to decode intertwined administrative systems, understand dynamic and multifaceted situations, based on solid foundation of study of need & demand of target population. Approaches problems with an empathic, “beginner’s mind”, openness, & optimism for creative and human cantered solutions. Follows systematic and conscious approach to public service delivery that involves being open and impartial to the perspectives, grievances, and recommendations of service users and stakeholders, especially those from diverse social groups."
+  },
+  {
+    "type": "Functional",
+    "theme": "Citizen Centricity",
+    "theme_description": "Ensures citizens’ welfare and citizens’ satisfaction, by improving the standards of accountable and transparent governance, implementing result-oriented administration through innovative interventions based on design thinking, and enhancing citizen- centric decision-making. Implements Open Government policies and practices, which include collaborating and forming partnerships with informed citizens, leveraging social capital, and promoting participative public service delivery by ensuring freedom and ease of access to information. Establish an efficient framework that ensures timely and transparent delivery of services by various government departments through awareness of various social, political, economic and technological developments that may impact citizens.",
+    "sub_theme": "Citizen Partnering & Collaboration",
+    "sub_theme_description": "Demonstrates proficiency in mediating and engaging with various segments and groups of society to establish a common ground on issues and actions that benefit the entire community. Display “Good Governance” by aiming to enhance effectiveness, efficiency, and accountability through a consensus-based approach that emphasizes equity, inclusivity, and active participation, resulting in increased public satisfaction at lower costs."
+  },
+  {
+    "type": "Functional",
+    "theme": "Citizen Centricity",
+    "theme_description": "Ensures citizens’ welfare and citizens’ satisfaction, by improving the standards of accountable and transparent governance, implementing result-oriented administration through innovative interventions based on design thinking, and enhancing citizen- centric decision-making. Implements Open Government policies and practices, which include collaborating and forming partnerships with informed citizens, leveraging social capital, and promoting participative public service delivery by ensuring freedom and ease of access to information. Establish an efficient framework that ensures timely and transparent delivery of services by various government departments through awareness of various social, political, economic and technological developments that may impact citizens.",
+    "sub_theme": "PEST (Political, Economic, Social, Technological) Consciousness",
+    "sub_theme_description": "Maintains awareness of the national political leadership’s vision for the country, as well as its strategic communications and collaborations with various national and global entities revolving around the economic, social or technological domains, in relation to the Department/Ministry/Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Policy Architecture",
+    "theme_description": "Demonstrates the capacity to detect gaps and improvement needs in existing policies in order to translate policy concepts into policy formulation for addressing existing and emerging needs of the citizens. Conducts thorough study and analysis of best practises at State, National, or Global levels, takes use of modern innovation and the most recent advancements in the social, economic, technological, and legal spheres while creating & implementing policies. Focuses on monitoring the application of policy and evaluating its impact and efficacy using a variety of instruments for responsible, open, and sustainable governance.",
+    "sub_theme": "Research & Need Analysis",
+    "sub_theme_description": "Demonstrates the ability to undertake primary and secondary research on a variety of aspects. Analyses and assesses a range of data points and reports produced by or obtained from a spectrum of sources (including but not limited to the subject of complaints, proposals by stakeholders, a range of appropriate indices, reports by governmental/non-governmental agencies, and gaps indicated in the course of interpretation and/or implementation)."
+  },
+  {
+    "type": "Functional",
+    "theme": "Policy Architecture",
+    "theme_description": "Demonstrates the capacity to detect gaps and improvement needs in existing policies in order to translate policy concepts into policy formulation for addressing existing and emerging needs of the citizens. Conducts thorough study and analysis of best practises at State, National, or Global levels, takes use of modern innovation and the most recent advancements in the social, economic, technological, and legal spheres while creating & implementing policies. Focuses on monitoring the application of policy and evaluating its impact and efficacy using a variety of instruments for responsible, open, and sustainable governance.",
+    "sub_theme": "Policy design/ amendment",
+    "sub_theme_description": "Demonstrates the ability to draft or amend government policies for delivering citizen centric civil service basis feasibility analysis and risk assessment of various policy alternatives."
+  },
+  {
+    "type": "Functional",
+    "theme": "Policy Architecture",
+    "theme_description": "Demonstrates the capacity to detect gaps and improvement needs in existing policies in order to translate policy concepts into policy formulation for addressing existing and emerging needs of the citizens. Conducts thorough study and analysis of best practises at State, National, or Global levels, takes use of modern innovation and the most recent advancements in the social, economic, technological, and legal spheres while creating & implementing policies. Focuses on monitoring the application of policy and evaluating its impact and efficacy using a variety of instruments for responsible, open, and sustainable governance.",
+    "sub_theme": "Policy implementation",
+    "sub_theme_description": "Establishes and implements appropriate procedures to facilitate the implementation of central policies within the context of good governance, such as government programmes, schemes, missions, initiatives, etc."
+  },
+  {
+    "type": "Functional",
+    "theme": "Policy Architecture",
+    "theme_description": "Demonstrates the capacity to detect gaps and improvement needs in existing policies in order to translate policy concepts into policy formulation for addressing existing and emerging needs of the citizens. Conducts thorough study and analysis of best practises at State, National, or Global levels, takes use of modern innovation and the most recent advancements in the social, economic, technological, and legal spheres while creating & implementing policies. Focuses on monitoring the application of policy and evaluating its impact and efficacy using a variety of instruments for responsible, open, and sustainable governance.",
+    "sub_theme": "Policy monitoring & impact assessment",
+    "sub_theme_description": "Creates and implements effective and practical monitoring & evaluation framework for assessing impact of policy implementation for maximizing the impact and benefits for target stakeholders."
+  },
+  {
+    "type": "Functional",
+    "theme": "Cabinet note preparation",
+    "theme_description": "Demonstrates comprehension of the significance of Cabinet Notes in policymaking, where the Cabinet and its committees make vital decisions that are crucial for efficient governance. This includes the ability to prepare Cabinet Notes that address various national and international matters affecting different areas of governance and present them to the Cabinet for consideration and decision-making. Therefore, a deep understanding of the AoB Rules, 1961 & ToB Rules, 1961 is essential, along with exceptional skills in preparing comprehensive Cabinet Notes that provide pertinent details and the right perspective.",
+    "sub_theme": "Rules of business (AoB/ToB)",
+    "sub_theme_description": "Demonstrates a high level of proficiency in conducting the official business of the Government of India, as specified in the first schedule of the Allocation of Business Rules (AoB), 1961, which define the Ministries, Departments, Secretariats, and offices where the government business is transacted and outline the distribution of subjects among various departments, as specified in the second schedule of the rules. Demonstrates comprehension of the Transaction of Business (ToB) Rules, 1961, which outline the procedures for handling the business of the Government of India, including consultation with other departments and submission of cases to the Prime Minister, Cabinet and its Committees, and the President."
+  },
+  {
+    "type": "Functional",
+    "theme": "Cabinet note preparation",
+    "theme_description": "Demonstrates comprehension of the significance of Cabinet Notes in policymaking, where the Cabinet and its committees make vital decisions that are crucial for efficient governance. This includes the ability to prepare Cabinet Notes that address various national and international matters affecting different areas of governance and present them to the Cabinet for consideration and decision-making. Therefore, a deep understanding of the AoB Rules, 1961 & ToB Rules, 1961 is essential, along with exceptional skills in preparing comprehensive Cabinet Notes that provide pertinent details and the right perspective.",
+    "sub_theme": "Cabinet note writing",
+    "sub_theme_description": "Ensures adherence to the procedures for preparing and submitting papers to be considered by the Cabinet, Cabinet Committees, and Committee of Secretaries (CoS) Notes, including the use of the prescribed format, inclusion of all necessary elements, and appropriate presentation of the Cabinet Note. Capable of grading the Notes and taking into account any special circumstances while being aware of common deficiencies."
+  },
+  {
+    "type": "Functional",
+    "theme": "Government Program Formulation",
+    "theme_description": "Demonstrates knowledge and ability to identify, define, plan, develop, deliver & monitor government programs, schemes to realize the agreed benefits for the citizens within prescribed timeframe. Oversees and coordinates a group of related projects within a government program to achieve specific benefits and maintain control. Demonstrates the ability in Program Selection, Program Planning, Program/ Project Transitions, Program Implementation, Strategic Program Management, Program Progress Monitoring and Review, Program Analysis, Program Financing, Program/ Project Change Management, Benefits Management, Stakeholder Relationships and Collaboration.",
+    "sub_theme": "Research & Need Analysis",
+    "sub_theme_description": "Analyses relevant reports, surveys, papers etc. to identify the needs, the beneficiaries, returns or strategic benefits to the citizens and Nation at large (both in tangible and intangible terms)."
+  },
+  {
+    "type": "Functional",
+    "theme": "Government Program Formulation",
+    "theme_description": "Demonstrates knowledge and ability to identify, define, plan, develop, deliver & monitor government programs, schemes to realize the agreed benefits for the citizens within prescribed timeframe. Oversees and coordinates a group of related projects within a government program to achieve specific benefits and maintain control. Demonstrates the ability in Program Selection, Program Planning, Program/ Project Transitions, Program Implementation, Strategic Program Management, Program Progress Monitoring and Review, Program Analysis, Program Financing, Program/ Project Change Management, Benefits Management, Stakeholder Relationships and Collaboration.",
+    "sub_theme": "Scheme/Program Design",
+    "sub_theme_description": "Demonstrates the ability to design central government schemes and draft contours of programs (constituent projects), preparation of necessary contract documents for procurement of Materials, Equipment and Services, indigenous & imported in line with the policies and schemes for development of the intended stakeholders ."
+  },
+  {
+    "type": "Functional",
+    "theme": "Government Program Formulation",
+    "theme_description": "Demonstrates knowledge and ability to identify, define, plan, develop, deliver & monitor government programs, schemes to realize the agreed benefits for the citizens within prescribed timeframe. Oversees and coordinates a group of related projects within a government program to achieve specific benefits and maintain control. Demonstrates the ability in Program Selection, Program Planning, Program/ Project Transitions, Program Implementation, Strategic Program Management, Program Progress Monitoring and Review, Program Analysis, Program Financing, Program/ Project Change Management, Benefits Management, Stakeholder Relationships and Collaboration.",
+    "sub_theme": "Feasibility & Risk Assessment",
+    "sub_theme_description": "Prepares and analyses feasibility study reports (FR), Detailed Project Reports (DPR), Environmental Impact Assessment (EIA) & Environmental Management Plan (EMP) Reports to identify potential risks (Governance Risks, Statutory Risks, Contractual Risks, Operational Risks, Financial Risks, Socio-economic Risks, Geopolitical Risks) and proposes suitable solutions for their mitigation."
+  },
+  {
+    "type": "Functional",
+    "theme": "Government Program Formulation",
+    "theme_description": "Demonstrates knowledge and ability to identify, define, plan, develop, deliver & monitor government programs, schemes to realize the agreed benefits for the citizens within prescribed timeframe. Oversees and coordinates a group of related projects within a government program to achieve specific benefits and maintain control. Demonstrates the ability in Program Selection, Program Planning, Program/ Project Transitions, Program Implementation, Strategic Program Management, Program Progress Monitoring and Review, Program Analysis, Program Financing, Program/ Project Change Management, Benefits Management, Stakeholder Relationships and Collaboration.",
+    "sub_theme": "Implementation & Outreach",
+    "sub_theme_description": "Emphasizes the use of appropriate methods for execution of government programs to ensure achievement of intended outcomes and impact to the target audience."
+  },
+  {
+    "type": "Functional",
+    "theme": "Project Management",
+    "theme_description": "Demonstrates ability to plan phases/stages and identify key activities, dependencies, and milestones for driving projects. Utilizes & creates various standard framework / mechanisms to determine project mode, vendor selection & engagement, implementation, communication, knowledge transition, and risk mitigation. Evaluates progress against KPIs and ensures adherence to relevant guidelines & policies etc. for ensuring optimization of resource utilization,and driving realization of intended benefit for the intended audience.",
+    "sub_theme": "Project Planning",
+    "sub_theme_description": "Define various aspects of project including creating proposal, defining objectives, deliverables, timelines, intended benefits, mode of project (PPP, BOOT etc.), costing, funding schedule, technology, and process for selecting consultants, procurement, advisors, stakeholder management framework, reporting, monitoring, assessment, knowledge management mechanism etc."
+  },
+  {
+    "type": "Functional",
+    "theme": "Project Management",
+    "theme_description": "Demonstrates ability to plan phases/stages and identify key activities, dependencies, and milestones for driving projects. Utilizes & creates various standard framework / mechanisms to determine project mode, vendor selection & engagement, implementation, communication, knowledge transition, and risk mitigation. Evaluates progress against KPIs and ensures adherence to relevant guidelines & policies etc. for ensuring optimization of resource utilization,and driving realization of intended benefit for the intended audience.",
+    "sub_theme": "Project Implementation",
+    "sub_theme_description": "Driving implementation of projects by leveraging partnerships with public community/ private sector etc and ensuring adherence to the schedule, procedural Codes & Manuals relevant to the sector/project and any related policies, guidelines, and standards."
+  },
+  {
+    "type": "Functional",
+    "theme": "Project Management",
+    "theme_description": "Demonstrates ability to plan phases/stages and identify key activities, dependencies, and milestones for driving projects. Utilizes & creates various standard framework / mechanisms to determine project mode, vendor selection & engagement, implementation, communication, knowledge transition, and risk mitigation. Evaluates progress against KPIs and ensures adherence to relevant guidelines & policies etc. for ensuring optimization of resource utilization,and driving realization of intended benefit for the intended audience.",
+    "sub_theme": "Project Evaluation & Monitoring",
+    "sub_theme_description": "Evaluate project progress with respect to contractual obligations and various parameters like, governance, communication management, standardization, Crisis Management Plan, Project Risk Management, Integrated Risk Management, HSE Bottom Line, DCMA 14-point Schedule Health Check, fund release & utilization, Sustainability (like, Biodegradable, Carbon footprint, Dematerialization, Design for the Environment (DfE), Environmentally preferable products (EPP), Life-Cycle Assessment (LCA) etc.), Governance Risks, Statutory Risks, Contractual Risks, Operational Risks, Social Bottom Line etc. Proposes necessary adjustments to implementation timelines, utilizing efficient and economical methods to accelerate progress."
+  },
+  {
+    "type": "Functional",
+    "theme": "Project Management",
+    "theme_description": "Demonstrates ability to plan phases/stages and identify key activities, dependencies, and milestones for driving projects. Utilizes & creates various standard framework / mechanisms to determine project mode, vendor selection & engagement, implementation, communication, knowledge transition, and risk mitigation. Evaluates progress against KPIs and ensures adherence to relevant guidelines & policies etc. for ensuring optimization of resource utilization,and driving realization of intended benefit for the intended audience.",
+    "sub_theme": "Project KPIs Monitoring",
+    "sub_theme_description": "Selects and implements the effective project monitoring tools suiting contract /project requirements. Establishes Key Performance Indicators (like, Safety KPIs. Schedule KPIs, Cost KPIs, Procurement/ Contract KPI, Quality KPIs) and sets up reporting, monitoring, assessment mechanism, dashboards etc. until project completion, final validation, litigation, and financial close-outs. Ensures continuous monitoring of alignment with the baseline requirement of project design/ scope with respect to execution and identifies the deviation. Applies technology for capturing real time information/data, performing data analytics."
+  },
+  {
+    "type": "Functional",
+    "theme": "Public Procurement (GFR)",
+    "theme_description": "Demonstrates the ability to procure goods, services, or works using GeM (Government eMarketplace, National Public Procurement Portal) and other electronic portals, directly or through empanelled agencies, whether by way of purchase, lease, licence, or another method based on fundamental principles of transparency, fairness, competition, economy, efficiency, and accountability with respect to procurement. Ensures judicious use of public funds or any other source of funds (such as grants, loans, donations, or private investment), in accordance with GFR 2017, DFPR, 1978 (DFPR Rule 21, 21(a), 21(b), Manual of Procurement 2022 and their amendments, AOB, TOB, ToR",
+    "sub_theme": "Procurement Mgmt. through GeM",
+    "sub_theme_description": "Demonstrates practical knowledge and ability in leveraging GeM (Government eMarketplace) as per Rule 149 of GFR, 2017 for procurement of common use goods, services and uses its tools of e-bidding, reverse e-auction, and demand aggregation, Guideline on Government eMarketplace (GeM) for all procurement needs of the Ministry / Department / Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Public Procurement (GFR)",
+    "theme_description": "Demonstrates the ability to procure goods, services, or works using GeM (Government eMarketplace, National Public Procurement Portal) and other electronic portals, directly or through empanelled agencies, whether by way of purchase, lease, licence, or another method based on fundamental principles of transparency, fairness, competition, economy, efficiency, and accountability with respect to procurement. Ensures judicious use of public funds or any other source of funds (such as grants, loans, donations, or private investment), in accordance with GFR 2017, DFPR, 1978 (DFPR Rule 21, 21(a), 21(b), Manual of Procurement 2022 and their amendments, AOB, TOB, ToR",
+    "sub_theme": "Procurement of Services / Goods / Works",
+    "sub_theme_description": "Demonstrates practical knowledge in the effective and timely procurement of goods / services / works for the department, by following the Rules & Regulations, Policies & Principles, and procedures in accordance with the “Manual on Procurement of Goods 2017” “Manual for Procurement of Services, 2022”, General Financial Rules (GFR) 2017 and its amendments, and the DFPR (Indents, Contracts and Purchases for public service) guidelines."
+  },
+  {
+    "type": "Functional",
+    "theme": "Public Procurement (GFR)",
+    "theme_description": "Demonstrates the ability to procure goods, services, or works using GeM (Government eMarketplace, National Public Procurement Portal) and other electronic portals, directly or through empanelled agencies, whether by way of purchase, lease, licence, or another method based on fundamental principles of transparency, fairness, competition, economy, efficiency, and accountability with respect to procurement. Ensures judicious use of public funds or any other source of funds (such as grants, loans, donations, or private investment), in accordance with GFR 2017, DFPR, 1978 (DFPR Rule 21, 21(a), 21(b), Manual of Procurement 2022 and their amendments, AOB, TOB, ToR",
+    "sub_theme": "Contract Management",
+    "sub_theme_description": "Oversee and execute contractual agreements, characterized by practical expertise in various facets of the contracting process. Has the ability to conducting contract scoping, formulating well-defined Terms & Conditions, considering attached commercial nuances and legal aspects, and implementing practices for risk mitigation in pursuit of the Public Good. Leverages domain knowledge to evaluate technical proficiency, skilfully negotiate contracts, and select the most suitable vendor, guided by principles such as transparency, fairness, competition, economy, efficiency, and accountability."
+  },
+  {
+    "type": "Functional",
+    "theme": "Public Procurement (GFR)",
+    "theme_description": "Demonstrates the ability to procure goods, services, or works using GeM (Government eMarketplace, National Public Procurement Portal) and other electronic portals, directly or through empanelled agencies, whether by way of purchase, lease, licence, or another method based on fundamental principles of transparency, fairness, competition, economy, efficiency, and accountability with respect to procurement. Ensures judicious use of public funds or any other source of funds (such as grants, loans, donations, or private investment), in accordance with GFR 2017, DFPR, 1978 (DFPR Rule 21, 21(a), 21(b), Manual of Procurement 2022 and their amendments, AOB, TOB, ToR",
+    "sub_theme": "Vendor / Consultant Management",
+    "sub_theme_description": "Demonstrates the ability to identify suitable vendors through established processes (e.g., GeM) by adhering to Ministry/Departmental guidelines, the “Manual for Procurement of Consultancy and other Services 2022,” and the “Manual on Procurement of Works 2022” for the effective procurement of goods and services. Ensuring that agreements are properly executed before commencement of all services by the vendors."
+  },
+  {
+    "type": "Functional",
+    "theme": "Material Management",
+    "theme_description": "Demonstrates ability to maintain accurate records of goods and materials in the Ministry / Department / Organization. Ensures proper custody of delivered items, conducts physical verification of assets, and identifies surplus and obsolete materials. Determines appropriate categories and modes of disposal for goods, such as auction or e-auction, in compliance with GFR, DFPR 1978, and Manual for Procurement of Goods 2017, to minimize losses due to various reasons.",
+    "sub_theme": "Maintenance and Disposal of materials",
+    "sub_theme_description": "Oversees and conducts accurate physical verification of materials, valuation of material, analysis of losses etc., and accordingly take required actions for disposal of assets, as per laid down processes/ guidelines in GFR 2017, Manual of Procurement of Goods, 2017, DFPR etc."
+  },
+  {
+    "type": "Functional",
+    "theme": "Material Management",
+    "theme_description": "Demonstrates ability to maintain accurate records of goods and materials in the Ministry / Department / Organization. Ensures proper custody of delivered items, conducts physical verification of assets, and identifies surplus and obsolete materials. Determines appropriate categories and modes of disposal for goods, such as auction or e-auction, in compliance with GFR, DFPR 1978, and Manual for Procurement of Goods 2017, to minimize losses due to various reasons.",
+    "sub_theme": "Inventory Management",
+    "sub_theme_description": "Manage assets and inventories in central government offices including issuing, handling receipts implementation of verification / inspection procedures ensuring control of movement of goods in the Ministry / Department / Organization in accordance with established guidelines and procedures."
+  },
+  {
+    "type": "Functional",
+    "theme": "Monitoring & Evaluation",
+    "theme_description": "Demonstrates the ability to develop monitoring and evaluation framework for tracking implementation of central government policies, schemes, and projects for the Department/ Ministry/ Organization. Identifies right set of data, information, and relevant parameters to evaluate. Undertakes qualitative and quantitative assessments to determine the progress of a government policy, schemes and project towards pre-specified goals and objectives, and to highlight any alarming gap that may hamper the slated outcomes & outputs. Facilitates in making informed decisions and adjustments to improve policy effectiveness, ensuring policies lead to desired outcomes and benefits. Identify successes, challenges, and lessons learned to enhance future policymaking and implementation processes for the Government of India.",
+    "sub_theme": "Creation of M&E Framework",
+    "sub_theme_description": "Demonstrates the ability to collect and collate data based on defined M&E framework and conduct analysis to outline the performance of government programs in accordance with defined objectives and outcomes."
+  },
+  {
+    "type": "Functional",
+    "theme": "Monitoring & Evaluation",
+    "theme_description": "Demonstrates the ability to develop monitoring and evaluation framework for tracking implementation of central government policies, schemes, and projects for the Department/ Ministry/ Organization. Identifies right set of data, information, and relevant parameters to evaluate. Undertakes qualitative and quantitative assessments to determine the progress of a government policy, schemes and project towards pre-specified goals and objectives, and to highlight any alarming gap that may hamper the slated outcomes & outputs. Facilitates in making informed decisions and adjustments to improve policy effectiveness, ensuring policies lead to desired outcomes and benefits. Identify successes, challenges, and lessons learned to enhance future policymaking and implementation processes for the Government of India.",
+    "sub_theme": "Evaluation of outcomes / outputs",
+    "sub_theme_description": "Conducts assessment based on the data to identify strengths and shortfalls in intended outcomes and formulates remedial actions to correct deficiencies in delivery of schemes and government programs."
+  },
+  {
+    "type": "Functional",
+    "theme": "Financial Management",
+    "theme_description": "Formulates budget and expenditure plans aligned to the objectives and budget allocation of the Ministry / Department / Organization, in accordance with the rules and guidelines of the Ministry of Finance, while also forecasting future expenditures. Manages and monitors the Division/ Department’s budget, accounts & expenditure, while promoting financial prudence within the Department to enhance its overall efficiencies. Develops proficiency in handling PFMS (Public Financial Management System).",
+    "sub_theme": "Budget Formulation & Implementation",
+    "sub_theme_description": "Demonstrates the ability to forecast and prepare budget for Division / Department / Ministry / Organization, for specified period, aligned to the guidelines and standards formulated by Ministry of Finance."
+  },
+  {
+    "type": "Functional",
+    "theme": "Financial Management",
+    "theme_description": "Formulates budget and expenditure plans aligned to the objectives and budget allocation of the Ministry / Department / Organization, in accordance with the rules and guidelines of the Ministry of Finance, while also forecasting future expenditures. Manages and monitors the Division/ Department’s budget, accounts & expenditure, while promoting financial prudence within the Department to enhance its overall efficiencies. Develops proficiency in handling PFMS (Public Financial Management System).",
+    "sub_theme": "Expenditure Management",
+    "sub_theme_description": "Demonstrates the ability to adopt internal control mechanisms for efficient & effective financial operations as well as identify potential threats & opportunities for the Ministry / Department / Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Financial Management",
+    "theme_description": "Formulates budget and expenditure plans aligned to the objectives and budget allocation of the Ministry / Department / Organization, in accordance with the rules and guidelines of the Ministry of Finance, while also forecasting future expenditures. Manages and monitors the Division/ Department’s budget, accounts & expenditure, while promoting financial prudence within the Department to enhance its overall efficiencies. Develops proficiency in handling PFMS (Public Financial Management System).",
+    "sub_theme": "Government accounts",
+    "sub_theme_description": "Prepares and presents accounts as per Government Accounting Rules, 1990; Accounting Rules for Treasuries; and Account Code Volume III and classify transactions in Government Accounts. Ensures that budget heads adhere to the classification rules and other guidelines of GFR 2017 and its relevant amendments."
+  },
+  {
+    "type": "Functional",
+    "theme": "Financial Management",
+    "theme_description": "Formulates budget and expenditure plans aligned to the objectives and budget allocation of the Ministry / Department / Organization, in accordance with the rules and guidelines of the Ministry of Finance, while also forecasting future expenditures. Manages and monitors the Division/ Department’s budget, accounts & expenditure, while promoting financial prudence within the Department to enhance its overall efficiencies. Develops proficiency in handling PFMS (Public Financial Management System).",
+    "sub_theme": "PFMS Portal Management",
+    "sub_theme_description": "Utilizes the Public Financial Management System (PFMS) to enrol implementing agencies and recipients, analyse various administrative reports (e.g., operational, performance, daily transaction reports), perform accounting, reconciliation, and audit trail, and monitor expenses, programs, and grants relevant to the Ministry / Department / Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Financial Management",
+    "theme_description": "Formulates budget and expenditure plans aligned to the objectives and budget allocation of the Ministry / Department / Organization, in accordance with the rules and guidelines of the Ministry of Finance, while also forecasting future expenditures. Manages and monitors the Division/ Department’s budget, accounts & expenditure, while promoting financial prudence within the Department to enhance its overall efficiencies. Develops proficiency in handling PFMS (Public Financial Management System).",
+    "sub_theme": "Financial Management",
+    "sub_theme_description": ""
+  },
+  {
+    "type": "Functional",
+    "theme": "Digital Fluency",
+    "theme_description": "Understands, identifies, implements, and utilizes digital tools for accurate, speedy, and effective delivery for superior visualization and decision making at different levels of the organization. Leverages digital technologies and platforms to collaborate effectively and efficiently with multiple stakeholders.",
+    "sub_theme": "Digital Tools ( MS office, Excel, PPT & AI tools) & Platforms",
+    "sub_theme_description": "Utilizes digital tools, systems, platforms, Microsoft Office, and software for promoting e-Governance both inter- and intra-departmentally within the Ministry’s ecosystem. Demonstrates vigilance in safeguarding data and sensitive information from potential risks and unauthorized access, including inspection, modification, recording, disruption, or destruction by internal or external individuals/agencies."
+  },
+  {
+    "type": "Functional",
+    "theme": "Digital Fluency",
+    "theme_description": "Understands, identifies, implements, and utilizes digital tools for accurate, speedy, and effective delivery for superior visualization and decision making at different levels of the organization. Leverages digital technologies and platforms to collaborate effectively and efficiently with multiple stakeholders.",
+    "sub_theme": "Digital Service Design",
+    "sub_theme_description": "Develops and executes services with a citizen- centric approach, leveraging efficient and effective touchpoints, involving end-users in iterative development, assessment, and utilizing digital technologies for periodic enhancements based on feedback and learnings. Proactively manages change by mitigating risks associated with digital technology, navigating barriers in digital transformation, and ensuring sustainability within the government."
+  },
+  {
+    "type": "Functional",
+    "theme": "Data Analytics",
+    "theme_description": "Collects, compiles, and assesses data, information, and knowledge resources in appropriate formats to enable interpretation and analysis for evidence- based decision-making. Scrutinizes data and reports with a keen eye for detail, evaluates their accuracy, relevance, trends, and anomalies, extracts insights, and contextualizes and critically analyses key points to develop data-driven strategic proposals and decisions while being mindful of prescribed rules & processes of data-handling within the government.",
+    "sub_theme": "Data Management",
+    "sub_theme_description": "Demonstrates the ability to collect and organize data, ensure data quality through data cleansing, protect data, store it, and transform it into usable and appropriate formats for warehousing, analyzing, and decision- making purposes."
+  },
+  {
+    "type": "Functional",
+    "theme": "Data Analytics",
+    "theme_description": "Collects, compiles, and assesses data, information, and knowledge resources in appropriate formats to enable interpretation and analysis for evidence- based decision-making. Scrutinizes data and reports with a keen eye for detail, evaluates their accuracy, relevance, trends, and anomalies, extracts insights, and contextualizes and critically analyses key points to develop data-driven strategic proposals and decisions while being mindful of prescribed rules & processes of data-handling within the government.",
+    "sub_theme": "Data Analysis & Visualization",
+    "sub_theme_description": "Represents data through use of common graphics, such as charts, plots, infographics, and even animations for effective decision making through identification of patterns, trends, and correlations."
+  },
+  {
+    "type": "Functional",
+    "theme": "Data Analytics",
+    "theme_description": "Collects, compiles, and assesses data, information, and knowledge resources in appropriate formats to enable interpretation and analysis for evidence- based decision-making. Scrutinizes data and reports with a keen eye for detail, evaluates their accuracy, relevance, trends, and anomalies, extracts insights, and contextualizes and critically analyses key points to develop data-driven strategic proposals and decisions while being mindful of prescribed rules & processes of data-handling within the government.",
+    "sub_theme": "Data led Decision making",
+    "sub_theme_description": "Utilizes data analytics to extract insights, present compelling perspectives, and make strategic decisions for the efficient disposal of business, improved citizen experience, and streamlining operations to fulfil the Department’s mandate."
+  },
+  {
+    "type": "Functional",
+    "theme": "Data Analytics",
+    "theme_description": "Collects, compiles, and assesses data, information, and knowledge resources in appropriate formats to enable interpretation and analysis for evidence- based decision-making. Scrutinizes data and reports with a keen eye for detail, evaluates their accuracy, relevance, trends, and anomalies, extracts insights, and contextualizes and critically analyses key points to develop data-driven strategic proposals and decisions while being mindful of prescribed rules & processes of data-handling within the government.",
+    "sub_theme": "Data Use and Governance",
+    "sub_theme_description": "Utilizes data based on prescribed rules, processes, and role delegations. Drives implementation of rules, policies, and procedures around data management to ensure its accuracy, consistency, security, and legality through focus on data protection, data privacy, data quality management, and regulatory compliance."
+  },
+  {
+    "type": "Functional",
+    "theme": "Data Analytics",
+    "theme_description": "Collects, compiles, and assesses data, information, and knowledge resources in appropriate formats to enable interpretation and analysis for evidence- based decision-making. Scrutinizes data and reports with a keen eye for detail, evaluates their accuracy, relevance, trends, and anomalies, extracts insights, and contextualizes and critically analyses key points to develop data-driven strategic proposals and decisions while being mindful of prescribed rules & processes of data-handling within the government.",
+    "sub_theme": "Data Analytics",
+    "sub_theme_description": ""
+  },
+  {
+    "type": "Functional",
+    "theme": "Establishment & HR",
+    "theme_description": "Demonstrates expertise in managing various processes and procedures related to establishment and human resource management, including manpower planning for efficient and optimal staffing, as well as managing service and personnel matters such as holding DPCs, managing promotions, pay fixation, allowances, transfers, postings, deputations, resignations, retirement, pension papers, employee grievances, reservations for various cadres, grades, and groups of services, and preventing sexual harassment within the Department or Ministry. Recognizes the accountability to provide prompt, accurate, and concise responses to employee queries by referring comprehensively to various FRSR, related rules, acts, policies, executive orders, etc., to satisfy government employees and mitigate factors that could lead to grievances or administrative tribunal cases.",
+    "sub_theme": "Handling Establishment Matters",
+    "sub_theme_description": "Demonstrates excellence in handling establishment matters through understanding extent and applicability of relevant rules, regulations, policies, for various establishment matters like holding DPCs (Departmental Promotion Committee), promotions, pay –fixation, transfer, posting, deputation, resignation, retirement, pension papers, employee grievances etc. to mitigate any potential grievance /complaints rising due to dissatisfaction of employees / staff. Involves setting new benchmarks and incentivizing exceptional performance of the employees. Conducts timely assessing current and future manpower needs, such as officers, supporting staff, and MTS, in the Ministry/Department. Manages employee grievances, providing prompt, clear, concise, and fact/rule-based responses to minimize administrative tribunal cases."
+  },
+  {
+    "type": "Functional",
+    "theme": "Establishment & HR",
+    "theme_description": "Demonstrates expertise in managing various processes and procedures related to establishment and human resource management, including manpower planning for efficient and optimal staffing, as well as managing service and personnel matters such as holding DPCs, managing promotions, pay fixation, allowances, transfers, postings, deputations, resignations, retirement, pension papers, employee grievances, reservations for various cadres, grades, and groups of services, and preventing sexual harassment within the Department or Ministry. Recognizes the accountability to provide prompt, accurate, and concise responses to employee queries by referring comprehensively to various FRSR, related rules, acts, policies, executive orders, etc., to satisfy government employees and mitigate factors that could lead to grievances or administrative tribunal cases.",
+    "sub_theme": "Handling matters of Reservations",
+    "sub_theme_description": "Demonstrates ability to manage appointments and promotions through various modes, as well as providing applicable relaxations or concessions in fees, in accordance with extant instructions for reservations provided to Scheduled Castes (SCs), Scheduled Tribes (STs), Other Backward Classes (OBCs), Persons with Disabilities, Ex-servicemen (re-employment in central services and posts), Economically Weaker Sections (EWSs), and exemptions, as amended from time to time, within the Ministry / Department / Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Establishment & HR",
+    "theme_description": "Demonstrates expertise in managing various processes and procedures related to establishment and human resource management, including manpower planning for efficient and optimal staffing, as well as managing service and personnel matters such as holding DPCs, managing promotions, pay fixation, allowances, transfers, postings, deputations, resignations, retirement, pension papers, employee grievances, reservations for various cadres, grades, and groups of services, and preventing sexual harassment within the Department or Ministry. Recognizes the accountability to provide prompt, accurate, and concise responses to employee queries by referring comprehensively to various FRSR, related rules, acts, policies, executive orders, etc., to satisfy government employees and mitigate factors that could lead to grievances or administrative tribunal cases.",
+    "sub_theme": "Handling Fundamental Rules /Supplementary Rules",
+    "sub_theme_description": "Demonstrates understanding of the extent and application of Fundamental Rules and Supplementary Rules, including their definitions, relevance, and relation to other rules, guiding principles, general conditions of service, joining procedures, transfers, pay, allowances, delegations, pension, and associated O.M.s."
+  },
+  {
+    "type": "Functional",
+    "theme": "Establishment & HR",
+    "theme_description": "Demonstrates expertise in managing various processes and procedures related to establishment and human resource management, including manpower planning for efficient and optimal staffing, as well as managing service and personnel matters such as holding DPCs, managing promotions, pay fixation, allowances, transfers, postings, deputations, resignations, retirement, pension papers, employee grievances, reservations for various cadres, grades, and groups of services, and preventing sexual harassment within the Department or Ministry. Recognizes the accountability to provide prompt, accurate, and concise responses to employee queries by referring comprehensively to various FRSR, related rules, acts, policies, executive orders, etc., to satisfy government employees and mitigate factors that could lead to grievances or administrative tribunal cases.",
+    "sub_theme": "Handling matters of Prevention of Sexual Harassment Policy",
+    "sub_theme_description": "Demonstrates understanding and knowledge of the clauses, processes, and procedures outlined in The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013. Takes appropriate measures to address any violation of the policy for promoting a respectful and inclusive work environment. Ensure Internal Complaints Committee formulation."
+  },
+  {
+    "type": "Functional",
+    "theme": "Establishment & HR",
+    "theme_description": "Demonstrates expertise in managing various processes and procedures related to establishment and human resource management, including manpower planning for efficient and optimal staffing, as well as managing service and personnel matters such as holding DPCs, managing promotions, pay fixation, allowances, transfers, postings, deputations, resignations, retirement, pension papers, employee grievances, reservations for various cadres, grades, and groups of services, and preventing sexual harassment within the Department or Ministry. Recognizes the accountability to provide prompt, accurate, and concise responses to employee queries by referring comprehensively to various FRSR, related rules, acts, policies, executive orders, etc., to satisfy government employees and mitigate factors that could lead to grievances or administrative tribunal cases.",
+    "sub_theme": "Handling APAR matters",
+    "sub_theme_description": "Demonstrates understanding of Annual Performance Assessment Report process for each Government employee, for enabling evaluation of performance and determining their suitability for career progression opportunities such as confirmation, promotion, selection for deputation, or selection for foreign assignments."
+  },
+  {
+    "type": "Functional",
+    "theme": "Office Management",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "E-Office",
+    "sub_theme_description": "Utilizes the digital workplace designed to enable simplified, responsive, effective, and transparent working of all government offices, promotes collaboration, and facilitates effective knowledge sharing in the ecosystem."
+  },
+  {
+    "type": "Functional",
+    "theme": "Office Management",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "File/DAK Management",
+    "sub_theme_description": "Maintains files, organises & tracks file movement, arranges important papers, adds references, and handles records in a way that is appropriate for the department to facilitate day-to-day business disposal."
+  },
+  {
+    "type": "Functional",
+    "theme": "Office Management",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "Office Procedures",
+    "sub_theme_description": "Understands the Organizational Structure of Government of India, including the roles and responsibilities of its functionaries and functions, as well as the decision-making process. Additionally, proficiency in file management, records management, knowledge management, noting and drafting, case disposition, handling grievances and VIP references, addressing Parliament assurances, managing court cases and pending matters, ensuring the security of official documents and information, e-Office digitization, and conducting periodic inspections."
+  },
+  {
+    "type": "Functional",
+    "theme": "Office Management",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "Noting & Drafting of official Communications",
+    "sub_theme_description": "Prepares the brief essence of a proposal or a paper under consideration with correct facts, statistics, and ruling position, etc., in the file to make an important final decision by a government officer on the file. Ability to prepare rough draft of an official communication to be issued after approval by the officer concerned."
+  },
+  {
+    "type": "Functional",
+    "theme": "Office Management",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "Technical Proposal / Report writing",
+    "sub_theme_description": "Creates reports / proposals clearly stating objective, need, supporting facts, various parameters, observations, conclusions, and recommendations depending on the requirement of the Department / Ministry / Mission etc."
+  },
+  {
+    "type": "Functional",
+    "theme": "Handling Parliamentary Matters",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "Submission of briefs, supply of information",
+    "sub_theme_description": "Demonstrates the ability to prepare responses to parliamentary questions for the Minister through suitable data analysis, coordination, and articulation of responses to parliamentary questions."
+  },
+  {
+    "type": "Functional",
+    "theme": "Handling Parliamentary Matters",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "Maintaining records of parliamentary matters",
+    "sub_theme_description": "Demonstrates the ability to ensure maintenance of departmental records of parliamentary proceedings for ready reference including questions, discussions, notices etc. in accordance with the established guidelines and standards."
+  },
+  {
+    "type": "Functional",
+    "theme": "Handling RTI Matters",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "RTI Responsiveness",
+    "sub_theme_description": "Understands the request /query/ complaint/appeal and drafts responses by retrieving relevant information available in Section / Division and ensures timely disposal of the requests through PIO (Public Information Officer)."
+  },
+  {
+    "type": "Functional",
+    "theme": "Handling RTI Matters",
+    "theme_description": "Administration and enforcement of compliance in accordance with the most recent “Central Secretariat Manual of Office Procedures” (CSMOP) to ensure that the Section, Division, or Department operates effectively and efficiently. Understands the issues and analyses precedence, facts, ruling position etc., and records remarks and proposes actions for enabling competent authority to review and make decisions for timely disposal. Concisely drafts written correspondence such as O.M., memos, notices, reports, letters, e-mails etc. to be issued on approval of competent authority. Articulates all kinds of communications towards administration, policy administration, implementation, advisory, reporting, proposal writing and any other documentation towards handling departmental matter with focus on good governance.",
+    "sub_theme": "RTI Records Management",
+    "sub_theme_description": "Maintains departmental records of RTIs for effective and comprehensive public disclosure of information of the Department."
+  },
+  {
+    "type": "Functional",
+    "theme": "Grievance Redressal",
+    "theme_description": "Demonstrates the ability to address grievances promptly and efficiently while prioritizing transparency and citizen-centricity. Utilizes the Centralised Public Grievance Redress and Monitoring System (CPGRAMS) to manage grievance redressal, ensuring access of the digital systems to all citizens, tracking their status, and obtaining resolutions in accordance with established guidelines and procedures. Measures the effectiveness and efficiency of the Department/Ministry’s administration by analysing data and providing feedback for enhancing processes and procedures.",
+    "sub_theme": "CPGRAMS Portal Management",
+    "sub_theme_description": "Demonstrates the ability to monitor reports & dashboards of grievances received, pending for closure, and resolved cases as per the requirement of Ministries/ Departments/Organizations for driving effective resolution for pending grievances."
+  },
+  {
+    "type": "Functional",
+    "theme": "Grievance Redressal",
+    "theme_description": "Demonstrates the ability to address grievances promptly and efficiently while prioritizing transparency and citizen-centricity. Utilizes the Centralised Public Grievance Redress and Monitoring System (CPGRAMS) to manage grievance redressal, ensuring access of the digital systems to all citizens, tracking their status, and obtaining resolutions in accordance with established guidelines and procedures. Measures the effectiveness and efficiency of the Department/Ministry’s administration by analysing data and providing feedback for enhancing processes and procedures.",
+    "sub_theme": "Public Grievance Handling",
+    "sub_theme_description": "Collaborates with multiple stakeholders to obtain inputs and context for formulating responses to grievances received and ensure prompt resolution of complaints / VIP references."
+  },
+  {
+    "type": "Functional",
+    "theme": "Vigilance Administration",
+    "theme_description": "Demonstrates a thorough understanding and practical application of administrative vigilance and disciplinary procedures, which serve as safeguards to ensure the proper implementation of government processes, policies, and rules, while identifying instances of breach by government employees who may abuse their authority or power of approval for personal gain. Facilitates in building a positive perception and image of the government and its policies, both within the government ecosystem, among citizens, and globally. Adheres to guidelines on implementation of strict anti-corruption measures, vigilant oversight, and a commitment to integrity in public service.",
+    "sub_theme": "Conduct Rules",
+    "sub_theme_description": "Understands the extent, applicability, intent, and content of the Central Civil Services (Conduct) Rules, 1964 (updated) for Government servants with a view to maintain integrity in public services by taking required action to promote its adherence."
+  },
+  {
+    "type": "Functional",
+    "theme": "Vigilance Administration",
+    "theme_description": "Demonstrates a thorough understanding and practical application of administrative vigilance and disciplinary procedures, which serve as safeguards to ensure the proper implementation of government processes, policies, and rules, while identifying instances of breach by government employees who may abuse their authority or power of approval for personal gain. Facilitates in building a positive perception and image of the government and its policies, both within the government ecosystem, among citizens, and globally. Adheres to guidelines on implementation of strict anti-corruption measures, vigilant oversight, and a commitment to integrity in public service.",
+    "sub_theme": "Provisions on Suspension",
+    "sub_theme_description": "Displays understanding of extent, applicability and intent of the CCS (CCA)(Classification, control & Appeal) Rules, 1965-Central Civil Services, Group ‘A’, Group ‘B’, ‘C’,‘D’ (classification of service, posts), AIS (Discipline & Appeal) Rules, 1969 for officers from All India Services, Central Civil Services (Classification, Control and Appeal (CCA)) Rules, 1965 (rule 10); FR 53 & 54 (b), in relation to provisions and circumstances under which a Government servant may be placed under suspension in the Ministry/Department. Ensures timely payment of subsistence allowance in cases of suspension."
+  },
+  {
+    "type": "Functional",
+    "theme": "Vigilance Administration",
+    "theme_description": "Demonstrates a thorough understanding and practical application of administrative vigilance and disciplinary procedures, which serve as safeguards to ensure the proper implementation of government processes, policies, and rules, while identifying instances of breach by government employees who may abuse their authority or power of approval for personal gain. Facilitates in building a positive perception and image of the government and its policies, both within the government ecosystem, among citizens, and globally. Adheres to guidelines on implementation of strict anti-corruption measures, vigilant oversight, and a commitment to integrity in public service.",
+    "sub_theme": "Proposal preparation for disciplinary proceedings",
+    "sub_theme_description": "Demonstrates prudence and clarity in comprehending and implementing The Public Servants Inquiries ACT, Action on complaints forwarded by the Administrative Ministry / Department, Disposal of complaints of non-vigilance nature, Action on anonymous/ pseudonymous complaints, procedure for dealing with complaints and engagement of retired officials to conduct Investigation and perform other vigilance functions."
+  },
+  {
+    "type": "Functional",
+    "theme": "Vigilance Administration",
+    "theme_description": "Demonstrates a thorough understanding and practical application of administrative vigilance and disciplinary procedures, which serve as safeguards to ensure the proper implementation of government processes, policies, and rules, while identifying instances of breach by government employees who may abuse their authority or power of approval for personal gain. Facilitates in building a positive perception and image of the government and its policies, both within the government ecosystem, among citizens, and globally. Adheres to guidelines on implementation of strict anti-corruption measures, vigilant oversight, and a commitment to integrity in public service.",
+    "sub_theme": "Handling prosecution cases",
+    "sub_theme_description": "Demonstrates ability and understanding to support investigation processes aptly and promptly, handling procedures for prosecution cases, and imposing minor and major penalties."
+  },
+  {
+    "type": "Functional",
+    "theme": "Vigilance Administration",
+    "theme_description": "Demonstrates a thorough understanding and practical application of administrative vigilance and disciplinary procedures, which serve as safeguards to ensure the proper implementation of government processes, policies, and rules, while identifying instances of breach by government employees who may abuse their authority or power of approval for personal gain. Facilitates in building a positive perception and image of the government and its policies, both within the government ecosystem, among citizens, and globally. Adheres to guidelines on implementation of strict anti-corruption measures, vigilant oversight, and a commitment to integrity in public service.",
+    "sub_theme": "Preventive Vigilance",
+    "sub_theme_description": "Fosters an environment of transparency, integrity, and accountability and identify acts of unethical behavioural, fraud and corruption in the ecosystem. Adopts suitable checks and balances to improve systems / procedures to eliminate corruption / discretion in the processes and procedures. Assists in systemic improvements and setting up of effective systems for curbing any potential avenues for corruption in the Ministry / Department / Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Litigation Management",
+    "theme_description": "Provides support during legal proceedings pertaining to the Union of India by demonstrating legal know-how and engaging law officers or approved panel counsels for a range of court cases. Keeps track of and manages information and updates regarding multiple cases on the LIMBS portal to ensure timely and necessary actions.",
+    "sub_theme": "Legal Know-How",
+    "sub_theme_description": "Manages various legal tasks such as preparing and analyzing paragraph-wise comments on writs, drafting counter replies or petitions, arranging files for consideration, identifying different case and petition types, working with advance notice of grievances, presenting a comprehensive legal position of the government in affidavit form, and briefing government counsel."
+  },
+  {
+    "type": "Functional",
+    "theme": "Litigation Management",
+    "theme_description": "Provides support during legal proceedings pertaining to the Union of India by demonstrating legal know-how and engaging law officers or approved panel counsels for a range of court cases. Keeps track of and manages information and updates regarding multiple cases on the LIMBS portal to ensure timely and necessary actions.",
+    "sub_theme": "Court case management",
+    "sub_theme_description": "Oversees execution of legal procedures in accordance with the National Litigation Policy, as well as to follow instructions and stay updated on legal matters from various competent authorities such as CAT, AMRD, AMRCD, and PIMS. Demonstrates understanding of pre-litigation procedures and adept at effectively managing court cases, notices, stay orders, appellate court directions, and pending appeals, as well as ensuring diligent compliance with conditional implementation."
+  },
+  {
+    "type": "Functional",
+    "theme": "Litigation Management",
+    "theme_description": "Provides support during legal proceedings pertaining to the Union of India by demonstrating legal know-how and engaging law officers or approved panel counsels for a range of court cases. Keeps track of and manages information and updates regarding multiple cases on the LIMBS portal to ensure timely and necessary actions.",
+    "sub_theme": "LIMBS Portal Management",
+    "sub_theme_description": "Leverages LIMBS portal for registering on the platform, working as a local officer or nodal admin, entering new cases and editing existing ones, keeping track of hearing dates, and generating reports from MIS reports, dashboard, and other related details to effectively manage and monitor court cases on the portal."
+  },
+  {
+    "type": "Functional",
+    "theme": "Information & Communication Management",
+    "theme_description": "Disseminates information through various media channels on behalf of the government to increase public awareness and advocacy of government policies and schemes and addresses any misconceptions using a range of media vehicles such as government websites. Facilitates in generating positive media coverage, building relationships with key stakeholders, managing conflicts or criticisms, and improving public understanding of a Ministry/Department/Organization and its objectives. Utilizes social media to communicate official government policies and information to the public, with a focus on creating an informed citizenry through a people-centric communication approach.",
+    "sub_theme": "Dissemination of Information",
+    "sub_theme_description": "Disseminates strategic communications, crisis communication, information and awareness about government policies and schemes to the citizens of the country, making pertinent information publicly, freely, and directly accessible, in understandable and comprehensible form and format."
+  },
+  {
+    "type": "Functional",
+    "theme": "Information & Communication Management",
+    "theme_description": "Disseminates information through various media channels on behalf of the government to increase public awareness and advocacy of government policies and schemes and addresses any misconceptions using a range of media vehicles such as government websites. Facilitates in generating positive media coverage, building relationships with key stakeholders, managing conflicts or criticisms, and improving public understanding of a Ministry/Department/Organization and its objectives. Utilizes social media to communicate official government policies and information to the public, with a focus on creating an informed citizenry through a people-centric communication approach.",
+    "sub_theme": "Handling social media",
+    "sub_theme_description": "Monitors and manages information and narratives on social media platforms, creates and publishes content, engages with and responds to the community of followers/ customers, and conducts impact analysis and reporting."
+  },
+  {
+    "type": "Functional",
+    "theme": "Information & Communication Management",
+    "theme_description": "Disseminates information through various media channels on behalf of the government to increase public awareness and advocacy of government policies and schemes and addresses any misconceptions using a range of media vehicles such as government websites. Facilitates in generating positive media coverage, building relationships with key stakeholders, managing conflicts or criticisms, and improving public understanding of a Ministry/Department/Organization and its objectives. Utilizes social media to communicate official government policies and information to the public, with a focus on creating an informed citizenry through a people-centric communication approach.",
+    "sub_theme": "Management of information on official websites",
+    "sub_theme_description": "Ensures compliance with the ‘Guidelines for Indian Government Websites’ (GIGW) in maintaining official websites of all Central Government Ministries, Departments, Offices, and CPSEs. This includes keeping the data and information updated and providing user- friendly interfaces and transactions that meet the high expectations of citizens and customers with respect to security, privacy of personal data, and accuracy of information."
+  },
+  {
+    "type": "Functional",
+    "theme": "Change Management",
+    "theme_description": "Adopts a structured approach for the effective initiation and implementation of multi-level, multi-faceted changes in the government ecosystem, with the aim of achieving a prescribed mandate as part of a Govt. program, scheme, project, or government initiative. Drives preparedness to unlearn and relearn, communicates the need for change to gain stakeholder acceptance and shared commitment, and drives change from the current state to the desired future state.",
+    "sub_theme": "Change Readiness",
+    "sub_theme_description": "Communicates effectively, enabling to comprehend the cause and purpose of proposed change, the vision of the change, and the anticipated impact (such as increased efficiency in processes, transparency, speed, accuracy, etc.) for the beneficiaries (including government employees, staff, citizens, etc.), in order to foster willingness and preparedness to adopt the change."
+  },
+  {
+    "type": "Functional",
+    "theme": "Change Management",
+    "theme_description": "Adopts a structured approach for the effective initiation and implementation of multi-level, multi-faceted changes in the government ecosystem, with the aim of achieving a prescribed mandate as part of a Govt. program, scheme, project, or government initiative. Drives preparedness to unlearn and relearn, communicates the need for change to gain stakeholder acceptance and shared commitment, and drives change from the current state to the desired future state.",
+    "sub_theme": "Change Implementation",
+    "sub_theme_description": "Demonstrates the ability to define objectives, allocate resources, assess Ministerial / Departmental / Organizational capacity (such as workforce, technology, infrastructure, etc.), establishes accountability mechanisms and ensures creation and implementation of monitoring and evaluation frameworks for assessing adoption of change. Develops and drives an effective implementation plan by breaking away from existing patterns and adopting new ones, and ensures that the change is sustained to achieve the expected outcomes and associated benefits."
+  },
+  {
+    "type": "Functional",
+    "theme": "Change Management",
+    "theme_description": "Adopts a structured approach for the effective initiation and implementation of multi-level, multi-faceted changes in the government ecosystem, with the aim of achieving a prescribed mandate as part of a Govt. program, scheme, project, or government initiative. Drives preparedness to unlearn and relearn, communicates the need for change to gain stakeholder acceptance and shared commitment, and drives change from the current state to the desired future state.",
+    "sub_theme": "Change Impact Assessment",
+    "sub_theme_description": ""
+  },
+  {
+    "type": "Functional",
+    "theme": "Change Management",
+    "theme_description": "Adopts a structured approach for the effective initiation and implementation of multi-level, multi-faceted changes in the government ecosystem, with the aim of achieving a prescribed mandate as part of a Govt. program, scheme, project, or government initiative. Drives preparedness to unlearn and relearn, communicates the need for change to gain stakeholder acceptance and shared commitment, and drives change from the current state to the desired future state.",
+    "sub_theme": "Accepting Change",
+    "sub_theme_description": "Drives willingness and acceptance to change and manages resistance to change at the Ministerial, Departmental or Organizational level. Identifies practical challenges associated with the said change, stays open to new opportunities, and maintains a proactive and positive mindset toward achieving goals."
+  },
+  {
+    "type": "Functional",
+    "theme": "Administration Matters",
+    "theme_description": "Demonstrates the ability to handle various administrative processes and procedures relating to Allowances & Reimbursement, Leave and Travel related matters. miscellaneous matters (Car, Residence, Personal Staff etc.), Official Language duty and ensures implementation across the Department / Ministry.",
+    "sub_theme": "Handling Allowances & Reimbursement",
+    "sub_theme_description": "Demonstrates understanding and ability to apply the relevant rules, regulations and guidelines for processing of Allowances and Reimbursements related matters in the Ministry, Department or Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Administration Matters",
+    "theme_description": "Demonstrates the ability to handle various administrative processes and procedures relating to Allowances & Reimbursement, Leave and Travel related matters. miscellaneous matters (Car, Residence, Personal Staff etc.), Official Language duty and ensures implementation across the Department / Ministry.",
+    "sub_theme": "Handling Leave and Travel",
+    "sub_theme_description": "Demonstrates understanding and ability to apply the relevant rules, regulations and guidelines for processing of Leave and Travel related matters in the Ministry, Department or Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Administration Matters",
+    "theme_description": "Demonstrates the ability to handle various administrative processes and procedures relating to Allowances & Reimbursement, Leave and Travel related matters. miscellaneous matters (Car, Residence, Personal Staff etc.), Official Language duty and ensures implementation across the Department / Ministry.",
+    "sub_theme": "Handling Miscellaneous Matters (Car, Residence, Personal Staff etc.)",
+    "sub_theme_description": "Demonstrates understanding and ability to apply diverse provisions, methodologies, and protocols for overseeing miscellaneous affairs including Telephone, Car, Residence, Personal Staff etc in the Ministry, Department or Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Administration Matters",
+    "theme_description": "Demonstrates the ability to handle various administrative processes and procedures relating to Allowances & Reimbursement, Leave and Travel related matters. miscellaneous matters (Car, Residence, Personal Staff etc.), Official Language duty and ensures implementation across the Department / Ministry.",
+    "sub_theme": "Implementing Official Language",
+    "sub_theme_description": "Carries out all official communication within central and state government offices in accordance with the Official Languages Act, 1963, in Hindi. Promotes the usage of the Official Language in the day-to-day work in the Ministry, Department or Organization."
+  },
+  {
+    "type": "Functional",
+    "theme": "Data Protection",
+    "theme_description": "",
+    "sub_theme": "Data Use and Governance",
+    "sub_theme_description": ""
+  }
+]
