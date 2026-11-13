@@ -1,0 +1,528 @@
+"""
+Reading course content off disk.
+
+Course folders are nested and the exporter writes placeholder files when it finds
+nothing, so naive reading produces empty or -- worse -- misleading input:
+
+    do_<courseid>/
+    |-- metadata.json
+    |-- english_subtitles.vtt   <- placeholder in 3707/3707 non-SCORM courses
+    |-- video.txt               <- "No video URLs found"
+    |-- pdf_links.txt
+    `-- do_<moduleid>/
+        |-- <Module Name>.pdf           <- PDFs live here, depth 2
+        `-- <Module Name>/
+            |-- metadata.json
+            `-- english_subtitles.vtt   <- the real transcript
+
+The course-root VTT is a sentinel in every non-SCORM course measured, so reading
+only the course root yields no transcript at all and injects the literal string
+"// No English subtitles found" as if it were content.
+"""
+
+from __future__ import annotations
+
+import asyncio
+import json
+import logging
+import os
+import re
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
+
+logger = logging.getLogger("course-regenerator.course_io")
+
+VTT_SENTINELS = ("// no english subtitles found",)
+VIDEO_SENTINELS = ("no video urls found",)
+
+CUE_TIME_RE = re.compile(
+    r"(\d{2}):(\d{2}):(\d{2})[.,](\d{3})\s*-->\s*(\d{2}):(\d{2}):(\d{2})[.,](\d{3})"
+)
+
+# Guardrails so one pathological course cannot blow up a prompt. One observed
+# course carries a 290k-char transcript across 32 PDFs.
+MAX_TRANSCRIPT_CHARS = int(os.environ.get("MAX_TRANSCRIPT_CHARS", "400000"))
+MAX_PDF_CHARS = int(os.environ.get("MAX_PDF_CHARS", "200000"))
+MAX_PDFS_PER_COURSE = int(os.environ.get("MAX_PDFS_PER_COURSE", "40"))
+# Rendering PDF pages costs far more than reading a text layer (~30k tokens for a
+# 14.5 MB document vs ~2k for its text) and is slow with it -- one such course took
+# 383s against a ~250s average. So cap how many one course may send, and skip
+# documents too large to be worth it at all: past these limits the token spend and
+# latency outweigh what a scanned or mis-encoded document contributes.
+MAX_NATIVE_PDFS = int(os.environ.get("MAX_NATIVE_PDFS", "3"))
+MAX_NATIVE_PDF_MB = float(os.environ.get("MAX_NATIVE_PDF_MB", "10"))
+MAX_NATIVE_PDF_PAGES = int(os.environ.get("MAX_NATIVE_PDF_PAGES", "50"))
+# v3.6: PDFs are summarised chunk by chunk (pdf_summarizer.py) before the main
+# call, so each document's text is extracted up to this cap rather than sharing
+# MAX_PDF_CHARS with every other document in the course.
+PDF_SUMMARY_MAX_CHARS_PER_DOC = int(os.environ.get("PDF_SUMMARY_MAX_CHARS_PER_DOC", "100000"))
+
+_MUPDF_QUIET = False
+
+
+def is_course_dir(path: Path) -> bool:
+    """
+    A course folder, as opposed to a batch folder or a module folder.
+
+    All three are named `do_*` or sit in the same tree, so name alone cannot tell
+    them apart. The discriminator is that only a course carries metadata.json
+    directly: a batch dir has none, and a module keeps its own one level deeper,
+    at do_<moduleid>/<Module Name>/metadata.json.
+    """
+    return path.is_dir() and path.name.startswith("do_") and (path / "metadata.json").is_file()
+
+
+def find_course_dirs(base: Path) -> List[Path]:
+    """
+    Course folders under `base`, accepting either layout:
+
+        base/do_<id>/...                  (flat, e.g. the shareable input bundle)
+        base/<batch>/do_<id>/...          (as extracted from the batch zips)
+
+    Never descends into a course, so a module is never mistaken for a course --
+    which silently inflated an early manifest from 12 courses to 93.
+    """
+    if not base.is_dir():
+        return []
+    found: List[Path] = []
+    for child in sorted(base.iterdir()):
+        if not child.is_dir():
+            continue
+        if is_course_dir(child):
+            found.append(child)
+        elif not child.name.startswith("do_"):
+            found.extend(c for c in sorted(child.iterdir()) if is_course_dir(c))
+    return found
+
+
+def read_text(path: Path) -> str:
+    """Read a text file, tolerating the mixed encodings in this export."""
+    for enc in ("utf-8", "utf-8-sig", "latin-1"):
+        try:
+            return path.read_text(encoding=enc)
+        except (UnicodeDecodeError, ValueError):
+            continue
+        except OSError:
+            return ""
+    return ""
+
+
+def load_json(path: Path) -> Optional[Dict[str, Any]]:
+    if not path.is_file():
+        return None
+    try:
+        return json.loads(read_text(path))
+    except (json.JSONDecodeError, ValueError):
+        logger.warning("unparseable JSON: %s", path)
+        return None
+
+
+def is_sentinel(text: str, sentinels: tuple = VTT_SENTINELS) -> bool:
+    stripped = (text or "").strip().lower()
+    if not stripped:
+        return True
+    return any(s in stripped for s in sentinels)
+
+
+def vtt_is_real(text: str) -> bool:
+    """A usable VTT must not be a sentinel and must contain a cue timing."""
+    return not is_sentinel(text, VTT_SENTINELS) and "-->" in text
+
+
+def vtt_span_seconds(text: str) -> float:
+    """
+    Duration proxy for one VTT: last cue end minus first cue start.
+
+    Cue timelines do not reliably start at 00:00 (observed a module whose first
+    cue begins at 00:07:30), so an absolute max-end would overstate length.
+    Measured against platform durations this underestimates (median ratio 0.59),
+    so it is only a fallback where no platform duration exists.
+    """
+    starts: List[float] = []
+    ends: List[float] = []
+    for m in CUE_TIME_RE.finditer(text):
+        sh, sm, ss, sms, eh, em, es, ems = (int(g) for g in m.groups())
+        starts.append(sh * 3600 + sm * 60 + ss + sms / 1000)
+        ends.append(eh * 3600 + em * 60 + es + ems / 1000)
+    if not starts:
+        return 0.0
+    return max(0.0, max(ends) - min(starts))
+
+
+def clean_vtt_text(text: str) -> str:
+    """Strip WEBVTT headers, NOTE blocks, cue ids and timings; keep spoken text."""
+    lines: List[str] = []
+    prev = None
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        upper = line.upper()
+        if upper.startswith("WEBVTT") or upper.startswith("NOTE"):
+            continue
+        if "-->" in line or line.isdigit():
+            continue
+        # Auto-generated captions frequently repeat a line verbatim.
+        if line == prev:
+            continue
+        prev = line
+        lines.append(line)
+    return "\n".join(lines)
+
+
+def _module_label(module_dir: Path, course_dir: Path) -> str:
+    meta = load_json(module_dir / "metadata.json") or {}
+    name = str(meta.get("name") or "").strip()
+    if name:
+        return name
+    try:
+        return str(module_dir.relative_to(course_dir))
+    except ValueError:
+        return module_dir.name
+
+
+# Legacy Indic fonts (Krutidev, Chanakya, Shree Lipi and friends) map Devanagari
+# glyphs onto ASCII codepoints, so a PDF using them yields text that *looks* like
+# content but is gibberish: "varjkZ\"Vªh; ;ksx" is Krutidev for
+# "अन्तर्राष्ट्रीय योग". Feeding that to the model is worse than feeding nothing,
+# because it reads as real text. These trigrams are the encoding's fingerprints,
+# taken from confirmed examples in this corpus.
+_LEGACY_FONT_MARKERS = (
+    "ksx", "fnYyh", "Vªh", "vk;", "izk", "jkT", "'kk", "gksE", "iqfL", "fpfd",
+)
+_EN_STOPWORDS = frozenset(
+    "the of and to in a is for on with as by are that be this or from at an it "
+    "was will not have has been which can may their its all any such other more".split()
+)
+
+
+def pdf_text_is_suspect(text: str) -> bool:
+    """
+    True when extracted text is almost certainly a legacy-font mis-encoding.
+
+    Deliberately narrow. A broader "mostly ASCII and few English words" test was
+    measured against this corpus and did not separate cleanly from legitimate
+    tabular and numeric English PDFs, so it would have discarded real content.
+    This requires all three signals together: overwhelmingly ASCII, essentially
+    no English function words, and at least two known legacy-font fingerprints.
+    """
+    printable = [c for c in text if not c.isspace() and c.isprintable()]
+    if len(printable) < 200:
+        return False
+    if sum(ord(c) < 128 for c in printable) / len(printable) < 0.9:
+        return False  # real native script present
+    words = re.findall(r"[A-Za-z]{2,}", text.lower())
+    if len(words) < 40:
+        return False  # too little to judge
+    if sum(w in _EN_STOPWORDS for w in words) / len(words) >= 0.03:
+        return False  # reads as English
+    return sum(m in text for m in _LEGACY_FONT_MARKERS) >= 2
+
+
+def pdf_page_count(pdf_path: Path) -> int:
+    """Page count, or 0 if the PDF cannot be opened."""
+    try:
+        import fitz
+
+        with fitz.open(str(pdf_path)) as doc:
+            return int(doc.page_count)
+    except Exception:
+        return 0
+
+
+def native_pdf_too_big(pdf_path: Path) -> Optional[str]:
+    """
+    Reason this PDF should not be sent to the model, or None if it is fine.
+
+    Both limits matter independently: a small file can still be hundreds of pages,
+    and a short file can still be hundreds of megabytes of scanned images.
+    """
+    try:
+        size_mb = pdf_path.stat().st_size / 1048576
+    except OSError:
+        return "unreadable"
+    if size_mb > MAX_NATIVE_PDF_MB:
+        return f"{size_mb:.0f} MB > {MAX_NATIVE_PDF_MB:.0f} MB limit"
+    pages = pdf_page_count(pdf_path)
+    if pages > MAX_NATIVE_PDF_PAGES:
+        return f"{pages} pages > {MAX_NATIVE_PDF_PAGES} page limit"
+    return None
+
+
+def extract_pdf_text_sync(pdf_path: Path, max_chars: int = MAX_PDF_CHARS) -> str:
+    """Extract text from one PDF with PyMuPDF, stopping at max_chars."""
+    import fitz  # imported lazily so course_io stays importable without PyMuPDF
+
+    # MuPDF writes recoverable complaints straight to stderr from C ("cannot
+    # create appearance stream for Screen annotations", broken colour profiles,
+    # malformed page trees). This corpus triggers thousands of them, which buries
+    # the run log. Extraction still succeeds, so silence them once and rely on the
+    # return value plus our own warning for real failures.
+    global _MUPDF_QUIET
+    if not _MUPDF_QUIET:
+        try:
+            fitz.TOOLS.mupdf_display_errors(False)
+        except Exception:
+            pass
+        _MUPDF_QUIET = True
+
+    parts: List[str] = []
+    total = 0
+    try:
+        with fitz.open(str(pdf_path)) as doc:
+            for page in doc:
+                text = (page.get_text() or "").strip()
+                if not text:
+                    continue
+                parts.append(text)
+                total += len(text)
+                if total >= max_chars:
+                    break
+    except Exception as exc:
+        logger.warning("PDF extraction failed for %s: %s", pdf_path, exc)
+        return ""
+    return "\n\n".join(parts)[:max_chars]
+
+
+async def extract_course_content(course_dir: Path) -> Dict[str, Any]:
+    """
+    Gather everything usable from one course folder.
+
+    Returns transcript text (module-labelled, in stable order), PDF text,
+    reference links, a duration fallback, and an evidence tier.
+    """
+    # ---- transcripts from module subfolders ---------------------------------
+    module_vtts: List[Tuple[str, Path]] = []
+    for vtt_path in sorted(course_dir.rglob("english_subtitles.vtt")):
+        if vtt_path.parent == course_dir:
+            continue  # course-root placeholder
+        module_vtts.append((_module_label(vtt_path.parent, course_dir), vtt_path))
+
+    def _read_transcripts() -> Tuple[str, float, int]:
+        chunks: List[str] = []
+        seconds = 0.0
+        used = 0
+        total = 0
+        for label, path in module_vtts:
+            raw = read_text(path)
+            if not vtt_is_real(raw):
+                continue
+            body = clean_vtt_text(raw)
+            if not body.strip():
+                continue
+            seconds += vtt_span_seconds(raw)
+            used += 1
+            block = f"## Module: {label}\n{body}"
+            if total + len(block) > MAX_TRANSCRIPT_CHARS:
+                chunks.append(block[: max(0, MAX_TRANSCRIPT_CHARS - total)])
+                chunks.append("\n[...remaining modules truncated...]")
+                break
+            chunks.append(block)
+            total += len(block)
+        return "\n\n".join(chunks), seconds, used
+
+    transcript, transcript_seconds, modules_with_transcript = await asyncio.to_thread(
+        _read_transcripts
+    )
+
+    # ---- PDFs (depth 2, siblings of the module dirs) -----------------------
+    # A "<name>.pdf.txt" sidecar is used in place of the PDF when present. The
+    # shareable input bundle ships sidecars instead of the binaries: the PDFs are
+    # 97% of the raw bytes (3.8 GB), and the largest are scanned images that yield
+    # almost no text (one 321 MB / 25-page file gave ~2,900 characters), while
+    # extraction is capped at MAX_PDF_CHARS regardless.
+    pdf_paths = [p for p in sorted(course_dir.rglob("*.pdf")) if p.is_file()]
+    sidecars = [p for p in sorted(course_dir.rglob("*.pdf.txt")) if p.is_file()]
+
+    # Don't read a PDF that already has a sidecar.
+    sidecar_stems = {p.name[: -len(".txt")] for p in sidecars}
+    pdf_paths = [p for p in pdf_paths if p.name not in sidecar_stems]
+
+    documents: List[Tuple[str, Path, bool]] = (
+        [(p.stem, p, False) for p in pdf_paths]
+        + [(Path(p.name[: -len(".pdf.txt")]).name, p, True) for p in sidecars]
+    )
+    documents.sort(key=lambda d: d[0])
+    truncated_pdfs = len(documents) > MAX_PDFS_PER_COURSE
+    documents = documents[:MAX_PDFS_PER_COURSE]
+
+    pdf_text = ""
+    pdf_native: List[Path] = []   # PDFs to hand to the model as files
+    # Per document, for pdf_summarizer: {"label", "text"} or {"label", "native_path"}.
+    pdf_documents: List[Dict[str, Any]] = []
+    if documents:
+        budget = max(1, MAX_PDF_CHARS // len(documents))
+        doc_cap = max(budget, PDF_SUMMARY_MAX_CHARS_PER_DOC)
+        texts = await asyncio.gather(
+            *(
+                asyncio.to_thread(read_text, path)
+                if is_sidecar
+                else asyncio.to_thread(extract_pdf_text_sync, path, doc_cap)
+                for _, path, is_sidecar in documents
+            )
+        )
+        blocks = []
+        for (label, path, is_sidecar), t in zip(documents, texts):
+            usable = bool(t and t.strip())
+            # Hand the PDF to the model directly when its text layer is empty
+            # (scanned: PyMuPDF does no OCR) or mis-encoded (legacy Indic font).
+            # The model renders the pages, so both cases resolve. Only original
+            # PDFs can be re-read this way -- a sidecar has no binary to send.
+            if not is_sidecar and (not usable or pdf_text_is_suspect(t)):
+                reason = "no text layer" if not usable else "legacy-font encoding"
+                too_big = native_pdf_too_big(path)
+                if too_big:
+                    logger.info(
+                        "%s: skipping %s (%s, and %s)",
+                        course_dir.name, path.name, reason, too_big,
+                    )
+                    continue
+                if len(pdf_native) < MAX_NATIVE_PDFS:
+                    pdf_native.append(path)
+                    pdf_documents.append({"label": label, "native_path": path})
+                    logger.info(
+                        "%s: sending %s to the model directly (%s)",
+                        course_dir.name, path.name, reason,
+                    )
+                    continue
+                if not usable:
+                    continue  # nothing to contribute and no capacity to render it
+            if usable:
+                blocks.append(f"## Document: {label}\n{t[:budget]}")
+                pdf_documents.append({"label": label, "text": t[:doc_cap]})
+
+        pdf_text = "\n\n---\n\n".join(blocks)[:MAX_PDF_CHARS]
+        if truncated_pdfs:
+            pdf_text += "\n\n[...additional documents omitted...]"
+
+    # ---- reference links ---------------------------------------------------
+    links: List[str] = []
+    for link_file in sorted(course_dir.rglob("pdf_links.txt")):
+        for line in read_text(link_file).splitlines():
+            m = re.search(r"https?://\S+", line)
+            if m and m.group(0) not in links:
+                links.append(m.group(0))
+    for vf in sorted(course_dir.rglob("video.txt")):
+        raw = read_text(vf)
+        if is_sentinel(raw, VIDEO_SENTINELS):
+            continue
+        for line in raw.splitlines():
+            m = re.search(r"https?://\S+", line)
+            if m and m.group(0) not in links:
+                links.append(m.group(0))
+
+    # ---- module (resource) ids, for the per-video language lookup ----------
+    # Module folders are named after the content id (do_...), the same id the
+    # transcription table is keyed on. Sorted, matching transcript order.
+    module_ids: List[str] = []
+    module_source_langs: Dict[str, str] = {}
+    for d in sorted(p for p in course_dir.rglob("do_*") if p.is_dir()):
+        if d.name in module_source_langs or d.name in module_ids:
+            continue
+        module_ids.append(d.name)
+        meta = load_json(d / "metadata.json") or {}
+        if isinstance(meta, dict) and meta.get("source_language"):
+            module_source_langs[d.name] = str(meta["source_language"])
+
+    # ---- evidence tier -----------------------------------------------------
+    if len(transcript) >= 2000:
+        tier = "transcript"
+    elif pdf_text or pdf_native:
+        # A scanned/legacy-font PDF has no usable text layer but is summarised
+        # from its pages, so it still counts as document content.
+        tier = "pdf_only"
+    elif transcript:
+        tier = "thin_transcript"
+    elif links:
+        tier = "links_only"
+    else:
+        tier = "metadata_only"
+
+    return {
+        "transcript": transcript,
+        "transcript_chars": len(transcript),
+        "transcript_seconds": round(transcript_seconds, 1),
+        "modules_total": len(list(course_dir.glob("do_*"))),
+        "modules_with_transcript": modules_with_transcript,
+        "pdf_text": pdf_text,
+        # Counts documents, not binaries: a bundle ships text sidecars instead of
+        # PDFs, and counting only *.pdf there would report 0 and drop the course
+        # out of the pdf_only tier.
+        "pdf_count": len(documents),
+        "pdf_native": pdf_native,
+        "pdf_documents": pdf_documents,
+        "module_ids": module_ids,
+        # Spoken language per video, saved by api_fetcher.py (--api mode only).
+        "module_source_langs": module_source_langs,
+        "reference_links": links,
+        "evidence_tier": tier,
+    }
+
+
+def load_course_metadata(course_dir: Path) -> Tuple[Optional[Dict[str, Any]], str, Optional[str]]:
+    """
+    Load a course's metadata.json.
+
+    Returns (metadata_for_prompt, raw_text_for_audit, declared_competency_area).
+
+    `competencies_v6` is removed from what the model sees, because the framework
+    requires the competency area to be decided from content rather than from the
+    frequently-wrong declared value. It is returned separately so the run can be
+    audited against it. The v3.4 code did `del metadata['competencies_v6']`,
+    which raised KeyError whenever the key was absent and -- via a bare except --
+    silently discarded the entire metadata record and the audit copy with it.
+    """
+    path = course_dir / "metadata.json"
+    raw = read_text(path)
+    if not raw.strip():
+        return None, "null", None
+
+    try:
+        meta = json.loads(raw)
+    except (json.JSONDecodeError, ValueError):
+        logger.warning("unparseable metadata.json for %s; keeping raw copy", course_dir.name)
+        return None, raw, None
+
+    declared_raw = meta.pop("competencies_v6", None)
+    declared: Optional[str] = None
+    if isinstance(declared_raw, str) and declared_raw.strip():
+        # Stored as one newline-joined token per module, e.g. "Functional\nFunctional".
+        values = {v.strip() for v in declared_raw.split("\n") if v.strip()}
+        if len(values) == 1:
+            declared = values.pop()
+        elif values:
+            declared = "MIXED:" + "+".join(sorted(values))
+
+    meta.pop("scorm", None)  # passed to the model separately as scorm_flag
+    return meta, raw, declared
+
+
+def quick_tier(course_dir: Path) -> Tuple[str, bool]:
+    """
+    (approximate evidence tier, is_scorm) without extracting any PDF text.
+
+    Used by meta_gen.py --sample to spread a sample across tiers cheaply. Same
+    thresholds as extract_course_content, except that any PDF counts as document
+    content (the real run decides whether its text is usable).
+    """
+    meta = load_json(course_dir / "metadata.json") or {}
+    scorm = bool(meta.get("scorm")) if isinstance(meta, dict) else False
+    transcript_chars = 0
+    for vtt_path in course_dir.rglob("english_subtitles.vtt"):
+        if vtt_path.parent == course_dir:
+            continue
+        raw = read_text(vtt_path)
+        if vtt_is_real(raw):
+            transcript_chars += len(clean_vtt_text(raw))
+            if transcript_chars >= 2000:
+                return "transcript", scorm
+    if any(course_dir.rglob("*.pdf")) or any(course_dir.rglob("*.pdf.txt")):
+        return "pdf_only", scorm
+    if transcript_chars:
+        return "thin_transcript", scorm
+    for name in ("pdf_links.txt", "video.txt"):
+        for f in course_dir.rglob(name):
+            raw = read_text(f)
+            if re.search(r"https?://", raw) and not is_sentinel(raw, VIDEO_SENTINELS):
+                return "links_only", scorm
+    return "metadata_only", scorm

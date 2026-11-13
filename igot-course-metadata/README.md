@@ -7,6 +7,9 @@ course's own transcripts and documents.
 This replaces the earlier `v3.4-advanced-extended` implementation. v3.4 is superseded but its output
 is preserved for comparison — see [Version coexistence](#version-coexistence).
 
+Code lives under `src/`: one runnable folder per version in `src/scripts/` (`v3.6/`, `v3.7/`, …) and
+all prompt text in `src/prompts/<version>.yaml`. See [Files](#files).
+
 ---
 
 ## Contents
@@ -52,18 +55,18 @@ iGOT/Karmayogi team, place them anywhere on disk, and point `.env` at them.
 | Vertex AI service-account JSON | Needs the Vertex AI User role on the project. | `GOOGLE_APPLICATION_CREDENTIALS` |
 | Postgres | One writable database for output; optionally a second, read-only, for enrichment. Tables are created automatically. | `DB_DSN`, `ENRICHMENT_DSN` |
 
-Derived artefacts, generated locally and also untracked: `manifest.jsonl` (from `tools/inventory.py`)
-and `data/designation_index.npz` (from `tools/build_designation_index.py`).
+Derived artefacts, generated locally and also untracked: `manifest.jsonl` (from `src/scripts/tools/inventory.py`)
+and `data/designation_index.npz` (from `src/scripts/tools/build_designation_index.py`).
 
 ### Getting all of that as one shareable bundle
 
-If you already have the raw zips, `tools/build_input_bundle.py` assembles everything into a single
+If you already have the raw zips, `src/scripts/tools/build_input_bundle.py` assembles everything into a single
 tidy folder and archives it, so it can be handed to someone offline who just wants to run the script:
 
 ```bash
-python tools/build_input_bundle.py                   # raw: every file verbatim, ~5 GB
-python tools/build_input_bundle.py --mode text-only  # slim: ~180 MB, emailable
-python tools/build_input_bundle.py --limit 50        # small sample bundle
+python src/scripts/tools/build_input_bundle.py                   # raw: every file verbatim, ~5 GB
+python src/scripts/tools/build_input_bundle.py --mode text-only  # slim: ~180 MB, emailable
+python src/scripts/tools/build_input_bundle.py --limit 50        # small sample bundle
 ```
 
 ```
@@ -118,7 +121,7 @@ described under [Output contract](#output-contract) and [Changes from v3.4](#cha
 
 ```bash
 # 1. Dependencies
-pip install asyncpg httpx pymupdf tenacity python-dotenv google-genai numpy
+pip install -r requirements.txt
 
 # 2. Configuration
 cp .env.example .env      # then fill in real values
@@ -130,18 +133,18 @@ unzip course_data/non-scorm-content-11-july.zip -d course_data/extracted/non-sco
 for z in course_data/extracted/non-scorm/_batches/*/*.zip; do
   unzip -q -o "$z" -d "course_data/extracted/non-scorm/_staging/$(basename "$z" .zip)"
 done
-python tools/inventory.py \
+python src/scripts/tools/inventory.py \
   --staging course_data/extracted/non-scorm/_staging \
   --out     course_data/extracted/non-scorm/manifest.jsonl
 
 # 4. Build the designation embedding index (one-off, ~90s)
-python tools/build_designation_index.py
+python src/scripts/tools/build_designation_index.py
 
 # 5. Dry run first — no AI calls, no writes
-python meta_gen.py --limit 10
+python src/scripts/v3.6/meta_gen.py --limit 10
 
 # 6. Then for real
-python meta_gen.py --limit 10 --execute
+python src/scripts/v3.6/meta_gen.py --limit 10 --execute
 ```
 
 **Dry run is the default.** Nothing is called or written until you pass `--execute`. This follows the
@@ -191,7 +194,7 @@ problems are visible in aggregate.
 
 ## The input data, as it actually is
 
-Measured across all 3,707 non-SCORM courses (`tools/inventory.py`):
+Measured across all 3,707 non-SCORM courses (`src/scripts/tools/inventory.py`):
 
 | | |
 |---|---|
@@ -366,7 +369,7 @@ The static system prompt and the masters now form a byte-identical prefix on eve
 per-course content strictly after it. v3.4 interleaved per-course data first, which makes prefix
 caching impossible.
 
-`prompts_v35.compact_competency_master()` is why that prefix stays small: the raw competency master
+`prompts.compact_competency_master()` is why that prefix stays small: the raw competency master
 is ~815 KB, most of it text the model is never asked to reason about. It is reduced to one entry per
 Theme/SubTheme pair carrying only the two definitions the mapping decision is actually made from.
 
@@ -622,14 +625,14 @@ confidence and rationale the prompt asked for.
 ## Operations
 
 ```bash
-python meta_gen.py --limit 10                       # dry run (default)
-python meta_gen.py --limit 10 --execute             # pilot
-python meta_gen.py --execute                        # drain everything, then exit
-python meta_gen.py --execute --serve                # stay resident, poll for work
-python meta_gen.py --course-id do_123 --execute     # one course
-python meta_gen.py --tier metadata_only --execute   # only courses with no content
-python meta_gen.py --execute --force                # redo completed courses
-python meta_gen.py --execute --batch-size 8         # concurrency
+python src/scripts/v3.6/meta_gen.py --limit 10                       # dry run (default)
+python src/scripts/v3.6/meta_gen.py --limit 10 --execute             # pilot
+python src/scripts/v3.6/meta_gen.py --execute                        # drain everything, then exit
+python src/scripts/v3.6/meta_gen.py --execute --serve                # stay resident, poll for work
+python src/scripts/v3.6/meta_gen.py --course-id do_123 --execute     # one course
+python src/scripts/v3.6/meta_gen.py --tier metadata_only --execute   # only courses with no content
+python src/scripts/v3.6/meta_gen.py --execute --force                # redo completed courses
+python src/scripts/v3.6/meta_gen.py --execute --batch-size 8         # concurrency
 ```
 
 ### Parallelism
@@ -647,8 +650,8 @@ instead — see `api_fetcher.py`. Requires `KARMAYOGI_API_KEY` (see `.env.exampl
 `COURSE_MANIFEST` don't apply in this mode.
 
 ```bash
-python meta_gen.py --api --course-id do_123 --execute
-python meta_gen.py --api --course-id-file ids.txt --execute      # one course id per line
+python src/scripts/v3.6/meta_gen.py --api --course-id do_123 --execute
+python src/scripts/v3.6/meta_gen.py --api --course-id-file ids.txt --execute      # one course id per line
 ```
 
 Fetched content (metadata, PDFs, English VTT transcripts) is cached under `API_CACHE_PATH`
@@ -661,8 +664,8 @@ Every run prints averages and a projection for the outstanding queue. For a stan
 whatever has been generated so far:
 
 ```bash
-python tools/estimate.py                  # projects from measured data in the DB
-python tools/estimate.py --concurrency 8
+python src/scripts/tools/estimate.py                  # projects from measured data in the DB
+python src/scripts/tools/estimate.py --concurrency 8
 ```
 
 **Measured on 20 courses** (`gemini-3.1-pro-preview`, `--batch-size 4`):
@@ -720,15 +723,15 @@ courses and exits cleanly.
 
 ### Reviewing the output with non-technical people
 
-`tools/review_report.py` builds a **single self-contained HTML page** — no external assets, no server —
+`src/scripts/tools/review_report.py` builds a **single self-contained HTML page** — no external assets, no server —
 that can be emailed, dropped on a share, or opened straight off disk.
 
 ```bash
-python tools/review_report.py                        # 50 newest courses
-python tools/review_report.py --limit 200 --out qa.html
-python tools/review_report.py --with-issues          # only auto-flagged records
-python tools/review_report.py --tier metadata_only   # weakest-evidence set
-python tools/review_report.py --area Domain
+python src/scripts/tools/review_report.py                        # 50 newest courses
+python src/scripts/tools/review_report.py --limit 200 --out qa.html
+python src/scripts/tools/review_report.py --with-issues          # only auto-flagged records
+python src/scripts/tools/review_report.py --tier metadata_only   # weakest-evidence set
+python src/scripts/tools/review_report.py --area Domain
 ```
 
 Each course is one card in plain language: the generated summary, description, "what a learner will be
@@ -792,11 +795,11 @@ A run writes the metadata to Postgres, not to files — that is what makes resum
 version coexistence work. Export to files when you need them:
 
 ```bash
-python tools/export.py                   # one <Do_ID>.json per course + index.json
-python tools/export.py --split-explain   # also <Do_ID>_explain.json, per framework section 13
-python tools/export.py --format jsonl    # single file, one course per line
-python tools/export.py --format csv      # 24-column flat summary for a spreadsheet
-python tools/export.py --version v3.4-advanced-extended   # export the old baseline instead
+python src/scripts/tools/export.py                   # one <Do_ID>.json per course + index.json
+python src/scripts/tools/export.py --split-explain   # also <Do_ID>_explain.json, per framework section 13
+python src/scripts/tools/export.py --format jsonl    # single file, one course per line
+python src/scripts/tools/export.py --format csv      # 24-column flat summary for a spreadsheet
+python src/scripts/tools/export.py --version v3.4-advanced-extended   # export the old baseline instead
 ```
 
 Everything lands under `output/<version>/`. All three formats read the same rows, so exports of
@@ -812,43 +815,98 @@ the key is idempotent and runs at startup.
 
 ## Files
 
-| File | Purpose |
+All code is under `src/`. Run everything **from this folder** (`igot-course-metadata/`): `.env`, `data/`,
+`logs/` and `output/` stay here, and the relative paths in `.env` resolve against it.
+
+```
+igot-course-metadata/
+├── .env / .env.example        configuration (every variable documented in .env.example)
+├── requirements.txt
+├── data/                      designation_index.npz (built by tools/build_designation_index.py)
+└── src/
+    ├── prompts/               prompt TEXT, one YAML file per version
+    │   ├── v3.4.yaml          reference copy only (v3.4 code still carries it inline)
+    │   ├── v3.5.yaml
+    │   ├── v3.6.yaml
+    │   └── v3.7.yaml
+    └── scripts/
+        ├── v3.4/              superseded v3.4 worker, verbatim, reference only (see its README)
+        ├── v3.5/              complete engine, runnable (no language.py / pdf_summarizer.py yet)
+        ├── v3.6/              complete engine, runnable
+        ├── v3.7/              complete engine, runnable (+ output_models.py)
+        ├── tools/             version-independent utilities (inventory, export, review, …)
+        └── run_courses.ps1, run_scorm.ps1, run_non_scorm.ps1
+```
+
+Each engine folder (`v3.5/`, `v3.6/`, `v3.7/`) is a **complete, frozen snapshot**: the modules import each other
+by plain name, so `python src/scripts/v3.7/meta_gen.py` only ever loads v3.7 code. A fix made in one
+version is *not* picked up by another: copy it across deliberately.
+
+| File (in each engine folder) | Purpose |
 |---|---|
 | `meta_gen.py` | worker: discovery, queue, LLM calls, persistence, CLI |
-| `prompts_v35.py` | system prompt, response schema, rubric weights, prompt assembly |
+| `prompts.py` | response schema, rubric weights, labels, and the code that fills in `src/prompts/<version>.yaml` |
+| `field_config.json` (v3.6+) | which output fields the model generates vs. portal / code / off |
 | `course_io.py` | reading course folders: nested transcripts, PDFs, placeholder filtering |
+| `api_fetcher.py` | fetching course content from the Learning API (`--api`) |
+| `pdf_summarizer.py` (v3.6+) | PDF chunk summaries fed to the main call |
+| `language.py` (v3.6+) | transcription source language per course |
 | `validation.py` | master-membership enforcement, rubric recomputation, repair |
 | `designations.py` | designation embedding index, hybrid retrieval, master validation |
-| `tools/inventory.py` | dedup + coverage census, produces `manifest.jsonl` |
-| `tools/build_designation_index.py` | one-off designation index builder |
-| `tools/estimate.py` | project run time and cost from measured data |
-| `tools/review_report.py` | self-contained HTML review page for non-technical sign-off |
-| `.env.example` | every variable, documented |
+| `output_models.py` (v3.7) | Pydantic models for the stakeholder output record |
+
+| Tool (`src/scripts/tools/`) | Purpose |
+|---|---|
+| `inventory.py` | dedup + coverage census, produces `manifest.jsonl` |
+| `build_designation_index.py` | one-off designation index builder |
+| `estimate.py` | project run time and cost from measured data |
+| `review_report.py` | self-contained HTML review page for non-technical sign-off |
+| `export.py`, `convert_export.py`, `bundle_courses.py` | getting output out of the DB as files |
+| `_paths.py` | where the tools find the project root and the engine modules they reuse |
+
+The tools reuse `course_io`, `designations` and `language` from one engine folder: v3.6 by default
+(identical in v3.7), or set `ENGINE_VERSION=v3.7`. The PowerShell runners take `-Engine v3.7` in the
+same way; v3.6 stays the default because that is what they ran before the move.
+
+### Running a version
+
+```bash
+python src/scripts/v3.5/meta_gen.py --limit 10            # v3.5, dry run
+python src/scripts/v3.6/meta_gen.py --limit 10            # v3.6, dry run
+python src/scripts/v3.7/meta_gen.py --limit 10 --execute  # v3.7, for real
+```
+
+v3.7 tags its rows with `PROMPT_VERSION_V37` (default `v3.7`) whatever `.env` sets `PROMPT_VERSION`
+to, so its output never mixes with an earlier version's. This replaces the old `run_v37.py` launcher.
 
 ### Editing the prompt
 
-**All prompt text lives in `prompts_v35.py` and nowhere else** — no instruction text is embedded in the
-worker, the validator, or the extraction code. Within that file:
+**All prompt text lives in `src/prompts/<version>.yaml` and nowhere else.** No instruction text is
+embedded in the worker, the validator or the extraction code. Each YAML file lists its placeholders at
+the top. Within it:
 
-| What | Where |
+| What | Key |
 |---|---|
-| The system prompt, in full | `SYSTEM_PROMPT_TEMPLATE` — one contiguous string, numbered sections 1–16 |
-| Learning-outcome wording (the two variants) | `_LO_RULES_UNLABELLED` / `_LO_RULES_WHW` |
-| The output JSON schema | `METADATA_SCHEMA` |
-| Rubric weights and bands | `RUBRIC_WEIGHTS`, `BEGINNER_MAX`, `INTERMEDIATE_MAX` — env-overridable |
-| How the prompt is assembled | `build_static_prefix()` (invariant head) + `build_course_section()` (per course) |
+| The system prompt, in full | `system_prompt`: one contiguous block, numbered sections 1–16 |
+| Learning-outcome wording (the two variants) | `learning_outcome_rules.unlabelled` / `.why_how_what` |
+| Static head: system prompt + masters | `static_prefix`, `kcm_header` (and `sto_block` in v3.7) |
+| Per-course input section and task | `course_section` |
+| PDF chunk summary prompt | `pdf_summary.instructions` (bump `pdf_summary.version` when it changes; it keys the cache) |
 
-The rubric weights and classification bands are written into the prompt text *and* used for the Python
-recomputation from the same constants, so editing them in one place cannot desynchronise the
-instructions from the scoring.
+Placeholders are written `__LIKE_THIS__` and filled in by that version's `prompts.py`. The output JSON
+schema (`FULL_METADATA_SCHEMA` / `METADATA_SCHEMA`) and the rubric weights and bands (`RUBRIC_WEIGHTS`,
+`BEGINNER_MAX`, `INTERMEDIATE_MAX`, all env-overridable) stay in `prompts.py`: they are generated from
+constants that the Python rubric recomputation also uses. The weights are written into the prompt text
+*and* used for scoring from the same constants, so the instructions and the scoring cannot drift apart.
 
-Two cautions when editing:
+Cautions when editing:
 
-- The `### N.` numbers in the template are placeholders. `_renumber_sections()` renumbers the sections
-  from 1 as it renders, so an optional one can be dropped without leaving a hole; do not rely on a
-  section's written number when cross-referencing from prose.
-- `build_static_prefix()` must stay byte-identical across courses — it is the cacheable prefix. Putting
-  anything course-specific into the system prompt disables caching (≈55% of spend).
+- **Make a new version rather than editing one that has produced output.** Copy `src/prompts/v3.7.yaml`
+  to `v3.8.yaml` and `src/scripts/v3.7/` to `src/scripts/v3.8/`, then point the new `prompts.py` at the
+  new YAML (`PROMPTS_FILE`) and change its default `PROMPT_VERSION`.
+- The text is sent byte-for-byte. Trailing spaces and blank lines in the YAML are part of the prompt.
+- `static_prefix` (and therefore `system_prompt`) must stay identical across courses: it is the cacheable
+  prefix. Putting anything course-specific into it disables caching (≈55% of spend).
 - Changing `PROMPT_VERSION` starts a fresh generation that coexists with the old one rather than
   overwriting it, which is what you want when comparing prompt edits.
 
